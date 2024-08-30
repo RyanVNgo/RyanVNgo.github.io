@@ -4,23 +4,21 @@
 
 
   <head>
-    <title>
-      RyanVNgo-Website
-    </title>
+    <title>RyanVNgo-Website</title>
 
     <style>
+
       body {
-        background-color: #f5f5f5;
+        background-color: #F5F5F0;
         margin: 40px auto;
-        margin-top: 120px;
-        max-width: 700px;
+        margin-top: 160px;
+        max-width: 600px;
         line-height: 1.6;
-        font-family: 'Comfortaa', sans-serif;
+        font-family: 'IBM Plex Mono', monospace;
         font-size: 18px;
         color: #444;
         padding: 0 10px
       }
-
       h1, h2, h3 {
         line-height: 1.2;
       }
@@ -30,14 +28,34 @@
         justify-content: left;
         align-items: center;
       }
-
-      img {
-        max-width: 80px;
-        max-height: 80px;
+      .img-container img {
+        transition: transform 0.15s;
+        max-width: 72px;
+        max-height: 72px;
         width: auto;
         height: auto;
-        padding-left: 8px;
-        padding-right: 8px;
+        margin: 10px auto;
+      }
+      .img-container img:hover {
+        transform: scale(1.15);
+      }
+
+      .social-links {
+        margin-top: 8px;
+        display: flex;
+        gap: 16px;
+      }
+      .social-links a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+        font-size: 16px;
+      }
+      .social-links img {
+        max-width: 16px;
+        max-height: 16px;
+        margin-right: 6px;
       }
 
     </style>
@@ -47,42 +65,67 @@
 
   <body>
 
-    <h1>Ryan V. Ngo's Website</h1>
+    <h1 style="margin-bottom:0">Ryan Ngo</h1>
 
-    <p>
-      Welcome to my personal website.
-    </p>
+    <div class="social-links">
+      <a href="https://github.com/RyanVNgo" target="_blank">
+        <img src="img-sources/Github_Logo.png" alt = "Github Logo">
+        Github
+      </a>
+      <a href="https://www.linkedin.com/in/ryanvngo/" target="_blank">
+        <img src="img-sources/LinkedIn_Logo.png" alt = "LinkedIn Logo">
+        LinkedIn
+      </a>
+      <a href="https://www.instagram.com/ryan.v.ngo/" target="_blank">
+        <img src="img-sources/Instagram_Logo.png" alt = "Instagram Logo">
+        Instagram
+      </a>
+    </div>
     
-    <h3>There isn't much going on here ... but that's alright!</h3>
+
+    <h3> Welcome to my personal website! There isn't much going on here, but that's alright!</h3>
 
     <p>
-      All you need to know is that I write code, low-level code.
+      I'm a C/C++ developer focusing on low-level programming and software development
+      (and given this website, I know a bit of HTML and CSS too).
     </p>
 
     <p>
-      My goal is to make systems work <b><i>fast</i></b> and <b><i>efficiently</i></b>
-      and I achieve that by:
-      <ul>
-        <li>Balancing minimal and efficient memory usage</li>
-        <li>Formulating custom built algorithms</li>
-        <li>Designing performant multithreaded architectures</li>
-      </ul>
+      My goal is to make systems work <b><i>quickly</i></b> and <b><i>efficiently</i></b> by:
+      <ol>
+        <li>Writing simple code</li>
+        <li>Benchmarking simple code</li>
+        <li>Finding bottlenecks</li>
+        <li>Fixing bottlenecks</li>
+      </ol>
     </p>
 
-    <h3>The languages I use.</h3>
+    <p>
+    </p>
+
+    <h3>To get that done, these are ...</h3>
+
+    <p>The languages I use:</p>
     <div class="img-container">
       <img src="img-sources/C_Logo.png" alt = "C Logo">
       <img src="img-sources/Cpp_Logo.png" alt = "C++ Logo">
       <img src="img-sources/Python_Logo.png" alt = "Python Logo">
       <img src="img-sources/Java_Logo.png" alt = "Java Logo">
     </div>
-    
-    <h3>Some tools I use.</h3>
+
+    <p>Some tools I use:</p>
     <div class="img-container">
       <img src="img-sources/Vim_Logo.png" alt = "Vim Logo">
       <img src="img-sources/GNU-Make_Logo.png" alt = "GNU Make Logo">
+      <img src="img-sources/Valgrind_Logo.png" alt = "Valgrind Logo">
       <img src="img-sources/Github_Logo.png" alt = "Github Logo">
       <img src="img-sources/Git_Logo.png" alt = "Git Logo">
+    </div>
+
+    <p>And the operating systems I work on:</p>
+    <div class="img-container">
+      <img src="img-sources/Ubuntu_Logo.png" alt = "Ubuntu Logo">
+      <img src="img-sources/Windows_Logo.png" alt = "Windows Logo">
     </div>
 
   </body>
