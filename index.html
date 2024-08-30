@@ -10,9 +10,12 @@
 
     <style>
       body {
+        background-color: #f5f5f5;
         margin: 40px auto;
-        max-width: 650px;
+        margin-top: 120px;
+        max-width: 700px;
         line-height: 1.6;
+        font-family: 'Comfortaa', sans-serif;
         font-size: 18px;
         color: #444;
         padding: 0 10px
@@ -22,10 +25,19 @@
         line-height: 1.2;
       }
 
+      .img-container {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+      }
+
       img {
-        width: 64px;
-        padding-left: 5px;
-        padding-right: 5px;
+        max-width: 80px;
+        max-height: 80px;
+        width: auto;
+        height: auto;
+        padding-left: 8px;
+        padding-right: 8px;
       }
 
     </style>
@@ -37,33 +49,41 @@
 
     <h1>Ryan V. Ngo's Website</h1>
 
-    <p>Welcome to my personal website.</p>
+    <p>
+      Welcome to my personal website.
+    </p>
     
-    <h3>There isn't much going on here but that's alright.</h3>
+    <h3>There isn't much going on here ... but that's alright!</h3>
 
     <p>
-      All you need to know is that I write code, and some pretty alright code at that.
+      All you need to know is that I write code, low-level code.
     </p>
 
     <p>
-      If you couldn't already tell, I don't do much web-development or front-end work.
-      I like working close to the computer, the low-level kind of sttuff.
-      From memory management to multi-threading, that's what I like. 
-    </p>
-
-    <p>
-      With that being said, my goal is to make systems work <i>fast</i> and <i>efficiently</i>.
+      My goal is to make systems work <b><i>fast</i></b> and <b><i>efficiently</i></b>
+      and I achieve that by:
       <ul>
         <li>Balancing minimal and efficient memory usage</li>
         <li>Formulating custom built algorithms</li>
         <li>Designing performant multithreaded architectures</li>
       </ul>
     </p>
-      
-    <!--
-    <img src="img-sources/C_Logo.png" alt = "C Logo">
-    <img src="img-sources/Cpp_Logo.png" alt = "C++ Logo">
-    -->
+
+    <h3>The languages I use.</h3>
+    <div class="img-container">
+      <img src="img-sources/C_Logo.png" alt = "C Logo">
+      <img src="img-sources/Cpp_Logo.png" alt = "C++ Logo">
+      <img src="img-sources/Python_Logo.png" alt = "Python Logo">
+      <img src="img-sources/Java_Logo.png" alt = "Java Logo">
+    </div>
+    
+    <h3>Some tools I use.</h3>
+    <div class="img-container">
+      <img src="img-sources/Vim_Logo.png" alt = "Vim Logo">
+      <img src="img-sources/GNU-Make_Logo.png" alt = "GNU Make Logo">
+      <img src="img-sources/Github_Logo.png" alt = "Github Logo">
+      <img src="img-sources/Git_Logo.png" alt = "Git Logo">
+    </div>
 
   </body>
 
