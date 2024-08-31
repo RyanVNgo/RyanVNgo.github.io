@@ -6,21 +6,30 @@
   <head>
     <title>RyanVNgo-Website</title>
 
+  <!-- STYLING --------------------------------------------------->
     <style>
 
       body {
-        background-color: #F5F5F0;
+        background-color: #F5F5F5;
         margin: 40px auto;
         margin-top: 160px;
-        max-width: 600px;
+        max-width: 400px;
         line-height: 1.6;
-        font-family: 'IBM Plex Mono', monospace;
-        font-size: 18px;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 16px;
         color: #444;
         padding: 0 10px
       }
       h1, h2, h3 {
         line-height: 1.2;
+      }
+      p a {
+        transition: color 0.25s;
+        text-decoration: underline;
+        color: inherit;
+      }
+      p a:hover {
+        color: #888;
       }
 
       .img-container {
@@ -34,100 +43,81 @@
         max-height: 72px;
         width: auto;
         height: auto;
-        margin: 10px auto;
+        margin: 8px auto;
       }
       .img-container img:hover {
         transform: scale(1.15);
       }
 
-      .social-links {
-        margin-top: 8px;
+      #social-links {
+        transition: opacity 0.5s;
+        opacity: 0;
         display: flex;
-        gap: 16px;
+        gap: 18px;
       }
-      .social-links a {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
+      #social-links img {
+        filter: grayscale(1);
+        max-width: 20px;
+        max-height: 20px;
+        width: auto;
+        height: auto;
+      }
+
+      .link-text {
+        transition: color 0.25s;
+        text-decoration: underline;
+        cursor: pointer;
         color: inherit;
-        font-size: 16px;
       }
-      .social-links img {
-        max-width: 16px;
-        max-height: 16px;
-        margin-right: 6px;
+      .link-text:hover {
+        color: #888;
       }
 
     </style>
 
   </head>
 
-
+  <!-- PRIMARY BODY ---------------------------------------------->
   <body>
 
-    <h1 style="margin-bottom:0">Ryan Ngo</h1>
+    <p style="margin-bottom:0"><b>Ryan Ngo</b></p>
 
-    <div class="social-links">
+    <p>
+      C/C++ developer working on low-level software and solutions.
+    </p>
+
+    <p>
+      Currently an undergraduate at San Diego State University.
+    </p>
+
+    <p>
+      Recently developing <a href="https://github.com/RyanVNgo/Asteria" target="_blank">Asteria</a>,
+      focusing on optimized data processing of FITS images.
+    </p>
+
+    <p>
+      This website is a work in progress but you can check out more from me 
+      <a href="https://github.com/RyanVNgo" target="_blank">here</a>
+      or feel free to <span id="get-in-touch" class="link-text">get in touch</span>.
+    </p>
+
+    <div id="social-links">
       <a href="https://github.com/RyanVNgo" target="_blank">
-        <img src="img-sources/Github_Logo.png" alt = "Github Logo">
-        Github
+        <img src="img-sources/Github_Logo.png" alt="Github">
       </a>
       <a href="https://www.linkedin.com/in/ryanvngo/" target="_blank">
-        <img src="img-sources/LinkedIn_Logo.png" alt = "LinkedIn Logo">
-        LinkedIn
+        <img src="img-sources/LinkedIn_Logo.png" alt="LinkedIn">
       </a>
-      <a href="https://www.instagram.com/ryan.v.ngo/" target="_blank">
-        <img src="img-sources/Instagram_Logo.png" alt = "Instagram Logo">
-        Instagram
+      <a href="https://www.instagram.com/ryan.v.ngo" target="_blank">
+        <img src="img-sources/Instagram_Logo.png" alt="Instagram">
+      </a>
+      <a href="mailto:vanryan711@gmail.com" target="_blank">
+        <img src="img-sources/Mail_Logo.png" alt="Email">
       </a>
     </div>
-    
 
-    <h3> Welcome to my personal website! There isn't much going on here, but that's alright!</h3>
 
-    <p>
-      I'm a C/C++ developer focusing on low-level programming and software development
-      (and given this website, I know a bit of HTML and CSS too).
-    </p>
-
-    <p>
-      My goal is to make systems work <b><i>quickly</i></b> and <b><i>efficiently</i></b> by:
-      <ol>
-        <li>Writing simple code</li>
-        <li>Benchmarking simple code</li>
-        <li>Finding bottlenecks</li>
-        <li>Fixing bottlenecks</li>
-      </ol>
-    </p>
-
-    <p>
-    </p>
-
-    <h3>To get that done, these are ...</h3>
-
-    <p>The languages I use:</p>
-    <div class="img-container">
-      <img src="img-sources/C_Logo.png" alt = "C Logo">
-      <img src="img-sources/Cpp_Logo.png" alt = "C++ Logo">
-      <img src="img-sources/Python_Logo.png" alt = "Python Logo">
-      <img src="img-sources/Java_Logo.png" alt = "Java Logo">
-    </div>
-
-    <p>Some tools I use:</p>
-    <div class="img-container">
-      <img src="img-sources/Vim_Logo.png" alt = "Vim Logo">
-      <img src="img-sources/GNU-Make_Logo.png" alt = "GNU Make Logo">
-      <img src="img-sources/Valgrind_Logo.png" alt = "Valgrind Logo">
-      <img src="img-sources/Github_Logo.png" alt = "Github Logo">
-      <img src="img-sources/Git_Logo.png" alt = "Git Logo">
-    </div>
-
-    <p>And the operating systems I work on:</p>
-    <div class="img-container">
-      <img src="img-sources/Ubuntu_Logo.png" alt = "Ubuntu Logo">
-      <img src="img-sources/Windows_Logo.png" alt = "Windows Logo">
-    </div>
-
+    <script src="scripts.js"></script>
   </body>
 
 
