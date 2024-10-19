@@ -1,30 +1,132 @@
-body {
-  background-color: #F5F5F5;
-  margin: 40px auto;
-  margin-top: 160px;
-  max-width: 400px;
-  line-height: 1.6;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 16px;
-  color: #444;
-  padding: 0 10px
-}
-h1, h2, h3 {
-  line-height: 1.2;
-}
-p a {
-  transition: color 0.25s;
-  text-decoration: underline;
-  color: inherit;
-}
-p a:hover {
-  color: #888;
-}
-hr {
-  border-width: 1px;
-  height: 0px;
+/******************** Defined Variables ********************/
+
+:root {
+
+  --black: #101212;
+  --white: #F0F0F0;
+  --grey: #252526;
+
+  --green: #00665E;
+  --yellow: #CEDC00;
+  --red: #C33C54;
+  /*--blue: #8EE3EF;*/
+  --blue: #5BC0BE;
+
+  --card-radius: 30px;
 }
 
+/******************** HTML components ********************/
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+
+  font-family: "Roboto";
+  font-size: 18px;
+
+  margin: 0px auto;
+  margin-bottom: 120px;
+  padding: 0px 0px
+}
+
+/******************** Class Specific ********************/
+
+.grid-container {
+  max-width: 1390px;
+}
+.grid {
+  margin-left:  auto;
+  margin-right: auto;
+  grid-column-gap:  24px;
+  grid-row-gap:     24px;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.chunk-header {
+  grid-column: span 12;
+  margin: 0 0;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: var(--grey);
+  border-radius: var(--card-radius);
+  min-height: 512px;
+  transition: transform 0.1s ease;
+}
+.card:hover {
+  transform: scale(1.015);
+  cursor: pointer;
+}
+.card-span-12 {
+  grid-column: span 12;
+}
+.card-span-8 {
+  grid-column: span 8;
+}
+.card-span-4 {
+  grid-column: span 4;
+}
+.card-header {
+  margin: 10px 40px;
+}
+.card-header h1 {
+  font-weight: 700;
+  font-size: 32px;
+}
+.card-header p {
+  font-size: 24px;
+}
+
+/******************** ID Specific ********************/
+
+#header-block{
+  grid-column: span 12;
+  margin-top: 300px;
+  text-align: left;
+}
+#header-block h1 {
+  margin: 10px 0px;
+  font-size: 80px;
+  color: transparent;
+  background-image: linear-gradient(90deg, var(--green), 50%,  var(--yellow));
+  background-clip: text;
+}
+#header-block p {
+  margin: 0px 0px;
+  font-size: 32px;
+}
+#header-block hr {
+  border: none;
+  height: 4px;
+  background-image: linear-gradient(to right, var(--green), var(--yellow));
+  margin: 32px auto;
+}
+
+/******************** Item Specific ********************/
+
+.card-cserio {
+  background-image: linear-gradient(135deg, var(--green), 60%, var(--yellow));
+}
+.card-ldsc {
+  background-image: linear-gradient(135deg, var(--red), 60%, var(--yellow));
+}
+.card-asteria{
+  background-image: linear-gradient(135deg, var(--blue), 60%, var(--yellow));
+}
+
+/******************** Legacy Components ********************/
+
+/*
 #social-links {
   transition: opacity 0.5s;
   display: flex;
@@ -53,3 +155,4 @@ hr {
 .link-text:hover {
   color: #888;
 }
+*/
