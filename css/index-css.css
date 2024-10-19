@@ -18,8 +18,8 @@
 /******************** HTML components ********************/
 
 body {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--black);
 
   font-family: "Roboto";
   font-size: 18px;
@@ -27,6 +27,13 @@ body {
   margin: 0px auto;
   margin-bottom: 120px;
   padding: 0px 0px
+}
+
+/******************** Animations ********************/
+
+@keyframes gradientMove {
+  0%    { background-position: 0%   0%; }
+  100%  { background-position: 100% 0%; }
 }
 
 /******************** Class Specific ********************/
@@ -90,15 +97,16 @@ body {
 /******************** ID Specific ********************/
 
 #header-block{
-  grid-column: span 12;
-  margin-top: 300px;
+  margin-top: 40vh;
   text-align: left;
 }
 #header-block h1 {
   margin: 10px 0px;
   font-size: 80px;
   color: transparent;
-  background-image: linear-gradient(90deg, var(--green), 50%,  var(--yellow));
+  background-image: linear-gradient(90deg, var(--green), var(--yellow), var(--green), var(--yellow));
+  background-size: 300% 100%;
+  animation: gradientMove 8s infinite linear;
   background-clip: text;
 }
 #header-block p {
@@ -107,9 +115,11 @@ body {
 }
 #header-block hr {
   border: none;
-  height: 4px;
-  background-image: linear-gradient(to right, var(--green), var(--yellow));
+  height: 8px;
   margin: 32px auto;
+  background-image: linear-gradient(90deg, var(--green), var(--yellow), var(--green), var(--yellow));
+  background-size: 300% 100%;
+  animation: gradientMove 8s infinite linear;
 }
 
 /******************** Item Specific ********************/
@@ -124,35 +134,3 @@ body {
   background-image: linear-gradient(135deg, var(--blue), 60%, var(--yellow));
 }
 
-/******************** Legacy Components ********************/
-
-/*
-#social-links {
-  transition: opacity 0.5s;
-  display: flex;
-  opacity: 0;
-  align-items: center;
-  gap: 18px;
-}
-#social-links img {
-  filter: grayscale(1);
-  max-width: 20px;
-  max-height: 20px;
-  width: auto;
-  height: auto;
-}
-
-.disabled-link {
-  pointer-events: none;
-}
-
-.link-text {
-  transition: color 0.25s;
-  text-decoration: underline;
-  cursor: pointer;
-  color: inherit;
-}
-.link-text:hover {
-  color: #888;
-}
-*/
