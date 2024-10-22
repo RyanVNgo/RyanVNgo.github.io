@@ -1,16 +1,13 @@
 /******************** Defined Variables ********************/
 
 :root {
-
   --black: #101212;
   --white: #F0F0F0;
+  --dark-grey: #181A1A;
   --grey: #252526;
 
   --green: #00665E;
   --yellow: #CEDC00;
-  --red: #C33C54;
-  /*--blue: #8EE3EF;*/
-  --blue: #5BC0BE;
 
   --card-radius: 30px;
 }
@@ -18,15 +15,13 @@
 /******************** HTML components ********************/
 
 body {
-  background-color: var(--white);
-  color: var(--black);
-
+  background-color: var(--black);
+  color: var(--white);
   font-family: "Roboto";
   font-size: 18px;
-
-  margin: 0px auto;
-  margin-bottom: 120px;
-  padding: 0px 0px
+  margin: 0 auto;
+  padding 0 0;
+  max-width: 1100px;
 }
 
 /******************** Animations ********************/
@@ -38,60 +33,33 @@ body {
 
 /******************** Class Specific ********************/
 
-.grid-container {
-  max-width: 1390px;
-}
-.grid {
-  margin-left:  auto;
-  margin-right: auto;
-  grid-column-gap:  24px;
-  grid-row-gap:     24px;
-  padding: 0 24px;
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-}
-
-.chunk-header {
-  grid-column: span 12;
-  margin: 0 0;
-  font-size: 48px;
-  font-weight: 700;
-}
-
-.card {
+.container {
   display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 0;
-  box-sizing: border-box;
-  overflow: hidden;
-  background-color: var(--grey);
-  border-radius: var(--card-radius);
-  min-height: 512px;
-  transition: transform 0.1s ease;
+  gap: 48px;
+  align-items: center;
 }
-.card:hover {
-  transform: scale(1.015);
-  cursor: pointer;
-}
-.card-span-12 {
-  grid-column: span 12;
-}
-.card-span-8 {
-  grid-column: span 8;
-}
-.card-span-4 {
-  grid-column: span 4;
-}
-.card-header {
-  margin: 10px 40px;
-}
-.card-header h1 {
-  font-weight: 700;
-  font-size: 32px;
-}
-.card-header p {
+
+.external-view-button {
+  margin: 0;
+  border: none;
+  min-height: 50px;
+  padding: 0 40px;
+  color: var(--white);
+  background: transparent;
   font-size: 24px;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+.external-view-button:hover {
+  transform: scale(1.08);
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+}
+.external-view-button.disabled {
+  opacity: 50%;
+  text-decoration: line-through;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 /******************** ID Specific ********************/
@@ -101,36 +69,45 @@ body {
   text-align: left;
 }
 #header-block h1 {
-  margin: 10px 0px;
-  font-size: 80px;
+  margin: 10px 0;
+  font-size: 54px;
   color: transparent;
   background-image: linear-gradient(90deg, var(--green), var(--yellow), var(--green), var(--yellow));
   background-size: 300% 100%;
-  animation: gradientMove 8s infinite linear;
+  animation: gradientMove 6s infinite linear;
   background-clip: text;
 }
 #header-block p {
-  margin: 0px 0px;
-  font-size: 32px;
+  margin: 0;
+  font-size: 28px;
 }
 #header-block hr {
+  margin: 32px 0;
+  height: 6px;
   border: none;
-  height: 8px;
-  margin: 32px auto;
   background-image: linear-gradient(90deg, var(--green), var(--yellow), var(--green), var(--yellow));
   background-size: 300% 100%;
-  animation: gradientMove 8s infinite linear;
+  animation: gradientMove 6s infinite linear;
 }
 
-/******************** Item Specific ********************/
+#header-links {
+  margin: 0 0;
+  padding: 0 0;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+#header-links img {
+  filter: invert(90%);
+  max-width: 28px;
+  transition: transform 0.30s;
+}
+#header-links img:hover {
+  transform: scale(1.12);
+}
 
-.card-cserio {
-  background-image: linear-gradient(135deg, var(--green), 60%, var(--yellow));
+#external-views {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
-.card-ldsc {
-  background-image: linear-gradient(135deg, var(--red), 60%, var(--yellow));
-}
-.card-asteria{
-  background-image: linear-gradient(135deg, var(--blue), 60%, var(--yellow));
-}
-

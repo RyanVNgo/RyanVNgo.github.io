@@ -12,47 +12,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <link rel="preload" href="css/index-css.css" as="style">
+    <link rel="preload" href="scripts/index-script.js" as="script">
 
     <link rel="stylesheet" href="css/index-css.css">
   </head>
 
-  <!-- PRIMARY BODY ---------------------------------------------->
   <body>
 
-    <div class="grid grid-container" style="height: 100vh">
-      <div id="header-block" class="card-span-12">
-        <h1>I'm Ryan Ngo</h1>
-        <p><i>A Software Developer engineering the processes that drive innovation and performance.</i></p>
-        <hr class="moving-gradient-hr">
-      </div>
+    <div id="header-block"> 
+      <h1>I'm Ryan Ngo</h1>
+      <p>
+        <i>
+          A software engineer intrested in developing fast and efficient systems for high performance environments.
+        </i>
+      </p>
+      <hr>
     </div>
 
-    <div class="grid grid-container">
-      <section class="chunk-header">
-        Projects
-      </section>
+    <div class="container">
+      <div id="header-links">
+        <a href="https://github.com/RyanVNgo" target="_blank">
+          <img src="images/Github_Logo.png" alt="Github">
+        </a>
+        <a href="https://www.linkedin.com/in/ryanvngo/" target="_blank">
+          <img src="images/LinkedIn_Logo.png" alt="LinkedIn">
+        </a>
+        <a href="https://www.instagram.com/ryan.v.ngo" target="_blank">
+          <img src="images/Instagram_Logo.png" alt="Instagram">
+        </a>
+        <a href="mailto:vanryan711@gmail.com" target="_blank">
+          <img src="images/Mail_Logo.png" alt="Email">
+        </a>
+      </div>
 
-      <section class="card card-span-4 card-cserio" data-link="https://github.com/RyanVNgo/CSERIO">
-        <header class="card-header">
-          <h1>CSERIO</h1>
-          <p>An interface to SER format image captures for C programmers.</p>
-        </header>
-      </section>
-
-      <section class="card card-span-4 card-ldsc" data-link="https://github.com/RyanVNgo/LDSC">
-        <header class="card-header">
-          <h1>LDSC</h1>
-          <p>Linked Data Structures for C</p>
-        </header>
-      </section>
-      
-      <section class="card card-span-4 card-asteria" data-link="https://github.com/RyanVNgo/Asteria">
-        <header class="card-header">
-          <h1>Asteria</h1>
-          <p>An astrophotography focused FITS viewer.</p>
-        </header>
-      </section>
-
+      <div id="external-views">
+        <button class="external-view-button disabled">Projects</button>
+        <button class="external-view-button disabled">Astro</button>
+        <button class="external-view-button disabled">Designs</button>
+      </div>
     </div>
 
     <script src="scripts/index-script.js"></script>
