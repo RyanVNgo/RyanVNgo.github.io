@@ -2,112 +2,86 @@
 
 :root {
   --black: #101212;
-  --white: #F0F0F0;
+  --white: #FCFCFC;
   --dark-grey: #181A1A;
   --grey: #252526;
-
+  --light-grey: #D0D0D0;
+  --very-light-grey: #E8E8E8;
   --green: #00665E;
   --yellow: #CEDC00;
-
-  --card-radius: 30px;
 }
 
 /******************** HTML components ********************/
 
 body {
-  background-color: var(--black);
-  color: var(--white);
-  font-family: "Roboto";
+  background-color: var(--white);
+  color: var(--black);
+  font-family: 'IBM Plex Sans', 'Arial', sans-serif;
   font-size: 18px;
-  margin: 0 auto;
-  padding 0 0;
-  max-width: 1100px;
+  line-height: 1.3;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+h1, p {
+  margin: 0;
+}
+h1 {
+  font-weight: 500;
 }
 
-/******************** Animations ********************/
-
-@keyframes gradientMove {
-  0%    { background-position: 0%   0%; }
-  100%  { background-position: 100% 0%; }
+hr {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-style: none;
+  height: 1px;
+  background-color: var(--light-grey);
 }
 
 /******************** Class Specific ********************/
 
-.container {
+.masthead {
+  box-sizing: border-box;
   display: flex;
-  gap: 48px;
   align-items: center;
+  height: 36px;
+  font-size: 0.75em;
+}
+.masthead-item {
+  display: flex;
+  min-width: 80px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  padding: 0 0.5rem;
+}
+.masthead-item:hover {
+  background-color: var(--very-light-grey);
+  cursor: pointer;
 }
 
-.external-view-button {
-  margin: 0;
-  border: none;
-  min-height: 50px;
-  padding: 0 40px;
-  color: var(--white);
-  background: transparent;
-  font-size: 24px;
-  border-radius: 15px;
-  transition: transform 0.3s;
+.content-block {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 50px;
 }
-.external-view-button:hover {
-  transform: scale(1.08);
-  text-decoration-line: underline;
-  text-decoration-thickness: 1px;
-}
-.external-view-button.disabled {
-  opacity: 50%;
-  text-decoration: line-through;
-  cursor: not-allowed;
-  pointer-events: none;
+
+.header-style-1 {
+  font-size: 1.8em;
+  font-weight: 500;
 }
 
 /******************** ID Specific ********************/
 
-#header-block{
-  margin-top: 40vh;
-  text-align: left;
+#headline {
+  margin: 200px auto;
 }
-#header-block h1 {
-  margin: 10px 0;
-  font-size: 54px;
+#headline .gradient-text-span {
   color: transparent;
-  background-image: linear-gradient(90deg, var(--green), var(--yellow), var(--green), var(--yellow));
-  background-size: 300% 100%;
-  animation: gradientMove 6s infinite linear;
+  background-image: linear-gradient(30deg, var(--green), var(--yellow));
   background-clip: text;
 }
-#header-block p {
-  margin: 0;
-  font-size: 28px;
-}
-#header-block hr {
-  margin: 32px 0;
-  height: 6px;
-  border: none;
-  background-image: linear-gradient(90deg, var(--green), var(--yellow), var(--green), var(--yellow));
-  background-size: 300% 100%;
-  animation: gradientMove 6s infinite linear;
-}
 
-#header-links {
-  margin: 0 0;
-  padding: 0 0;
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-#header-links img {
-  filter: invert(90%);
-  max-width: 28px;
-  transition: transform 0.30s;
-}
-#header-links img:hover {
-  transform: scale(1.12);
-}
-
-#external-views {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}

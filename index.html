@@ -9,7 +9,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <link rel="preload" href="css/index-css.css" as="style">
     <link rel="preload" href="scripts/index-script.js" as="script">
@@ -19,37 +19,38 @@
 
   <body>
 
-    <div id="header-block"> 
-      <h1>I'm Ryan Ngo</h1>
-      <p>
-        <i>
-          A software engineer intrested in developing fast and efficient systems for high performance environments.
-        </i>
-      </p>
-      <hr>
+    <div class="content-block">
+      <div class="masthead">
+        <div class="masthead-item">
+          <span>Ryan Ngo</span>
+        </div>
+        <div class="masthead-item">
+          <span>Projects</span>
+        </div>
+        <div class="masthead-item">
+          <span>Astro</span>
+        </div>
+        <div class="masthead-item">
+          <span>Blog</span>
+        </div>
+      </div>
     </div>
 
-    <div class="container">
-      <div id="header-links">
-        <a href="https://github.com/RyanVNgo" target="_blank">
-          <img src="images/Github_Logo.png" alt="Github">
-        </a>
-        <a href="https://www.linkedin.com/in/ryanvngo/" target="_blank">
-          <img src="images/LinkedIn_Logo.png" alt="LinkedIn">
-        </a>
-        <a href="https://www.instagram.com/ryan.v.ngo" target="_blank">
-          <img src="images/Instagram_Logo.png" alt="Instagram">
-        </a>
-        <a href="mailto:vanryan711@gmail.com" target="_blank">
-          <img src="images/Mail_Logo.png" alt="Email">
-        </a>
+    <hr>
+
+    <div class="content-block">
+
+      <div id="headline"> 
+        <h1>
+          <span class="gradient-text-span">I'm Ryan Ngo</span>
+        </h1>
+        <p>
+          <span>
+            A software engineer with an interest in developing fast and efficient software in high-performance environments.
+          </span>
+        </p>
       </div>
 
-      <div id="external-views">
-        <button class="external-view-button disabled">Projects</button>
-        <button class="external-view-button disabled">Astro</button>
-        <button class="external-view-button disabled">Designs</button>
-      </div>
     </div>
 
     <script src="scripts/index-script.js"></script>
