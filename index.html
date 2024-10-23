@@ -13,34 +13,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+    <link rel="preload" href="css/global.css" as="style">
     <link rel="preload" href="css/index-css.css" as="style">
     <link rel="preload" href="scripts/index-script.js" as="script">
 
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/index-css.css">
   </head>
 
   <body>
     <!-- Nav bar ------>
-    <section class="fixed-section">
-      <header>
-        <nav id="navbar-main">
-          <a>Ryan Ngo</a>
-          <a>Projects</a>
-          <a>Astro</a>
-          <a>Documents</a>
-          <a href="https://github.com/RyanVNgo" target="_blank">Github</a>
-        </nav>
-      </header>
+    <header>
+      <nav>
+        <a href="">Ryan Ngo</a>
+        <a>Projects</a>
+        <a>Astro</a>
+        <a>Documents</a>
+        <a href="https://github.com/RyanVNgo" target="_blank">Github</a>
+      </nav>
       <hr>
-    </section>
+    </header>
 
     <!-- Primary Content ------>
 
     <section>
-      <div class="content-block row-container" id="hero-block">
+      <div class="content-block row-oriented-block main-axis-center" id="hero-block">
         <hgroup class="flex-1">
           <h1>
-            <span class="gradient-text-span">I'm Ryan Ngo</span>
+            <span class="gradient-text-span green-yellow-gradient">I'm Ryan Ngo</span>
           </h1>
           <p>
             A software engineer interested in developing fast and efficient 
@@ -53,6 +53,52 @@
         <div class="flex-1" id="hero-img">
           <img src="images/ryanvngo_headshot.jpg">
         </div>
+      </div>
+    </section>
+
+    <hr class="content-width">
+
+    <section>
+      <div class="content-block column-oriented-block">
+        <h2>
+          <span class="gradient-text-span green-yellow-gradient">
+            Projects
+          </span>
+        </h2>
+        <div class="grid" id="project-cards-container"> 
+          <hgroup class="background-on-hover bigger-on-hover">
+            <h3>CSERIO</h3>
+            <p>
+              Some content about whatever this project is or does.
+              Mostly text but might end up containing some pictures.
+              Preferably at the bottom or at the top with this text
+              and the header below it, we'll see.
+            </p>
+          </hgroup>
+          <hgroup class="background-on-hover bigger-on-hover">
+            <h3>Asteria</h3>
+            <p>
+              Some content about whatever this project is or does.
+              Mostly text but might end up containing some pictures.
+              Preferably at the bottom or at the top with this text
+              and the header below it, we'll see.
+            </p>
+          </hgroup>
+          <hgroup class="background-on-hover bigger-on-hover">
+            <h3>LDSC</h3>
+            <p>
+              Some content about whatever this project is or does.
+              Mostly text but might end up containing some pictures.
+              Preferably at the bottom or at the top with this text
+              and the header below it, we'll see.
+            </p>
+          </hgroup>
+        </div>
+        <h4 style="text-align: right">
+          <a class="content-link" href="https://github.com/RyanVNgo" target="_blank">
+            More Projects >
+          </a>
+        </h4>
       </div>
     </section>
 
