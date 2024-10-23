@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/website-icon.png">
 
     <title>RyanVNgo-Website</title>
@@ -18,41 +20,48 @@
   </head>
 
   <body>
+    <!-- Nav bar -->
+    <section class="fixed-section">
+      <header>
+        <nav id="navbar-main">
+          <a>Ryan Ngo</a>
+          <a>Projects</a>
+          <a>Astro</a>
+          <a>Documents</a>
+          <a href="https://github.com/RyanVNgo" target="_blank">Github</a>
+        </nav>
+      </header>
+      <hr>
+    </section>
 
-    <div class="content-block">
-      <div class="masthead">
-        <div class="masthead-item">
-          <span>Ryan Ngo</span>
-        </div>
-        <div class="masthead-item">
-          <span>Projects</span>
-        </div>
-        <div class="masthead-item">
-          <span>Astro</span>
-        </div>
-        <div class="masthead-item">
-          <span>Blog</span>
+    <!-- Primary Content -->
+
+    <section class="section-theme-light-grey">
+      <div class="content-block" id="hero-block">
+        <hgroup> 
+          <h1>
+            <span class="gradient-text-span">I'm Ryan Ngo</span>
+          </h1>
+          <p>
+            A software engineer interested in developing fast and efficient 
+            software solutions for high-performance environments.
+            <br><br>
+            I currently study at San Diego State University and will get 
+            a Bachelor's of Science in Computer Science in May of 2025.
+          </p>
+        </hgroup>
+        <div id="hero-img">
+          <img src="images/ryanvngo_headshot.jpg">
         </div>
       </div>
-    </div>
+    </section>
 
-    <hr>
+    <!-- Footer -->
+    <footer>
 
-    <div class="content-block">
+    </footer>
 
-      <div id="headline"> 
-        <h1>
-          <span class="gradient-text-span">I'm Ryan Ngo</span>
-        </h1>
-        <p>
-          <span>
-            A software engineer with an interest in developing fast and efficient software in high-performance environments.
-          </span>
-        </p>
-      </div>
-
-    </div>
-
+    <!-- Scripts -->
     <script src="scripts/index-script.js"></script>
   </body>
 
