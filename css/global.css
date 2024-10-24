@@ -133,7 +133,7 @@ div {
 
 .grid {
   display: grid;
-  gap: 20px;
+  gap: 1px;
 }
 
 .content-block {
@@ -173,10 +173,6 @@ div {
 .gradient-text-span {
   color: transparent;
   background-clip: text;
-}
-
-.background-on-hover:hover {
-  background-color: var(--color);
 }
 
 .bigger-on-hover:hover {
