@@ -13,7 +13,7 @@
   /* colors */
   --black:            #101212;
   --white:            #FCFCFC;
-  --dark-grey:        #252526;
+  --dark-grey:        #252525;
   --grey:             #E0E0E0;
   --light-grey:       #F0F0F0;
   --very-light-grey:  #F7F7F7;
@@ -66,7 +66,12 @@ h4 {
   font-size: 16px;
   font-weight: 300;
 }
+h5 {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
 p {
+  font-weight: 300;
   margin: 0;
 }
 
@@ -107,7 +112,6 @@ nav a:hover {
   cursor: pointer;
 }
 
-
 section {
   width: 100%;
   display: flex;
@@ -127,6 +131,27 @@ hr {
 div {
   display: flex;
   flex-wrap: wrap;
+}
+
+footer {
+  background-color: var(--dark-grey);
+  width: 100%;
+  margin-top: 15vh;
+  padding: var(--section-v-padding) 0;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+}
+form label {
+  width: 100%;
+}
+form input {
+  width: 100%;
 }
 
 /******************** Class Specific ********************/
@@ -181,6 +206,7 @@ div {
 
 .content-link {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .content-link:hover {

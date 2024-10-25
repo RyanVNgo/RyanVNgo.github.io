@@ -17,17 +17,19 @@
     <link rel="preload" href="css/index-css.css" as="style">
     <link rel="preload" href="scripts/index-script.js" as="script"> <link rel="stylesheet" href="css/index-css.css">
     <link rel="stylesheet" href="css/global.css">
+
+    <base target="_blank">
   </head>
 
   <body>
     <!-- Nav bar ------>
     <header>
       <nav>
-        <a href="">Ryan Ngo</a>
+        <a href="" target="_self">Ryan Ngo</a>
         <a>Projects</a>
-        <a>Astro</a>
+        <a href="https://github.com/RyanVNgo">Github</a>
         <a>Documents</a>
-        <a href="https://github.com/RyanVNgo" target="_blank">Github</a>
+        <a>Astro</a>
       </nav>
       <hr>
     </header>
@@ -47,6 +49,22 @@
             I currently study at San Diego State University and will get 
             a Bachelor's of Science in Computer Science in May of 2025.
           </p>
+
+          <div class="grid">
+            <a href="https://github.com/RyanVNgo">
+              <img src="images/Github_Logo.png">
+            </a>
+            <a href="https://www.linkedin.com/in/ryanvngo/">
+              <img src="images/LinkedIn_Logo.png">
+            </a>
+            <a href="https://www.instagram.com/ryan.v.ngo/">
+              <img src="images/Instagram_Logo.png">
+            </a>
+            <a href="mailto:vanryan711@gmail.com">
+              <img src="images/Mail_Logo.png">
+            </a>
+          </div>
+
         </hgroup>
         <div class="flex-1" id="hero-img">
           <img src="images/ryanvngo_headshot.jpg">
@@ -64,7 +82,7 @@
           </span>
         </h2>
         <div class="grid" id="project-cards-container"> 
-          <hgroup>
+          <a href="https://github.com/RyanVNgo/CSERIO">
             <h3>CSERIO</h3>
             <p>
               Some content about whatever this project is or does.
@@ -72,8 +90,8 @@
               Preferably at the bottom or at the top with this text
               and the header below it, we'll see.
             </p>
-          </hgroup>
-          <hgroup>
+          </a>
+          <a href="https://github.com/RyanVNgo/Asteria">
             <h3>Asteria</h3>
             <p>
               Some content about whatever this project is or does.
@@ -81,8 +99,8 @@
               Preferably at the bottom or at the top with this text
               and the header below it, we'll see.
             </p>
-          </hgroup>
-          <hgroup>
+          </a>
+          <a href="https://github.com/RyanVNgo/LDSC">
             <h3>LDSC</h3>
             <p>
               Some content about whatever this project is or does.
@@ -90,10 +108,10 @@
               Preferably at the bottom or at the top with this text
               and the header below it, we'll see.
             </p>
-          </hgroup>
+          </a>
         </div>
         <h4 style="text-align: right">
-          <a class="content-link" href="https://github.com/RyanVNgo" target="_blank">
+          <a class="content-link" href="https://github.com/RyanVNgo">
             More Projects >
           </a>
         </h4>
@@ -104,7 +122,33 @@
 
     <!-- Footer ------>
     <footer>
+      <div class="content-block row-oriented-block" id="footer-block">
+        <span class="flex-1">
+          <a href="" target="_self">
+            <img src="images/website-icon.png">
+          </a>
+        </span>
 
+        <hgroup class="flex-1 column-oriented-block">
+          <h5>Navigation</h5>
+          <p><a class="content-link">Projects</a></p>
+          <p><a class="content-link">Astro</a></p>
+          <p><a class="content-link">Documents</a></p>
+
+          <h5>Links</h5>
+          <p><a class="content-link" href="https://github.com/RyanVNgo">Github</a></p>
+          <p><a class="content-link" href="https://www.linkedin.com/in/ryanvngo/">LinkedIn</a></p>
+          <p><a class="content-link" href="https://www.instagram.com/ryan.v.ngo/">Instagram</a></p>
+        </hgroup>
+
+        <hgroup class="flex-1 column-oriented-block">
+          <h5>Contacts</h5>
+          <p>+1 (619) 410-5044</p>
+          <p><a class="content-link" href="mailto:vanryan711@gmail.com">vanryan711@gmail.com</a></p>
+          <p>San Diego, CA</p>
+        </hgroup>
+
+      </div>
     </footer>
 
     <!-- Scripts ------>

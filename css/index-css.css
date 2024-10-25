@@ -1,8 +1,31 @@
 /******************** ID Specific ********************/
 
 #hero-block {
-  height: 500px;
+  min-height: 400px;
+  height: 45vh;
 }
+#hero-block p {
+  font-weight: 400;
+}
+#hero-block img {
+  width: 20px;
+}
+#hero-block .grid {
+  margin-top: 1rem; 
+  grid-template-rows: repeat(1, 40px);
+  grid-template-columns: repeat(4, 40px);
+}
+#hero-block .grid a {
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+#hero-block .grid a:hover {
+  background-color: var(--light-grey);
+}
+
 #hero-img{
   display: flex;
   margin: 0 0;
@@ -17,7 +40,6 @@
 #project-cards-container {
   background-color: var(--grey);
   margin: 1rem 0;
-  padding: 1px 1px;
   grid-template-columns: repeat(3, 1fr);
 }
 #project-cards-container hgroup {
@@ -26,7 +48,12 @@
   cursor: pointer;
   transition: 0.2s;
 }
-#project-cards-container hgroup:hover {
+#project-cards-container a {
+  background-color: var(--white);
+  padding: 2rem;
+  transition: 0.2s;
+}
+#project-cards-container a:hover {
   background-color: var(--light-grey);
 }
 
@@ -34,3 +61,20 @@
   background-image: linear-gradient(30deg, var(--green), var(--yellow));
 }
 
+#footer-block {
+  filter: invert(1);
+  height: 18vh;
+  font-size: 0.85rem;
+}
+#footer-block hgroup {
+  display: flex;
+}
+#footer-block hgroup p {
+  padding: 0.125rem;
+}
+#footer-block hgroup h5 {
+  margin: 1rem 0 0.75rem 0;
+}
+#footer-block form {
+  margin-top: 1rem;
+}
