@@ -78,3 +78,13 @@
 #footer-block form {
   margin-top: 1rem;
 }
+
+#skill-images {
+  margin: 1rem 0;
+  justify-content: space-around;
+  height: 64px;
+}
+#skill-images img {
+  height: inherit;
+  width: auto;
+}
