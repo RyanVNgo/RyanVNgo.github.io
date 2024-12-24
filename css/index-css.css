@@ -1,55 +1,61 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #202020;
+    --main-color: #E0E0E0;
+    --img-invert: 1;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #F5F5F5;
+    --main-color: #101010;
+    --img-invert: 0;
+  }
+}
+
+
 body {
-  background-color: #F5F5F5;
+  background-color: var(--bg-color);
   margin: 40px auto;
   margin-top: 160px;
-  max-width: 400px;
+  max-width: 450px;
   line-height: 1.6;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Courier New", monospace;
   font-size: 16px;
-  color: #444;
+  color: var(--main-color);
   padding: 0 10px
 }
-h1, h2, h3 {
-  line-height: 1.2;
+
+h4 {
+  margin: 0
 }
+
 p a {
   transition: color 0.25s;
   text-decoration: underline;
   color: inherit;
 }
+
 p a:hover {
   color: #888;
 }
+
 hr {
   border-width: 1px;
   height: 0px;
 }
 
 #social-links {
-  transition: opacity 0.5s;
   display: flex;
-  opacity: 0;
   align-items: center;
   gap: 18px;
 }
+
 #social-links img {
-  filter: grayscale(1);
+  filter: grayscale(1) invert(var(--img-invert));
   max-width: 20px;
   max-height: 20px;
   width: auto;
   height: auto;
-}
-
-.disabled-link {
-  pointer-events: none;
-}
-
-.link-text {
-  transition: color 0.25s;
-  text-decoration: underline;
-  cursor: pointer;
-  color: inherit;
-}
-.link-text:hover {
-  color: #888;
 }
