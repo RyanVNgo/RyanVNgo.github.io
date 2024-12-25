@@ -1,6 +1,6 @@
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #202020;
+    --bg-color: #202022;
     --main-color: #E0E0E0;
     --img-invert: 1;
   }
@@ -8,27 +8,25 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-color: #F5F5F5;
+    --bg-color: #F5F5F3;
     --main-color: #101010;
     --img-invert: 0;
   }
 }
 
-
 body {
   background-color: var(--bg-color);
-  margin: 40px auto;
-  margin-top: 160px;
-  max-width: 450px;
-  line-height: 1.6;
+  margin: 25vh auto;
+  max-width: 30em;
+  line-height: 1.6em;
   font-family: "IBM Plex Mono", "Courier New", monospace;
-  font-size: 14px;
+  font-size: 1rem;
   color: var(--main-color);
-  padding: 0 10px
+  padding: 0 1em;
 }
 
 h4 {
-  margin: 0
+  margin: 1em 0;
 }
 
 p a {
@@ -42,20 +40,21 @@ p a:hover {
 }
 
 hr {
-  border-width: 1px;
+  border-width: 0.1em;
+  border-style: solid;
   height: 0px;
 }
 
 #social-links {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 1em;
 }
 
 #social-links img {
   filter: grayscale(1) invert(var(--img-invert));
-  max-width: 20px;
-  max-height: 20px;
+  max-width: 1.2em;
+  max-height: 1.2em;
   width: auto;
   height: auto;
 }
