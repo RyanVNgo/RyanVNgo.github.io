@@ -1,6 +1,13 @@
+:root {
+  color: var(--main-color);
+  font-family: "IBM Plex Mono", "Courier New", monospace;
+  font-size: 16px;
+  line-height: 1.6rem;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #202022;
+    --bg-color: #202024;
     --main-color: #E0E0E0;
     --img-invert: 1;
   }
@@ -14,18 +21,24 @@
   }
 }
 
-body {
-  background-color: var(--bg-color);
-  margin: 25vh auto;
-  max-width: 30em;
-  line-height: 1.6em;
-  font-family: "IBM Plex Mono", "Courier New", monospace;
-  font-size: 1rem;
-  color: var(--main-color);
-  padding: 0 1em;
+@media (width <= 512px) {
+  :root {
+    font-size: 12px;
+  }
 }
 
-h4 {
+body {
+  background-color: var(--bg-color);
+  display: flex;
+  max-width: 30em;
+  margin: 0 auto 10vh;
+  padding: 20vh 1rem 0;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4 {
+  font-size: 1rem;
+  font-style: bold;
   margin: 1em 0;
 }
 
@@ -45,16 +58,3 @@ hr {
   height: 0px;
 }
 
-#social-links {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-}
-
-#social-links img {
-  filter: grayscale(1) invert(var(--img-invert));
-  max-width: 1.2em;
-  max-height: 1.2em;
-  width: auto;
-  height: auto;
-}
