@@ -1,8 +1,8 @@
 :root {
   color: var(--main-color);
-  font-family: "IBM Plex Mono", "Courier New", monospace;
+  font-family: monospace;
   font-size: 16px;
-  line-height: 1.6rem;
+  line-height: 1.5rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,25 +21,34 @@
   }
 }
 
-@media (width <= 512px) {
+@media (width <= 42rem) {
   :root {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 
 body {
   background-color: var(--bg-color);
   display: flex;
-  max-width: 30em;
+  flex-direction: column;
+  max-width: 40rem;
   margin: 0 auto 10vh;
   padding: 20vh 1rem 0;
-  flex-direction: column;
 }
 
-h1, h2, h3, h4 {
-  font-size: 1rem;
-  font-style: bold;
-  margin: 1em 0;
+main {
+  min-height: 40vh;
+  margin: 1rem 0;
+}
+
+h1 {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin: 1rem 0;
 }
 
 p a {
@@ -55,6 +64,50 @@ p a:hover {
 hr {
   border-width: 0.1em;
   border-style: solid;
+  border-color: var(--main-color);
   height: 0px;
+  padding: 0;
+  margin: 0;
 }
 
+#site-nav {
+  margin: 0.5rem 0;
+}
+
+#site-nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+#site-nav a{
+  text-decoration: none;
+  color: inherit;
+  transition: text-decoration 0.25s ease, color 0.25s ease;
+}
+
+#site-nav a:hover {
+  color: #888;
+}
+
+#social-links {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#social-links a > img{
+  filter: grayscale(1) invert(var(--img-invert));
+  max-width: 1.1rem;
+  max-height: 1.1rem;
+}
