@@ -50,13 +50,19 @@ h2 {
   margin: 1rem 0;
 }
 
-p a {
+p > a {
   transition: color 0.25s;
   text-decoration: underline;
   color: inherit;
 }
 
-p a:hover {
+a {
+  transition: color 0.25s;
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
   color: #888;
 }
 

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+  <head>
+    <title>241228 | Minimizing Page Weight</title>
+    <link rel="shortcut icon" href="/images/website-icon.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ryan Ngo">
+    <meta name="description" content="Programming/Tech Article.">
+    <meta name="keywords" content="ryan ngo, ryan, ngo, tech, software, programming">
+
+    <link rel="stylesheet" href="/css/baseline.css">
+  </head>
+
+  <body>
+    
+    <nav id="site-nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/tech">Programming</a></li>
+        <li><a href="/astro">Astro</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+
+    <hr>
+
+    <main>
+
+      <h1>Minimizing Page Weight</h1>
+
+      <p>
+        Something I took careful consideration of when developing this website was
+        the page weight. Page weight just refers to the total byte size of the page
+        which can include the HTML, CSS, JS, images, videos, and whatever other
+        files or services that need to be loaded for the page to function. 
+      </p>
+      <p>
+        Shifting more of my development work to my Thinkpad X61T, a laptop from 2007,
+        made me realize just how resource intensive a lot of sites on the web
+        actually are.
+      </p>
+      <p>
+        The median page weight has increased from just under 500kB in 2010 all the
+        way to 2600kB in 2024. That's over five times the amount data being
+        transferred per page with most of it consisting of images and JS. The result
+        is longer load times and greater technical requirements.
+      </p>
+      <p>
+        This can be pretty damaging to users who are working on slower networks or have
+        lower end hardware. Especially when a lot of these services don't need to
+        warrant so many resources.
+
+      </p>
+      <p>
+        Because of this, I made it a goal for myself to minimize as much unnecessary
+        weight as possible while still mantaining a good level of functionality and
+        visual appeal. This involved sticking to pure HTML and CSS as much as possible.
+        To the point that the site doesn't even include any JS.
+      </p>
+      <p>
+        I even left out using a custom font, specifically IBM Plex Mono, because
+        even that added an extra 30kB of weight to the site. That's three times more
+        data than the average 10kB of data per page that the site sits at right now.
+      </p>
+      <p>
+        And while sure, the site doesn't have any cool or flashy interactivity, at
+        the end of the day it gets the job done. The site has all the functionality I
+        want and still looks visually appealing (at least to me).
+      </p>
+      <p>
+        Things will probably get more complex once I decide to host the site myself
+        instead of on Github pages but a lot of that will likely come from the web
+        server itself and adding a system to handle and serve these articles better.
+      </p>
+      <p>
+        But until then, I like the way things are set up now and I hope to keep things
+        as simple and minimal as possible for as long as possible.
+      </p>
+
+    </main>
+
+    <hr>
+    
+    <div id="social-links">
+      <a href="https://github.com/RyanVNgo" target="_blank">
+        <img src="/images/Github_Logo.png" alt="Github">
+      </a>
+      <a href="https://www.linkedin.com/in/ryanvngo/" target="_blank">
+        <img src="/images/LinkedIn_Logo.png" alt="LinkedIn">
+      </a>
+      <a href="https://www.instagram.com/ryan.v.ngo" target="_blank">
+        <img src="/images/Instagram_Logo.png" alt="Instagram">
+      </a>
+      <a href="mailto:vanryan711@gmail.com" target="_blank">
+        <img src="/images/Mail_Logo.png" alt="Email">
+      </a>
+    </div>
+    
+  </body>
+
+</html>
+
+
