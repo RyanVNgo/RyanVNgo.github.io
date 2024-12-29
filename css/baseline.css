@@ -50,6 +50,11 @@ h2 {
   margin: 1rem 0;
 }
 
+h3 {
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+
 p > a {
   transition: color 0.25s;
   text-decoration: underline;
