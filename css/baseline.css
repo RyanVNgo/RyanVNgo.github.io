@@ -32,10 +32,9 @@
 html {
   background-color: var(--bg-color);
   background-image: radial-gradient(circle, var(--main-color) 1px, transparent 2px);
-  background-position: center;
+  background-position: center top;
   background-size: 3rem 3rem;
   padding: 0 1rem;
-  height: 100%;
 }
 
 body {
