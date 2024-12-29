@@ -41,6 +41,7 @@ html {
 body {
   background-color: var(--body-color);
   border: 1px solid var(--main-color);
+  box-shadow: 0 0 3rem black;
   display: flex;
   flex-direction: column;
   max-width: 40rem;
@@ -139,7 +140,12 @@ hr {
 }
 
 #social-links a > img{
+  transition: opacity 0.25s ease;
   filter: grayscale(1) invert(var(--img-invert));
   max-width: 1.1rem;
   max-height: 1.1rem;
+}
+
+#social-links a > img:hover {
+  opacity: 0.5;
 }
