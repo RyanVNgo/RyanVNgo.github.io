@@ -2,11 +2,13 @@
   color: var(--main-color);
   font: 16px/1.4rem monospace;
   letter-spacing: -0.03125rem;
+  --accent-color: #FF8000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #202024;
+    --body-color: #242428;
     --main-color: #E0E0E0;
     --img-invert: 1;
   }
@@ -15,39 +17,59 @@
 @media (prefers-color-scheme: light) {
   :root {
     --bg-color: #F5F5F3;
+    --body-color: #F1F1EE;
     --main-color: #101010;
     --img-invert: 0;
   }
 }
 
-@media (width <= 42rem) {
+@media (width <= 44rem) {
   :root {
     font-size: 11px;
   }
 }
 
-body {
+html {
   background-color: var(--bg-color);
+  background-image: radial-gradient(circle, var(--main-color) 1px, transparent 2px);
+  background-position: center;
+  background-size: 3rem 3rem;
+  padding: 0 1rem;
+  height: 100%;
+}
+
+body {
+  background-color: var(--body-color);
+  border: 1px solid var(--main-color);
   display: flex;
   flex-direction: column;
   max-width: 40rem;
-  margin: 0 auto 10vh;
-  padding: 20vh 1rem 0;
+  margin: 10vh auto;
+  padding: 10vh 2rem 10vh;
 }
 
 main {
   min-height: 40vh;
   margin: 1rem 0;
+  padding: 0 1rem;
 }
 
 h1 {
   font-size: 1.2rem;
   margin: 1rem 0;
 }
+h1::before {
+  color: var(--accent-color);
+  content: '# ';
+}
 
 h2 {
   font-size: 1.1rem;
   margin: 1rem 0;
+}
+h2::before {
+  color: var(--accent-color);
+  content: '## ';
 }
 
 h3 {
@@ -93,7 +115,7 @@ hr {
   margin: 0;
 }
 
-#site-nav a{
+#site-nav a {
   text-decoration: none;
   color: inherit;
   transition: text-decoration 0.25s ease, color 0.25s ease;
