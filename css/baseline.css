@@ -83,6 +83,12 @@ p > a {
   color: inherit;
 }
 
+li > a {
+  transition: color 0.25s;
+  text-decoration: underline;
+  color: inherit;
+}
+
 a {
   transition: color 0.25s;
   text-decoration: none;
