@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <title>{{ site.title }}</title>
+    <link rel="shortcut icon" href="/images/website-icon.png">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ryan Ngo">
+    <meta name="description" content="Ryan V Ngo's home page.">
+    <meta name="keywords" content="ryan ngo, ryan, ngo">
+
+    <link rel="stylesheet" href="{{ '/css/baseline.css' | relative_url }}" />
+    <base target="_blank">
+  </head>
+
+  <body>
+
+    <header>
+      <div id="header-content">
+        <nav id="site-nav">
+          <ul>
+            <li><a href="/" target="_self">Home</a></li>
+            <li><a href="/about/" target="_self">About</a></li>
+          </ul>
+        </nav>
+      </div> <!-- header-content -->
+    </header>
+    
+    <main>
+      <div id="main-content">
+        {{ content }}
+      </div> <!-- main-content -->
+    </main>
+
+    <footer>
+      <div id="footer-content">
+        <div id="social-links">
+          <a href="{{ site.github }}" target="_blank">
+            <img src="/images/Github_Logo.png" alt="Github">
+          </a>
+          <a href="{{ site.linkedin }}" target="_blank">
+            <img src="/images/LinkedIn_Logo.png" alt="LinkedIn">
+          </a>
+          <a href="{{ site.instagram }}" target="_blank">
+            <img src="/images/Instagram_Logo.png" alt="Instagram">
+          </a>
+          <a href="mailto:{{ site.email }}" target="_blank">
+            <img src="/images/Mail_Logo.png" alt="Email">
+          </a>
+        </div>
+      </div> <!-- footer-content -->
+    </footer>
+
+  </body>
+
+</html>
+
+
