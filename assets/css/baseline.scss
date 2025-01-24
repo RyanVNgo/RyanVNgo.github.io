@@ -1,0 +1,55 @@
+---
+---
+
+:root {
+  --sans-font: system-ui, Ubuntu, -apple-system, Segoe UI;
+  --mono-font: Courier New, monospace;
+  --bg-color: #242428;
+  --rib-color: #202024;
+  --font-color: #E0E1DD;
+  --content-width: 48rem;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #FFFCF2;
+    --rib-color: #CCC5B9;
+    --font-color: #101010;
+  }
+}
+
+/* mobile conditions
+@media (width <= 46rem) {
+  :root {
+  }
+}
+*/
+
+@import "header";
+@import "footer";
+
+/* primary elemenets */
+body {
+  background-color: var(--bg-color);
+  font-family: var(--sans-font);
+  font-size: 16px;
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+main {
+  width: var(--content-width);
+  margin: 0 auto auto;
+  height: auto;
+}
+
+article {
+  padding: 0 1rem;
+  margin: 0;
+}
+

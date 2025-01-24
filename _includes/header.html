@@ -1,0 +1,7 @@
+<header>
+  <nav>
+    {% for item in site.docs %}
+      <a href="{{ item.url }}">{{ item.title }}</a>
+    {% endfor %}
+  </nav>
+</header>

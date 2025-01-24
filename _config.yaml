@@ -1,7 +1,22 @@
 
 title: Ryan V. Ngo Portfolio Site
+author: Ryan Ngo
+description: Online portfolio
+baseurl: ""
+url: https://RyanVNgo.github.io
 
 github: https://github.com/RyanVNgo
 linkedin: https://www.linkedin.com/in/ryanvngo/
 instagram: https://www.instagram.com/ryan.v.ngo
 email: vanryan711@gmail.com
+
+docs:
+  - title: Home
+    url: /index.html
+
+  - title: Posts 
+    url: /pages/posts.html
+
+  - title: About
+    url: /pages/about.html
+

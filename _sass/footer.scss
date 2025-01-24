@@ -1,0 +1,27 @@
+footer {
+  background-color: var(--rib-color);
+  width: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  padding: 0 1rem;
+}
+
+footer > div {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  width: var(--content-width);
+}
+
+footer > div > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer > div > a > img {
+  max-width: 1.2rem;
+  max-height: 1.2rem;
+}
