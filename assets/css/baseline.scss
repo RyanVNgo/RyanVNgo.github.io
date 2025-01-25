@@ -2,7 +2,7 @@
 ---
 
 :root {
-  --sans-font: system-ui, Ubuntu, -apple-system, Segoe UI;
+  --sans-font: "Roboto", "Arial", system-ui, Ubuntu, -apple-system, sans-serif;
   --mono-font: Courier New, monospace;
   --bg-color: #2C2E34;
   --rib-color: #222327;
@@ -37,6 +37,7 @@
 
 html {
   font-size: var(--font-size);
+  letter-spacing: -0.02rem;
 }
 
 body {
@@ -60,6 +61,11 @@ main {
 
 main a {
   color: inherit;
+  transition: all 0.2s;
+}
+
+main a:hover {
+  opacity: 0.65;
 }
 
 article {

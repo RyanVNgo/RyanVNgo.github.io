@@ -275,6 +275,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages (~> 232)
   jekyll
+  rouge
 
 BUNDLED WITH
    2.4.20
