@@ -3,8 +3,8 @@ footer {
   width: auto;
   display: flex;
   justify-content: center;
-  margin-top: 10vh;
-  padding: 0 1rem;
+  margin-top: 10rem;
+  padding: 0.5rem 1rem;
 }
 
 footer > div {
@@ -22,6 +22,7 @@ footer > div > a {
 }
 
 footer > div > a > img {
+  filter: #{"invert(var(--img-invert))"};
   max-width: 1.2rem;
   max-height: 1.2rem;
 }

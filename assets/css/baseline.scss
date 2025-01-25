@@ -4,37 +4,45 @@
 :root {
   --sans-font: system-ui, Ubuntu, -apple-system, Segoe UI;
   --mono-font: Courier New, monospace;
-  --bg-color: #242428;
-  --rib-color: #202024;
+  --bg-color: #2C2E34;
+  --rib-color: #222327;
   --font-color: #E0E1DD;
+  --font-size: 16px;
   --content-width: 48rem;
+  --img-invert: 1;
 }
 
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-color: #FFFCF2;
-    --rib-color: #CCC5B9;
+    --bg-color: #E1E2E7;
+    --rib-color: #D4D6E4;
     --font-color: #101010;
+    --img-invert: 0;
   }
 }
 
-/* mobile conditions
+/* mobile conditions */
 @media (width <= 46rem) {
   :root {
+    --font-size: 11px;
   }
 }
-*/
 
 @import "header";
 @import "footer";
 
 /* primary elemenets */
+
+html {
+  font-size: var(--font-size);
+}
+
 body {
   background-color: var(--bg-color);
-  font-family: var(--sans-font);
-  font-size: 16px;
   color: var(--font-color);
+  font-family: var(--sans-font);
+  line-height: 1.4rem;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -43,9 +51,13 @@ body {
 }
 
 main {
-  width: var(--content-width);
+  max-width: var(--content-width);
   margin: 0 auto auto;
   height: auto;
+}
+
+main a {
+  color: inherit;
 }
 
 article {
@@ -53,3 +65,6 @@ article {
   margin: 0;
 }
 
+h1, h2, h3, h4 {
+  line-height: 1.2rem;
+}
