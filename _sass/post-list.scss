@@ -1,0 +1,33 @@
+#post-list {
+  margin: 0;
+  padding: 0;
+}
+
+#post-list > li {
+  list-style-type: none;
+  margin-bottom: 1rem;
+}
+
+.post-date {
+  display: inline-block;
+  font-size: 0.8rem;
+  letter-spacing: -0.0312rem;
+}
+
+.post-title {
+  margin: 0;
+  padding: 0;
+  transition: all 0.2s;
+}
+
+.post-title:hover {
+  opacity: 0.65;
+}
+
+.post-excerpt {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin: 0.5rem 0 0;
+  padding: 0;
+}
+

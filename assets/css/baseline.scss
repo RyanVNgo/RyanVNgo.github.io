@@ -8,7 +8,7 @@
   --rib-color: #222327;
   --font-color: #E0E1DD;
   --font-size: 16px;
-  --content-width: 48rem;
+  --content-width: 40rem;
   --img-invert: 1;
 }
 
@@ -31,6 +31,7 @@
 
 @import "header";
 @import "footer";
+@import "post-list";
 
 /* primary elemenets */
 
@@ -52,6 +53,7 @@ body {
 
 main {
   max-width: var(--content-width);
+  width: 100%;
   margin: 0 auto auto;
   height: auto;
 }
@@ -68,3 +70,13 @@ article {
 h1, h2, h3, h4 {
   line-height: 1.2rem;
 }
+
+hr {
+  border-width: 0.1rem;
+  border-style: solid;
+  border-color: var(--font-color);
+  height: 0px;
+  margin: 0;
+  padding: 0;
+}
+

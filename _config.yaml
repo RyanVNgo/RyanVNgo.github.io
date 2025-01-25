@@ -11,12 +11,12 @@ instagram: https://www.instagram.com/ryan.v.ngo
 email: vanryan711@gmail.com
 
 docs:
-  - title: Home
-    url: /index.html
+  - title: home
+    url: /
 
-  - title: Posts 
+  - title: posts 
     url: /pages/posts.html
 
-  - title: About
+  - title: about
     url: /pages/about.html
 

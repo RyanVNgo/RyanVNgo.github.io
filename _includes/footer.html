@@ -1,16 +1,25 @@
 <footer>
-  <div>
-    <a href="{{ site.github }}">
-      <img src="/assets/images/Github_Logo.png" alt="Github">
-    </a>
-    <a href="{{ site.linkedin }}">
-      <img src="/assets/images/LinkedIn_Logo.png" alt="Github">
-    </a>
-    <a href="{{ site.instagram }}">
-      <img src="/assets/images/Instagram_Logo.png" alt="Github">
-    </a>
-    <a href="mailto:{{ site.email}}">
-      <img src="/assets/images/Mail_Logo.png" alt="Github">
-    </a>
+  <div id="footer-content">
+    <div id="social-links">
+      <a href="{{ site.github }}" target="_blank">
+        <img src="/assets/images/Github_Logo.png" alt="Github">
+      </a>
+      <a href="{{ site.linkedin }}" target="_blank">
+        <img src="/assets/images/LinkedIn_Logo.png" alt="Github">
+      </a>
+      <a href="{{ site.instagram }}" target="_blank">
+        <img src="/assets/images/Instagram_Logo.png" alt="Github">
+      </a>
+      <a href="mailto:{{ site.email}}" target="_blank">
+        <img src="/assets/images/Mail_Logo.png" alt="Github">
+      </a>
+    </div>
+
+    <p>
+      Built with
+      <a href="https://jekyllrb.com/" target="_blank">
+        Jekyll {{ jekyll.version }}
+      </a>
+    </p>
   </div>
 </footer>
