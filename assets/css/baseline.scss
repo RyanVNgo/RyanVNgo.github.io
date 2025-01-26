@@ -4,26 +4,26 @@
 :root {
   --sans-font: "Roboto", "Arial", system-ui, Ubuntu, -apple-system, sans-serif;
   --mono-font: Courier New, monospace;
-  --bg-color: #2C2E34;
-  --rib-color: #222327;
-  --font-color: #E0E1DD;
+  --bg-color: #303030;
+  --rib-color: #343434;
+  --font-color: #E0E0E0;
   --font-size: 16px;
-  --content-width: 40rem;
+  --content-width: 38rem;
   --img-invert: 1;
 }
 
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg-color: #E1E2E7;
-    --rib-color: #D4D6E4;
-    --font-color: #101010;
+    --bg-color: #F8F8F8;
+    --rib-color: #FFFFFF;
+    --font-color: #383838;
     --img-invert: 0;
   }
 }
 
 /* mobile conditions */
-@media (width <= 46rem) {
+@media (width <= 42rem) {
   :root {
     --font-size: 11px;
   }
@@ -32,6 +32,7 @@
 @import "header";
 @import "footer";
 @import "post-list";
+@import "project-list";
 
 /* primary elemenets */
 
@@ -48,7 +49,6 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 0;
   min-height: 100vh;
 }
 
@@ -59,30 +59,66 @@ main {
   height: auto;
 }
 
-main a {
+article > p > a {
   color: inherit;
   transition: all 0.2s;
 }
 
-main a:hover {
+article > p > a:hover {
   opacity: 0.65;
 }
 
 article {
-  padding: 0 1rem;
+  padding: 0 2rem;
   margin: 0;
 }
 
-h1, h2, h3, h4 {
+article h1, h2, h3 {
+  font-weight: 600;
   line-height: 1.2rem;
 }
 
+article > h1 {
+  font-size: 1.6rem;
+}
+
+article > h2 {
+  font-size: 1.4rem;
+  margin: 3rem 0 1rem;
+}
+
+article > h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+article ul {
+  margin: 0 0 0 0.5rem;
+  padding-left: 1rem;
+}
+
+article blockquote {
+  margin: 0.5rem;
+  padding: 0 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--rib-color);
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.3);
+  font-size: 0.85rem;
+}
+
+article img {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem rgba(0,0,0,0.5);
+}
+
 hr {
-  border-width: 0.1rem;
-  border-style: solid;
-  border-color: var(--font-color);
+  border-style: none;
+  border-top: 0.125rem solid var(--font-color);
   height: 0px;
-  margin: 0;
+  margin: 1rem 0;
   padding: 0;
 }
 

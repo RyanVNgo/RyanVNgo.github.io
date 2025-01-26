@@ -14,9 +14,15 @@ docs:
   - title: home
     url: /
 
+  - title: projects
+    url: /pages/projects.html
+
   - title: posts 
     url: /pages/posts.html
 
   - title: about
     url: /pages/about.html
 
+collections:
+  projects:
+    output: true

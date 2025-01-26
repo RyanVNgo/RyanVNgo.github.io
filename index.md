@@ -6,15 +6,18 @@ author: Ryan Ngo
 
 # Hi, I'm {{ page.author }}
 
-A software developer that makes simple, fast, functional software.
+A software developer making simple, fast, functional software.
 
-Undergraduate at San Diego State University.
+Current undergraduate at San Diego State University.
 
-Check out some of the stuff I've built [here]({{ site.github }}), or
-feel free to get in touch using the links below (email preferred).
+Below, you can check out some of the projects I've built or you 
+can read some of the posts I've made on whatever tf idk the title
+will tell you.
 
 
-
+## Recent Projects
+{% assign project-list-length = 2 %}
+{% include project-list.html %}
 
 
 ## Recent Posts
