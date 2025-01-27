@@ -1,6 +1,16 @@
 ---
 ---
 
+.highlighter-rouge {
+  padding: 0.1em 0.3em;
+  margin: 0;
+  font-size: 0.8rem;
+  white-spaces: break-spaces;
+  background-color: var(--rib-color);
+  border-radius: 0.4rem;
+  border: 1px solid rgba(127,127,127,0.5);
+}
+
 .highlight {
   color: white;
   font-size: 0.7rem;
@@ -27,6 +37,7 @@
 .highlight .p { color: #f8f8f2 } /* Punctuation */
 .highlight .cm { color: #75715e } /* Comment.Multiline */
 .highlight .cp { color: #75715e } /* Comment.Preproc */
+.highlight .cpf { color: #e6db74 } /* Comment.Include */
 .highlight .c1 { color: #75715e } /* Comment.Single */
 .highlight .cs { color: #75715e } /* Comment.Special */
 .highlight .ge { font-style: italic } /* Generic.Emph */
