@@ -59,12 +59,12 @@ main {
   height: auto;
 }
 
-article > p > a {
+article a {
   color: inherit;
   transition: all 0.2s;
 }
 
-article > p > a:hover {
+article a:hover {
   opacity: 0.65;
 }
 
