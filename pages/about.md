@@ -8,7 +8,7 @@ author: Ryan Ngo
 ---
 
 I'm Ryan Ngo, an undergraduate at San Diego State University
-studying computer science. I into programming, tech,
+studying computer science. I'm into programming, tech,
 astrophotography, and K-pop *(stan Aespa)*.
 
 
