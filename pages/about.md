@@ -7,12 +7,10 @@ author: Ryan Ngo
 # About
 ---
 
-I'm Ryan Ngo, an undergraduate at San Diego State University
-studying computer science. I'm into programming, tech,
-astrophotography, and K-pop *(stan Aespa)*.
-
-
-## Stuff I Use
+Current undergraduate at San Diego State University (2025).
+Recently messing around with C/C++ alongside CUDA. Also familiar with Java, Python, and a bit of Go.
+Interested in software/program optimization cause I hate it when shits slow. 
+Outside of programming I'm also into tech, gaming, coffee, astrophotography, and K-pop. <sub>*(stan Aespa)*</sub>
 
 ### Hardware
 - Desktop PC
@@ -21,8 +19,9 @@ astrophotography, and K-pop *(stan Aespa)*.
     - 16GB RAM
     - Linux Mint (Primary), Windows
 - LG Ultrawide 34WP65C
-- Surface Book 2 (Linux mint)
+- Thinkpad E14 Gen-5 (Linux Mint)
 - Thinkpad X61 Tablet (Linux Mint)
+- ~~Surface Book 2 (Linux mint)~~
 
 ### Development
 - ~~Vim~~ Neovim
