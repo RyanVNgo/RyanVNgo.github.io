@@ -7,10 +7,8 @@ author: Ryan Ngo
 # About
 ---
 
-Current undergraduate at San Diego State University (2025).
-Recently messing around with C/C++ alongside CUDA. Also familiar with Java, Python, and a bit of Go.
-Interested in software/program optimization cause I hate it when shits slow. 
-Outside of programming I'm also into tech, gaming, coffee, astrophotography, and K-pop. <sub>*(stan Aespa)*</sub>
+Recent graduate from San Diego State University with a Bachelor's in Computer Science.
+I like programming, tech, gaming, coffee, astrophotography, F1, and K-pop. <sub>*(stan Aespa)*</sub>
 
 ### Hardware
 - Desktop PC

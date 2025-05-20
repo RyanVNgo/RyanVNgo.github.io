@@ -6,12 +6,16 @@ author: Ryan Ngo
 
 # Hi, I'm {{ page.author }}
 
-A software developer making simple, fast, functional software.
+I do computer stuff. Programming in my free time. Understanding obfuscated
+documentation in my spare time. 
 
-Current undergraduate at San Diego State University.
+Recent gradauate from San Diego State University with a B.S. in Computer Science.
 
-Recently messing around with C/C++ along with a bit of CUDA.
-Also familiar with Java, Python, and a bit of Go.
+Been messing around in developing and training computer vision models in Python/PyTorch.
+Beyond that, I like C++ and C and I'm familiar with Java.
+
+Mostly interested in software/program optimization because I hate it when
+shits slow.
 
 Below, you can check out some of the projects I've built or you 
 can read some of the posts I've made on whatever tf idk the title
