@@ -4,7 +4,7 @@ layout: default
 author: Ryan Ngo
 ---
 
-# Hi, I'm {{ page.author }}
+<h1>Hi, I'm <span class="title-highlight">{{ page.author }}</span></h1>
 
 I do computer stuff. Programming in my free time. Understanding obfuscated
 documentation in my spare time. 
