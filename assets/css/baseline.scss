@@ -2,24 +2,32 @@
 ---
 
 :root {
-  --sans-font: "Roboto", "Arial", system-ui, Ubuntu, -apple-system, sans-serif;
+  --sans-font: "IBM Plex Sans", "Arial", system-ui, Ubuntu, -apple-system, sans-serif;
   --mono-font: Courier New, monospace;
-  --bg-color: #303030;
-  --rib-color: #343434;
-  --font-color: #E0E0E0;
+
+  --base-100: hsl(270 3% 100%);
+  --base-200: hsl(270 3% 90%);
+  --base-300: hsl(270 3% 80%);
+  --base-400: hsl(270 3% 70%);
+  --base-500: hsl(270 3% 60%);
+  --base-600: hsl(270 3% 50%);
+  --base-700: hsl(270 3% 40%);
+  --base-800: hsl(270 3% 30%);
+  --base-900: hsl(270 3% 20%);
+
+  --accent-100: hsl(171 100% 98%);
+  --accent-200: hsl(171 100% 85%);
+  --accent-300: hsl(171 100% 75%);
+  --accent-400: hsl(171 100% 65%);
+  --accent-500: hsl(171 100% 55%);
+  --accent-600: hsl(171 100% 45%);
+  --accent-700: hsl(171 100% 35%);
+  --accent-800: hsl(171 100% 25%);
+  --accent-900: hsl(171 100% 15%);
+
   --font-size: 16px;
   --content-width: 38rem;
-  --img-invert: 1;
-}
-
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg-color: #F8F8F8;
-    --rib-color: #FFFFFF;
-    --font-color: #383838;
-    --img-invert: 0;
-  }
+  --img-invert: 0;
 }
 
 /* mobile conditions */
@@ -42,8 +50,8 @@ html {
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--font-color);
+  background-color: var(--base-100);
+  color: var(--base-900);
   font-family: var(--sans-font);
   line-height: 1.4rem;
   display: flex;
@@ -62,10 +70,6 @@ main {
 article a {
   color: inherit;
   transition: all 0.2s;
-}
-
-article a:hover {
-  opacity: 0.65;
 }
 
 article {
@@ -103,8 +107,7 @@ article blockquote {
   margin: 0.5rem;
   padding: 0 1rem;
   border-radius: 0.25rem;
-  border: 1px solid var(--rib-color);
-  box-shadow: 0 0 0.5rem rgba(0,0,0,0.3);
+  border: 1px solid var(--base-300);
   font-size: 0.85rem;
 }
 
@@ -118,7 +121,7 @@ article img {
 
 hr {
   border-style: none;
-  border-top: 0.125rem solid var(--font-color);
+  border-top: 0.125rem solid var(--base-900);
   height: 0px;
   margin: 1rem 0;
   padding: 0;

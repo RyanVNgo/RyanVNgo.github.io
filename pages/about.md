@@ -7,7 +7,7 @@ author: Ryan Ngo
 # About
 ---
 
-Recent graduate from San Diego State University with a Bachelor's in Computer Science.
+Recent graduate from San Diego State University with a B.S. in Computer Science.
 I like programming, tech, gaming, coffee, astrophotography, F1, and K-pop. <sub>*(stan Aespa)*</sub>
 
 ### Hardware

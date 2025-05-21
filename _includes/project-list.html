@@ -1,25 +1,25 @@
+
 {% unless project-list-length %}
   {% assign project-list-length = site.projects | size %}
 {% endunless %}
 <ul id="project-list">
   {% assign sorted_projects = site.projects | sort: 'priority' %}
   {% for project in sorted_projects limit: project-list-length %}
-    <li class="project-listing">
-      <h3 class="project-title">
-        <a href="{{ project.url }}">
-          {{ project.title }}
-        </a>
-      </h3>
-      <p class="project-excerpt">
-        {{ project.excerpt | strip_html }}
-      </p>
-      <ul class="tag-list">
-        {% for tag in project.tags %}
-          <li class="tag">
-            {{ tag }}
-          </li>
-        {% endfor %}
-      </ul>
+    <li class="list-item">
+      <a class="link-wrapper" href="{{ project.url }}">
+        <div class="list-content">
+          <h3 class="project-title"> {{ project.title }} </h3>
+          <p class="project-excerpt"> {{ project.excerpt | strip_html }} </p>
+          <ul class="tag-list">
+            {% for tag in project.tags %}
+              <li class="tag">
+                {{ tag }}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </a>
     </li>
   {% endfor %}
 </ul>
+

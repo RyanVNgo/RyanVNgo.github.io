@@ -1,12 +1,12 @@
 header {
-  background-color: var(--rib-color);
+  background-color: var(--base-100);
+  border-bottom: 1px solid var(--base-300);
   width: auto;
   display: flex;
   justify-content: center;
-  margin-bottom: 10rem;
+  margin-bottom: 4rem;
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,0.25);
 }
 
 #header-content {
@@ -17,17 +17,17 @@ header {
 
 #header-content > h1 {
   font-size: 1rem;
-  font-weight: normal;
   white-space: nowrap;
+  text-decoration: var(--accent-700) underline;
 }
 
 #header-content > h1 > a {
   text-decoration: none;
-  color: inherit;
+  font-weight: 500;
+  color: var(--base-900);
 }
 
 #site-nav {
-  //width: var(--content-width);
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -47,19 +47,23 @@ header {
   text-decoration: none;
   color: inherit;
   font-size: 0.9rem;
-  font-weight: normal;
+  font-weight: 500;
   letter-spacing: -0.0312rem;
   text-transform: capitalize;
   transition: all 0.15s;
 }
 
-.tab:hover {
-  box-shadow: inset 0.125rem 0.125rem 0.5rem rgba(0,0,0,0.25);
+.tab:not(.tab-highlight):hover {
+  background-color: var(--base-200);
 }
 
 .tab-highlight {
-  background-color: var(--font-color);
-  color: var(--bg-color);
-  box-shadow: 0 0 0.4rem rgba(0,0,0,0.6);
+  background-color: var(--accent-700);
+  color: var(--base-100);
+}
+
+.tab-highlight:hover {
+  background-color: var(--accent-800);
+  color: var(--base-100);
 }
 

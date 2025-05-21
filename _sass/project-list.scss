@@ -1,31 +1,40 @@
+
 #project-list {
   margin: 0;
   padding: 0;
 }
 
-.project-listing {
-  background-color: var(--rib-color);
+.list-item {
+  background-color: var(--base-100);
   border-radius: 0.5rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 0 0.4rem rgba(0,0,0,0.2);
+  border: 1px solid var(--base-300);
   margin: 0.5rem;
-  padding: 1rem;
+  padding: 0rem;
+  color: var(--base-900);
   list-style-type: none;
+  text-decoration: none;
+  filter: none;
+  transition: all 0.2s;
+}
+
+.list-item:hover {
+  background-color: var(--accent-700);
+  border: 1px solid var(--accent-800);
+  color: var(--accent-100);
+}
+
+.link-wrapper {
+  text-decoration: none;
+}
+
+.list-content {
+  text-decoration: none;
+  padding: 1rem;
 }
 
 .project-title {
   margin: 0;
   padding: 0;
-}
-
-.project-title > a {
-  text-decoration: none;
-  color: inherit;
-  transition: all 0.2s;
-}
-
-.project-title > a:hover {
-  text-decoration: underline;
 }
 
 .project-excerpt {
@@ -35,7 +44,7 @@
   padding: 0 0 0 1rem;
 }
 
-.project-listing > .tag-list {
+.tag-list {
   font-size: 0.65rem;
   margin: 0.5rem 0 0;
   padding: 0;
@@ -44,15 +53,20 @@
   gap: 0.25rem;
 }
 
-.project-listing > .tag-list > .tag {
-  background-color: var(--bg-color);
+.tag {
+  list-style-type: none;
   min-width: 2rem;
+  border: 1px solid var(--base-300);
   border-radius: 0.25rem;
   margin: 0;
   padding: 0.0rem 0.5rem;
-  list-style-type: none;
   text-align: center;
-  box-shadow: 0 0 0.2rem rgba(0,0,0,0.4);
+  color: inherit;
   user-select: none;
+  transition: all 0.2s;
+}
+
+.list-item:hover .tag {
+  border: 1px solid var(--accent-800);
 }
 
