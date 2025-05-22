@@ -12,9 +12,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="{{ '/assets/css/baseline.css' }}" />
-  {% if page.tags contains "code" %}
-    <link rel="stylesheet" href="{{ '/assets/css/syntaxHL.css' }}" />
-  {% endif %}
+  {% for style-sheet in page.style-sheets %}
+    <link rel="stylesheet" href="{{ '/assets/css/' | append: style-sheet | append: '.css' | relative_url}}">
+  {% endfor %}
 
 </head>

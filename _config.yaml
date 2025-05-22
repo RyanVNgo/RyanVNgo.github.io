@@ -10,6 +10,8 @@ linkedin: https://www.linkedin.com/in/ryanvngo/
 instagram: https://www.instagram.com/ryan.v.ngo
 email: vanryan711@gmail.com
 
+projects-imgs-dir: /assets/images/projects/
+
 docs:
   - title: home
     url: /
@@ -26,3 +28,6 @@ docs:
 collections:
   projects:
     output: true
+
+sass:
+  style: compressed

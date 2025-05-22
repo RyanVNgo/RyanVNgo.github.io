@@ -1,5 +1,6 @@
+
 footer {
-  background-color: var(--rib-color);
+  background-color: var(--base-100);
   border-top: 1px solid var(--base-300);
   width: auto;
   display: flex;
@@ -7,6 +8,15 @@ footer {
   margin-top: 4rem;
   padding: 0.5rem 1rem;
   font-size: 0.75rem;
+
+  a {
+    color: inherit;
+    transition: all 0.2s;
+    
+    &:hover {
+      opacity: 0.65;
+    }
+  }
 }
 
 #footer-content {
@@ -20,30 +30,19 @@ footer {
   display: flex;
   align-items: center;
   gap: 1em;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      filter: #{"invert(var(--img-invert))"};
+      max-width: 1.2rem;
+      max-height: 1.2rem;
+      transition: all 0.2s ease;
+    }
+  }
+
 }
 
-#social-links > a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#social-links > a > img {
-  filter: #{"invert(var(--img-invert))"};
-  max-width: 1.2rem;
-  max-height: 1.2rem;
-  transition: all 0.2s ease;
-}
-
-#social-links > a > img:hover {
-  opacity: 0.5;
-}
-
-footer a {
-  color: inherit;
-  transition: all 0.2s;
-}
-
-footer a:hover {
-  opacity: 0.65;
-}

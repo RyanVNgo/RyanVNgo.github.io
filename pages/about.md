@@ -1,6 +1,7 @@
 ---
 section: about
 layout: default 
+style-sheets: [default]
 author: Ryan Ngo
 ---
 

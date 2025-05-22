@@ -1,13 +1,13 @@
 ---
 section: home
 layout: default 
+style-sheets: [default, post-list, project-list]
 author: Ryan Ngo
 ---
 
 <h1>Hi, I'm <span class="title-highlight">{{ page.author }}</span></h1>
 
-I do computer stuff. Programming in my free time. Understanding obfuscated
-documentation in my spare time. 
+I do computer stuff. Programming in my free time. Critiquing documentation in my spare time. 
 
 Recent gradauate from San Diego State University with a B.S. in Computer Science.
 

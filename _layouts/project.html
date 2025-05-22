@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <main>
+      <article>
+
+        <div id="title-section">
+          <h1>{{ page.title }}</h1>
+
+          {% if page.github %}
+            <a href="{{ page.github }}" target="_blank">
+              <img src="/assets/images/Github_Logo.png" alt="Github">
+            </a>
+          {% endif %}
+
+        </div>
+
+        <hr>
+
+        {{ content }}
+
+      </article>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
+

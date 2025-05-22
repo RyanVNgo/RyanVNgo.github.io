@@ -1,0 +1,36 @@
+---
+---
+
+#title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.2rem 0 ;
+
+  >h1 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.6rem;
+    &::before {
+      content: ">";
+    }
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+
+    img {
+      filter: #{"invert(var(--img-invert))"};
+      max-width: 1.5rem;
+      max-height: 1.5rem;
+      transition: all 0.2s ease;
+      &:hover {
+        opacity: 0.65;
+      }
+    }
+  }
+}
+

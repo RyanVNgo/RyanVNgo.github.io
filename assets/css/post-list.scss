@@ -1,5 +1,7 @@
+---
+---
 
-#project-list {
+#post-list {
   margin: 0;
   padding: 0;
 }
@@ -15,12 +17,14 @@
   text-decoration: none;
   filter: none;
   transition: all 0.2s;
-}
-
-.list-item:hover {
-  background-color: var(--accent-700);
-  border: 1px solid var(--accent-800);
-  color: var(--accent-100);
+  &:hover {
+    background-color: var(--accent-700);
+    border: 1px solid var(--accent-800);
+    color: var(--accent-100);
+    .tag {
+      border: 1px solid var(--accent-800);
+    }
+  }
 }
 
 .link-wrapper {
@@ -32,16 +36,23 @@
   padding: 1rem;
 }
 
-.project-title {
+.post-date {
+  display: inline-block;
+  font-size: 0.8rem;
+  letter-spacing: -0.0312rem;
+}
+
+.post-title {
+  font-weight: 500;
   margin: 0;
   padding: 0;
 }
 
-.project-excerpt {
+.post-excerpt {
   font-size: 0.75rem;
   line-height: 1rem;
   margin: 0.5rem 0 0;
-  padding: 0 0 0 1rem;
+  padding: 0;
 }
 
 .tag-list {
@@ -64,9 +75,5 @@
   color: inherit;
   user-select: none;
   transition: all 0.2s;
-}
-
-.list-item:hover .tag {
-  border: 1px solid var(--accent-800);
 }
 

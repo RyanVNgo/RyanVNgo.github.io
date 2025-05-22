@@ -1,3 +1,4 @@
+
 header {
   background-color: var(--base-100);
   border-bottom: 1px solid var(--base-300);
@@ -13,18 +14,18 @@ header {
   width: var(--content-width);
   display: flex;
   justify-content: space-between;
-}
 
-#header-content > h1 {
-  font-size: 1rem;
-  white-space: nowrap;
-  text-decoration: var(--accent-700) underline;
-}
+  h1 {
+    font-size: 1rem;
+    white-space: nowrap;
+    text-decoration: var(--accent-700) underline;
 
-#header-content > h1 > a {
-  text-decoration: none;
-  font-weight: 500;
-  color: var(--base-900);
+    a {
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--base-900);
+    }
+  }
 }
 
 #site-nav {
@@ -51,19 +52,19 @@ header {
   letter-spacing: -0.0312rem;
   text-transform: capitalize;
   transition: all 0.15s;
-}
 
-.tab:not(.tab-highlight):hover {
-  background-color: var(--base-200);
+  &:not(.tab-highlight):hover {
+    background-color: var(--base-200);
+  }
 }
 
 .tab-highlight {
   background-color: var(--accent-700);
   color: var(--base-100);
-}
-
-.tab-highlight:hover {
-  background-color: var(--accent-800);
-  color: var(--base-100);
+  
+  &:hover {
+    background-color: var(--accent-800);
+    color: var(--base-100);
+  }
 }
 

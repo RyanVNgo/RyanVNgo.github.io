@@ -9,7 +9,7 @@
       <a class="link-wrapper" href="{{ project.url }}">
         <div class="list-content">
           <h3 class="project-title"> {{ project.title }} </h3>
-          <p class="project-excerpt"> {{ project.excerpt | strip_html }} </p>
+          <p class="project-excerpt"> {{ project.blip }} </p>
           <ul class="tag-list">
             {% for tag in project.tags %}
               <li class="tag">

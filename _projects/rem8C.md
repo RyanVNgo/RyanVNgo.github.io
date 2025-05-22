@@ -1,8 +1,10 @@
 ---
 section: projects
-layout: post
+layout: project
+style-sheets: [default, project-page]
 title: rem8C
-priority: 1
+priority: 2
+github: https://github.com/RyanVNgo/rem8C
 tags:
     - code
     - C
@@ -11,9 +13,9 @@ images:
     - https://raw.githubusercontent.com/RyanVNgo/rem8C/refs/heads/main/images/IBM_test.png
     - https://raw.githubusercontent.com/RyanVNgo/rem8C/refs/heads/main/images/Flags_test.png
     - https://raw.githubusercontent.com/RyanVNgo/rem8C/refs/heads/main/images/Corax_test.png
+blip: >
+    A CHIP-8 emulator made in C.
 ---
-
-A CHIP-8 emulator made in C.
 
 ![IBM logo test ROM running]({{ page.images[0] }})
 

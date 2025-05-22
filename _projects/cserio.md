@@ -1,15 +1,17 @@
 ---
 section: projects
-layout: post
+layout: project 
+style-sheets: [default, project-page, syntaxHL]
 title: CSERIO 
-priority: 2
+priority: 3
+github: https://github.com/RyanVNgo/CSERIO
 tags:
     - code
     - C
     - library
+blip: >
+    An interface to SER format image captures for C programmers.
 ---
-
-An interface to SER format image captures for C programmers.
 
 {% highlight c %}
 #include <stdio.h>
