@@ -1,7 +1,7 @@
 ---
 section: home
 layout: default 
-style-sheets: [default, post-list, project-list]
+style-sheets: [default, index, post-list, project-list]
 author: Ryan Ngo
 ---
 
@@ -21,11 +21,16 @@ Below, you can check out some of the projects I've built or you
 can read some of the posts I've made on whatever tf idk the title
 will tell you.
 
-## Recent Projects
+<div class="list-heading">
+    <h2>Recent Projects</h2>
+    <a href="{{ site.docs[1].url }}"> more </a>
+</div>
 {% assign project-list-length = 2 %}
 {% include project-list.html %}
 
-
-## Recent Posts
+<div class="list-heading">
+    <h2>Recent Projects</h2>
+    <a href="{{ site.docs[2].url }}"> more </a>
+</div>
 {% assign post-list-length = 2 %}
 {% include post-list.html %}
