@@ -1,8 +1,5 @@
 
 :root {
-  --sans-font: "IBM Plex Sans", "Arial", system-ui, Ubuntu, -apple-system, sans-serif;
-  --mono-font: Courier New, monospace;
-
   --base-100: hsl(270 3% 100%);
   --base-200: hsl(270 3% 90%);
   --base-300: hsl(270 3% 80%);
@@ -22,9 +19,5 @@
   --accent-700: hsl(171 100% 35%);
   --accent-800: hsl(171 100% 25%);
   --accent-900: hsl(171 100% 15%);
-
-  --font-size: 16px;
-  --content-width: 38rem;
-  --img-invert: 0;
 }
 
