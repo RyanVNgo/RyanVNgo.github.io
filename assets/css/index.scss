@@ -27,7 +27,11 @@
     font-size: 0.9rem;
     text-decoration: var(--accent-700) solid underline;
     margin: 0 1rem;
-    &::after{
+    transition: all 0.2s;
+    &:hover {
+      color: var(--accent-700);
+    }
+    &::after {
       content: "->";
       color: inherit;
     }
