@@ -3,7 +3,7 @@ section: projects
 layout: project
 style-sheets: [default, project-page]
 title: SRNAFNet
-priority: 1
+priority: 2
 github: https://github.com/RyanVNgo/NAFNet-SISR
 tags:
     - code

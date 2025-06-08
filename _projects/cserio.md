@@ -3,7 +3,7 @@ section: projects
 layout: project 
 style-sheets: [default, project-page, syntaxHL]
 title: CSERIO 
-priority: 3
+priority: 4
 github: https://github.com/RyanVNgo/CSERIO
 tags:
     - code

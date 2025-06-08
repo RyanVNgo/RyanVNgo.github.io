@@ -3,7 +3,7 @@ section: projects
 layout: project
 style-sheets: [default, project-page]
 title: rem8C
-priority: 2
+priority: 3
 github: https://github.com/RyanVNgo/rem8C
 tags:
     - code
