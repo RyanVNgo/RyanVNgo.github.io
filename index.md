@@ -32,7 +32,7 @@ will tell you.
 {% include project-list.html %}
 
 <div class="list-heading">
-    <h2>Recent Projects</h2>
+    <h2>Recent Posts</h2>
     <a href="{{ site.docs[2].url }}"> more </a>
 </div>
 {% assign post-list-length = 3 %}

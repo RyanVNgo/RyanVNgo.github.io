@@ -11,6 +11,7 @@ instagram: https://www.instagram.com/ryan.v.ngo
 email: vanryan711@gmail.com
 
 projects-imgs-dir: /assets/images/projects/
+posts-imgs-dir: /assets/images/posts/
 
 docs:
   - title: home
