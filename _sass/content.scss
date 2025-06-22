@@ -56,7 +56,8 @@ article {
   }
 
   h1, h2, h3 {
-    line-height: 1.2rem;
+    line-height: 1.8rem;
+    text-indent: 1.5rem hanging;
     &::before {
       margin-right: 0.5rem;
       color: var(--accent-700)

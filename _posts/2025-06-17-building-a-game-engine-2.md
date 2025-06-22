@@ -7,7 +7,6 @@ tags:
     - C++
     - OpenGL
     - GLFW
-    - Dear ImGui
 ---
 
 ## Structure
