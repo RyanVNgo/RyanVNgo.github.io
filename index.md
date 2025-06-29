@@ -11,9 +11,9 @@ I do computer stuff. Mostly writing code. Documentation is chill too.
 
 Recent gradauate from San Diego State University with a B.S. in Computer Science.
 
-Been trying to improve my knowledge and skills in C++ development, namely for
+Improving my knowledge and skills in C++ development, namely for
 game engines and high performance applications. Aside from that, I've done some
-ML/AI development in Python + PyTorch/NumPy, webserver and Docker stuff in Golang,
+ML/AI development in Python + PyTorch/NumPy, web server and Docker stuff in Golang,
 and more general stuff in Java. I guess I also know HTML and CSS given this website
 if that counts for anything.
 
@@ -26,14 +26,14 @@ will tell you.
 
 <div class="list-heading">
     <h2>Recent Projects</h2>
-    <a href="{{ site.docs[1].url }}"> more </a>
+    <a href="{{ site.docs[1].url }}"> more -></a>
 </div>
 {% assign project-list-length = 3 %}
 {% include project-list.html %}
 
 <div class="list-heading">
     <h2>Recent Posts</h2>
-    <a href="{{ site.docs[2].url }}"> more </a>
+    <a href="{{ site.docs[2].url }}"> more -></a>
 </div>
 {% assign post-list-length = 3 %}
 {% include post-list.html %}

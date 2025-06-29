@@ -28,12 +28,9 @@
     text-decoration: var(--accent-700) solid underline;
     margin: 0 1rem;
     transition: all 0.2s;
+    width: 4em;
     &:hover {
       color: var(--accent-700);
-    }
-    &::after {
-      content: "->";
-      color: inherit;
     }
   }
 }
