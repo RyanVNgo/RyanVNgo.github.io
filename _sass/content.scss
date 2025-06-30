@@ -4,7 +4,7 @@
   --mono-font: Courier New, monospace;
 
   --font-size: 16px;
-  --content-width: 38rem;
+  --content-width: 40rem;
   --img-invert: 0;
 }
 
@@ -107,8 +107,8 @@ article {
 
   img {
     display: block;
-    margin: 0 auto;
-    max-width: 90%;
+    margin: 0rem auto;
+    max-width: 95%;
     border-radius: 0.5rem;
     + sub {
       display: inline-block;
