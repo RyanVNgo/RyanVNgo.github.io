@@ -1,7 +1,7 @@
 ---
 section: posts
 layout: post
-style-sheets: [default, syntaxHL]
+style-sheets: [default, post-page, syntaxHL]
 title: Building a Game Engine - 2 | Organization
 tags:
     - C++

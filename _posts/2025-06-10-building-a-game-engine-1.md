@@ -1,7 +1,7 @@
 ---
 section: posts
 layout: post
-style-sheets: [default]
+style-sheets: [default, post-page]
 title: Building a Game Engine - 1 | Start
 tags:
     - C++
