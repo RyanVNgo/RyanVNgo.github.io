@@ -1,6 +1,12 @@
 ---
 ---
 
+h1 {
+  &::before {
+    content: ">";
+  }
+}
+
 .title-highlight {
   text-decoration: var(--accent-700) wavy underline;
   text-decoration-skip-ink: none;
@@ -11,22 +17,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem 0 1rem;
+  padding-bottom: 0.25rem;
+  margin: 2rem 0 0.75rem;
+  border-bottom: 0.125rem solid var(--base-300);
 
   >h2 {
     font-weight: 400;
     font-size: 1.4rem;
     margin: 0;
-    &::before {
-      content: ">>";
-    }
   }
 
   a {
     color: inherit;
     font-size: 0.9rem;
     text-decoration: var(--accent-700) solid underline;
-    margin: 0 1rem;
+    margin-right: 0;
     transition: all 0.2s;
     width: 4em;
     &:hover {
