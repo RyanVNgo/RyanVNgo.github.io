@@ -125,11 +125,10 @@ class ScopeProfiler {
 };
 {% endhighlight %}
 
-As shown, the class sets and stores the start time and when destroyed, it
-evaluated and printed the elapsed time.
+When initialized, the object sets and stores the start time and when destroyed, it
+evaluates and prints the elapsed time.
 
-Now we can profile our function in a similar same way as before but in a much
-cleaner way.
+Now we can profile our function like before but in a much cleaner way.
 
 {% highlight cpp %}
 #include "profiling.h"
