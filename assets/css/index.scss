@@ -1,9 +1,11 @@
 ---
 ---
 
-h1 {
-  &::before {
-    content: ">";
+article {
+  h1 {
+    &::before {
+      content: ">";
+    }
   }
 }
 
