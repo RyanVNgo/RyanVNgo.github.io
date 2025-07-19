@@ -3,10 +3,6 @@ section: posts
 layout: post
 style-sheets: [default, post-page, syntaxHL]
 title: Building a Game Engine - 3 | Rendering with Instancing
-tags:
-    - C++
-    - OpenGL
-    - GLFW
 ---
 
 ## Representing Voxel Objects

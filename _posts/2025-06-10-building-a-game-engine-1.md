@@ -3,10 +3,6 @@ section: posts
 layout: post
 style-sheets: [default, post-page]
 title: Building a Game Engine - 1 | Start
-tags:
-    - C++
-    - OpenGL
-    - GLFW
 ---
 
 With how abysmal recent games have been in terms of performance to visual quality, I've been wanting

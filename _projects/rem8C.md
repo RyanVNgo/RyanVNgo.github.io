@@ -6,7 +6,6 @@ title: rem8C
 priority: 3
 github: https://github.com/RyanVNgo/rem8C
 tags:
-    - code
     - C
     - emulator
 images:

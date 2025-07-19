@@ -6,9 +6,7 @@ title: CSERIO
 priority: 4
 github: https://github.com/RyanVNgo/CSERIO
 tags:
-    - code
     - C
-    - library
 blip: >
     An interface to SER format image captures for C programmers.
 ---

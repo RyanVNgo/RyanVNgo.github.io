@@ -6,7 +6,6 @@ title: SRNAFNet
 priority: 2
 github: https://github.com/RyanVNgo/NAFNet-SISR
 tags:
-    - code
     - Python
     - PyTorch
     - Computer Vision

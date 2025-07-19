@@ -6,7 +6,6 @@ title: rem8C++
 priority: 1
 github: https://github.com/RyanVNgo/rem8Cpp
 tags:
-    - code
     - C++
     - Dear ImGui
     - emulator

@@ -3,9 +3,6 @@ section: posts
 layout: post
 style-sheets: [default, post-page, syntaxHL]
 title: Building a Game Engine - 4 | Performance Monitoring
-tags:
-    - C++
-    - ImGui
 ---
 
 Performance profiling, because I want to know how fast things are running.
