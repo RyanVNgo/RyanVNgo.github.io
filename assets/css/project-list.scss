@@ -4,70 +4,69 @@
 #project-list {
   margin: 0;
   padding: 0;
-}
 
-.list-item {
-  background-color: var(--base-100);
-  border-radius: 0.5rem;
-  border: 1px solid var(--base-300);
-  margin: 0.5rem;
-  padding: 0rem;
-  color: var(--base-900);
-  list-style-type: none;
-  text-decoration: none;
-  filter: none;
-  transition: all 0.2s;
-  &:hover {
-    background-color: var(--accent-700);
-    border: 1px solid var(--accent-800);
-    color: var(--accent-100);
-    .tag {
-      border: 1px solid var(--accent-800);
+  .list-item {
+    min-height: 6rem;
+    background-color: var(--base-200);
+    box-shadow: var(--shadow) var(--base-500),
+                var(--edge-shadow) var(--base-600);
+    border-radius: 1.0rem;
+    margin: 1.0rem 0.5rem;
+    padding: 0rem;
+    color: var(--text-800);
+    list-style-type: none;
+    text-decoration: none;
+    filter: none;
+    transition: all 0.2s;
+    &:hover {
+      background-color: var(--accent-500);
+      box-shadow: var(--shadow) var(--accent-800),
+                  var(--edge-shadow) var(--accent-700);
+      color: var(--base-100);
+    }
+
+    .link-wrapper {
+      color: inherit;
+      text-decoration: none;
+
+      .list-content {
+        padding: 0.75rem 1rem;
+
+        .project-title {
+          font-weight: 400;
+          margin: 0;
+          padding: 0;
+        }
+
+        .project-excerpt {
+          font-size: 0.75rem;
+          line-height: 1rem;
+          margin: 0;
+          padding-left: 1rem;
+        }
+
+        .tag-list {
+          font-size: 0.65rem;
+          margin: 0.5rem 0 0;
+          padding: 0;
+          display: flex;
+          justify-content: flex-end;
+          gap: 0.25rem;
+
+          .tag {
+            list-style-type: none;
+            min-width: 2rem;
+            border-radius: 0.25rem;
+            margin: 0;
+            padding: 0.0rem 0.5rem;
+            text-align: center;
+            color: inherit;
+            user-select: none;
+            transition: all 0.2s;
+          }
+        }
+      }
     }
   }
-}
-
-.link-wrapper {
-  color: inherit;
-  text-decoration: none;
-}
-
-.list-content {
-  padding: 1rem;
-}
-
-.project-title {
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-}
-
-.project-excerpt {
-  font-size: 0.75rem;
-  line-height: 1rem;
-  margin: 0.5rem 0 0;
-  padding-left: 1rem;
-}
-
-.tag-list {
-  font-size: 0.65rem;
-  margin: 0.5rem 0 0;
-  padding: 0;
-  display: flex;
-  justify-content: flex-end;
-  gap: 0.25rem;
-}
-
-.tag {
-  list-style-type: none;
-  min-width: 2rem;
-  border: 1px solid var(--base-300);
-  border-radius: 0.25rem;
-  margin: 0;
-  padding: 0.0rem 0.5rem;
-  text-align: center;
-  color: inherit;
-  user-select: none;
-  transition: all 0.2s;
 }
 

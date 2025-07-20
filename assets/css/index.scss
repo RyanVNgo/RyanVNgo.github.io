@@ -3,14 +3,13 @@
 
 article {
   h1 {
-    &::before {
-      content: ">";
-    }
+    margin-bottom: 1.5rem;
   }
 }
 
 .title-highlight {
-  text-decoration: var(--accent-700) wavy underline;
+  text-decoration: var(--accent-500) wavy underline;
+  text-decoration-thickness: 0.125rem;
   text-decoration-skip-ink: none;
   text-underline-offset: 0.25rem;
 }
@@ -21,7 +20,7 @@ article {
   align-items: center;
   padding-bottom: 0.25rem;
   margin: 2rem 0 0.75rem;
-  border-bottom: 0.125rem solid var(--base-300);
+  border-bottom: 0.0625rem solid var(--base-500);
 
   >h2 {
     font-weight: 400;
@@ -32,12 +31,12 @@ article {
   a {
     color: inherit;
     font-size: 0.9rem;
-    text-decoration: var(--accent-700) solid underline;
+    text-decoration: var(--accent-500) solid underline;
     margin-right: 0;
     transition: all 0.2s;
     width: 4em;
     &:hover {
-      color: var(--accent-700);
+      color: var(--accent-500);
     }
   }
 }

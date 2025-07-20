@@ -1,7 +1,8 @@
 
 header {
   background-color: var(--base-100);
-  border-bottom: 1px solid var(--base-300);
+  border-bottom: 1px solid var(--base-400);
+  box-shadow: var(--shadow) var(--base-500);
   width: auto;
   display: flex;
   justify-content: center;
@@ -18,12 +19,12 @@ header {
   h1 {
     font-size: 1rem;
     white-space: nowrap;
-    text-decoration: var(--accent-700) underline;
+    text-decoration: var(--accent-500) underline;
 
     a {
       text-decoration: none;
       font-weight: 500;
-      color: var(--base-900);
+      color: var(--text-700);
     }
   }
 }
@@ -38,15 +39,15 @@ header {
 }
 
 .tab {
-  border-radius: 0.5rem;
-  min-width: 5rem;
+  border-radius: 0.75rem;
+  min-width: 5.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0.1rem 0;
   padding: 0.5rem 0;
   text-decoration: none;
-  color: inherit;
+  color: var(--text-700);
   font-size: 0.9rem;
   font-weight: 500;
   letter-spacing: -0.0312rem;
@@ -55,16 +56,21 @@ header {
 
   &:not(.tab-highlight):hover {
     background-color: var(--base-200);
+    box-shadow: var(--shadow) var(--base-500), 
+                var(--edge-shadow) var(--base-600);
   }
 }
 
 .tab-highlight {
-  background-color: var(--accent-700);
+  background-color: var(--accent-500);
+  box-shadow: var(--shadow) var(--accent-500),
+              var(--edge-shadow) var(--accent-700);
   color: var(--base-100);
   
   &:hover {
-    background-color: var(--accent-800);
-    color: var(--base-100);
+    background-color: var(--accent-400);
+    box-shadow: var(--shadow) var(--accent-400),
+                var(--edge-shadow) var(--accent-600);
   }
 }
 

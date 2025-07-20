@@ -1,23 +1,140 @@
 
 :root {
-  --base-100: hsl(270 3% 100%);
-  --base-200: hsl(270 3% 85%);
-  --base-300: hsl(270 3% 74%);
-  --base-400: hsl(270 3% 64%);
-  --base-500: hsl(270 3% 53%);
-  --base-600: hsl(270 3% 42%);
-  --base-700: hsl(270 3% 32%);
-  --base-800: hsl(270 3% 21%);
-  --base-900: hsl(270 3% 10%);
+  --base-h: 0;
+  --base-s: 0%;
+  --base-l: 48%;
+  --accent-h: 171;
+  --accent-s: 100%;
+  --accent-l: 35%;
 
-  --accent-100: hsl(171 100% 98%);
-  --accent-200: hsl(171 100% 85%);
-  --accent-300: hsl(171 100% 75%);
-  --accent-400: hsl(171 100% 65%);
-  --accent-500: hsl(171 100% 55%);
-  --accent-600: hsl(171 100% 45%);
-  --accent-700: hsl(171 100% 35%);
-  --accent-800: hsl(171 100% 25%);
-  --accent-900: hsl(171 100% 15%);
+  --base-100: hsl(
+                var(--base-h) 
+                calc(var(--base-s)) 
+                calc(var(--base-l) + calc(100% - var(--base-l)) * 0.98)
+              );
+  --base-200: hsl(
+                var(--base-h) 
+                calc(var(--base-s)) 
+                calc(var(--base-l) + calc(100% - var(--base-l)) * 0.95)
+              );
+  --base-300: hsl(
+                var(--base-h) 
+                calc(var(--base-s)) 
+                calc(var(--base-l) + calc(100% - var(--base-l)) * 0.89)
+              );
+  --base-400: hsl(
+                var(--base-h) 
+                calc(var(--base-s)) 
+                calc(var(--base-l) + calc(100% - var(--base-l)) * 0.81)
+              );
+  --base-500: hsl(
+                var(--base-h) 
+                calc(var(--base-s)) 
+                calc(var(--base-l) + calc(100% - var(--base-l)) * 0.71)
+              );
+  --base-600: hsl(
+                var(--base-h) 
+                calc(var(--base-s)) 
+                calc(var(--base-l) + calc(100% - var(--base-l)) * 0.59)
+              );
+  --base-700: hsl(
+                var(--base-h) 
+                calc(var(--base-s)) 
+                calc(var(--base-l) + calc(100% - var(--base-l)) * 0.45)
+              );
+  --base-800: hsl(
+                var(--base-h) 
+                calc(var(--base-s)) 
+                calc(var(--base-l) + calc(100% - var(--base-l)) * 0.31)
+              );
+  --base-900: hsl(
+                var(--base-h) 
+                calc(var(--base-s)) 
+                calc(var(--base-l) + calc(100% - var(--base-l)) * 0.16)
+              );
+
+  --accent-100: hsl(
+                var(--accent-h) 
+                calc(var(--accent-s)) 
+                calc(var(--accent-l) + calc(100% - var(--accent-l)) * 0.4)
+              );
+  --accent-200: hsl(
+                var(--accent-h) 
+                calc(var(--accent-s)) 
+                calc(var(--accent-l) + calc(100% - var(--accent-l)) * 0.3)
+              );
+  --accent-300: hsl(
+                var(--accent-h) 
+                calc(var(--accent-s)) 
+                calc(var(--accent-l) + calc(100% - var(--accent-l)) * 0.2)
+              );
+  --accent-400: hsl(
+                var(--accent-h) 
+                calc(var(--accent-s)) 
+                calc(var(--accent-l) + calc(100% - var(--accent-l)) * 0.1)
+              );
+  --accent-500: hsl(
+                var(--accent-h) 
+                calc(var(--accent-s)) 
+                calc(var(--accent-l) + calc(100% - var(--accent-l)) * 0.0)
+              );
+  --accent-600: hsl(
+                var(--accent-h) 
+                calc(var(--accent-s)) 
+                calc(var(--accent-l) + calc(100% - var(--accent-l)) * -0.1)
+              );
+  --accent-700: hsl(
+                var(--accent-h) 
+                calc(var(--accent-s)) 
+                calc(var(--accent-l) + calc(100% - var(--accent-l)) * -0.2)
+              );
+  --accent-800: hsl(
+                var(--accent-h) 
+                calc(var(--accent-s)) 
+                calc(var(--accent-l) + calc(100% - var(--accent-l)) * -0.3)
+              );
+  --accent-900: hsl(
+                var(--accent-h) 
+                calc(var(--accent-s)) 
+                calc(var(--accent-l) + calc(100% - var(--accent-l)) * -0.4)
+              );
+
+
+  --text-100: hsl(var(--base-h) var(--base-s) calc(var(--base-l) - var(--base-l) * 0.85) / 0.1);
+  --text-200: hsl(var(--base-h) var(--base-s) calc(var(--base-l) - var(--base-l) * 0.85) / 0.2);
+  --text-300: hsl(var(--base-h) var(--base-s) calc(var(--base-l) - var(--base-l) * 0.85) / 0.3);
+  --text-400: hsl(var(--base-h) var(--base-s) calc(var(--base-l) - var(--base-l) * 0.85) / 0.4);
+  --text-500: hsl(var(--base-h) var(--base-s) calc(var(--base-l) - var(--base-l) * 0.85) / 0.5);
+  --text-600: hsl(var(--base-h) var(--base-s) calc(var(--base-l) - var(--base-l) * 0.85) / 0.6);
+  --text-700: hsl(var(--base-h) var(--base-s) calc(var(--base-l) - var(--base-l) * 0.85) / 0.7);
+  --text-800: hsl(var(--base-h) var(--base-s) calc(var(--base-l) - var(--base-l) * 0.85) / 0.8);
+  --text-900: hsl(var(--base-h) var(--base-s) calc(var(--base-l) - var(--base-l) * 0.85) / 0.9);
+
+  --edge-shadow: 0.0rem 0.125rem 0.125rem;
+  --shadow: 0 0 0.125rem;
 }
 
+// @media (prefers-color-scheme: dark) {
+//   body {
+//     --base-100: hsl(270 3% 100%);
+//     --base-200: hsl(270 3% 85%);
+//     --base-300: hsl(270 3% 74%);
+//     --base-400: hsl(270 3% 64%);
+//     --base-500: hsl(270 3% 53%);
+//     --base-600: hsl(270 3% 42%);
+//     --base-700: hsl(270 3% 32%);
+//     --base-800: hsl(270 3% 21%);
+//     --base-900: hsl(270 3% 10%);
+// 
+//     --accent-100: hsl(171 100% 98%);
+//     --accent-200: hsl(171 100% 85%);
+//     --accent-300: hsl(171 100% 75%);
+//     --accent-400: hsl(171 100% 65%);
+//     --accent-500: hsl(171 100% 55%);
+//     --accent-600: hsl(171 100% 45%);
+//     --accent-700: hsl(171 100% 35%);
+//     --accent-800: hsl(171 100% 25%);
+//     --accent-900: hsl(171 100% 15%);
+//   }
+// }
+// 

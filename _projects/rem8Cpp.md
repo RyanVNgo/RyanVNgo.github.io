@@ -8,7 +8,7 @@ github: https://github.com/RyanVNgo/rem8Cpp
 tags:
     - C++
     - Dear ImGui
-    - emulator
+    - Emulator
 images:
     - https://raw.githubusercontent.com/RyanVNgo/rem8Cpp/refs/heads/main/images/IBM_test.png
 blip: >

@@ -6,7 +6,7 @@ article {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1.2rem 0;
+    margin: 1.2rem 0 0.75rem;
 
     h1 {
       margin: 0;
@@ -31,7 +31,7 @@ article {
   }
 
   >h2 {
-    border-bottom: 0.125rem solid var(--base-300);
+    border-bottom: 0.0625rem solid var(--base-500);
   }
 }
 

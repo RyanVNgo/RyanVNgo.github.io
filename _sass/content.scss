@@ -16,7 +16,7 @@ html {
 
 body {
   background-color: var(--base-100);
-  color: var(--base-900);
+  color: var(--text-800);
   font-family: var(--sans-font);
   line-height: 1.5;
   display: flex;
@@ -26,15 +26,15 @@ body {
 }
 
 main {
-  background-color: var(--base-100);
   max-width: var(--content-width);
   width: 100%;
   margin: 0 auto auto;
+  padding: 1.5rem 3rem 3rem;
   height: auto;
 }
 
 article {
-  padding: 0 1rem;
+  padding: 0 0rem;
   margin: 0;
   font-weight: 350;
 
@@ -45,15 +45,8 @@ article {
       color: inherit;
       transition: all 0.2s;
       &:hover {
-        color: var(--accent-800);
+        color: var(--accent-500);
       }
-    }
-
-    >code {
-      font-size: 0.8rem;
-      border: 1px solid var(--base-300);
-      border-radius: 0.2rem;
-      padding: 0 0.2rem;
     }
   }
 
@@ -64,7 +57,7 @@ article {
     letter-spacing: -0.005rem;
     &::before {
       margin-right: 0.5rem;
-      color: var(--accent-700)
+      color: var(--accent-500)
     }
   }
 
@@ -72,6 +65,7 @@ article {
     font-weight: 500;
     font-size: 1.6rem;
     text-indent: 1.5rem hanging;
+    margin-bottom: 0.75rem;
     &::before {
       content: ">";
     }
@@ -95,11 +89,19 @@ article {
   }
 
   blockquote {
-    margin: 0.5rem;
-    padding: 0 1rem;
+    margin: 1.0rem;
+    padding: 1rem;
     border-radius: 0.25rem;
-    border: 1px solid var(--base-300);
+    border-left: 0.25rem solid var(--base-300);
+    font-family: var(--serif-font);
+    font-weight: 400;
+    font-style: italic;
     font-size: 0.85rem;
+
+    >* {
+      margin: 0;
+      padding: 0;
+    }
   }
 
   img {
@@ -107,6 +109,8 @@ article {
     margin: 0rem auto;
     max-width: 95%;
     border-radius: 0.5rem;
+    box-shadow: var(--shadow) var(--base-600),
+                var(--edge-shadow) var(--base-700);
     + sub {
       display: inline-block;
       text-align: center;
@@ -117,9 +121,9 @@ article {
 
 hr {
   border-style: none;
-  border-top: 0.125rem solid var(--base-600);
+  border-top: 0.0625rem solid var(--base-700);
   height: 0px;
-  margin: 1rem 0;
+  margin-bottom: 1rem;
   padding: 0;
 }
 

@@ -7,7 +7,7 @@ priority: 3
 github: https://github.com/RyanVNgo/rem8C
 tags:
     - C
-    - emulator
+    - Emulator
 images:
     - https://raw.githubusercontent.com/RyanVNgo/rem8C/refs/heads/main/images/IBM_test.png
     - https://raw.githubusercontent.com/RyanVNgo/rem8C/refs/heads/main/images/Flags_test.png

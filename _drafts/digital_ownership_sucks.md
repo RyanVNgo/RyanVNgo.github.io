@@ -3,6 +3,8 @@ section: posts
 layout: post
 style-sheets: [default, post-page]
 title: Digital Ownership Isn't Real
+blip: >
+    The declining state of online ownership and control.
 ---
 
 - You aren't buying, you're renting
@@ -33,4 +35,7 @@ title: Digital Ownership Isn't Real
     - maintain full ownership
     - cannot be taken away from you or changed
     - ownership can be transferred and/or shared
+
+- Appendix
+    - rambling
 
