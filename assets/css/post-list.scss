@@ -20,9 +20,10 @@
     transition: all 0.2s;
     &:hover {
       background-color: var(--accent-500);
-      box-shadow: var(--shadow) var(--accent-800),
+      box-shadow: var(--shadow) var(--accent-500),
                   var(--edge-shadow) var(--accent-700);
       color: var(--base-100);
+      transform: scale(1.02);
     }
 
     .link-wrapper {

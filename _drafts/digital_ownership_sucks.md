@@ -7,6 +7,28 @@ blip: >
     The declining state of online ownership and control.
 ---
 
+<blockquote class="blockquote-note">
+    This is a note.
+</blockquote>
+
+<blockquote class="blockquote-tip">
+    This is tip.
+</blockquote>
+
+<blockquote class="blockquote-important">
+    This is important.
+</blockquote>
+
+<blockquote class="blockquote-warning">
+    This is a warning.
+</blockquote>
+
+<blockquote class="blockquote-caution">
+    This is a caution.
+</blockquote>
+
+
+
 - You aren't buying, you're renting
     - you cannot transfer ownership
     - companies have the power to take away your 'ownership'
