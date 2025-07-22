@@ -90,8 +90,8 @@ article {
 
   blockquote {
     background-color: hsl(var(--block-hsl) / 0.1);
-    margin: 1.0rem;
-    padding: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem 0.75rem 0.75rem;
     border-radius: 0.5rem 0.75rem 0.75rem 0.5rem;
     border-left: 0.5rem solid hsl(var(--block-hsl));
     box-shadow: var(--shadow) hsl(var(--block-hsl) / 0.4),
@@ -101,7 +101,6 @@ article {
     font-style: italic;
     font-size: 0.9rem;
     color: hsl(var(--block-color));
-    padding: 0.75rem;
 
     &::before {
       display: block;
