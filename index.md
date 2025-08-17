@@ -7,22 +7,19 @@ author: Ryan Ngo
 
 <h1>Hi, I'm <span class="title-highlight">{{ page.author }}</span></h1>
 
-I do computer stuff. Mostly writing code. Documentation is chill too.
+A recent Comp-Sci graduate from San Diego State University that likes 
+writing software, especially for projects or systems that aim to benefit 
+people, our world, or our understanding of everything around us.
 
-Recent gradauate from San Diego State University with a B.S. in Computer Science.
+Currently improving my knowledge and skills in C++ —  I like the language,
+encourages me to write cleanly (cause it can get messy), and is pretty fast.
 
-Improving my knowledge and skills in C++ development, namely for
-game engines and high performance applications. Aside from that, I've done some
-ML/AI development in Python + PyTorch/NumPy, web server and Docker stuff in Golang,
-and more general stuff in Java. I guess I also know HTML and CSS given this website
-if that counts for anything.
+Beyond that, I've done some ML/AI development in Python + PyTorch/NumPy, and 
+more general stuff in Golang and Java. I guess I also know HTML and CSS given 
+this website if that counts for anything.
 
-Mostly interested in software/program optimization because I hate it when
-shits slow.
-
-Below, you can check out some of the projects I've built or you 
-can read some of the posts I've made on whatever tf idk the title
-will tell you.
+Below, you can check out some of the projects I've built or read some of the 
+posts I've made.
 
 <div class="list-heading">
     <h2>Recent Projects</h2>

@@ -37,7 +37,7 @@ I like programming, tech, gaming, coffee, astrophotography, F1, and K-pop. <sub>
 
 ### Astrophotography Equipment
 - Orion Starblast 4.5 (modified)
-- Celestron CGEM
+- ~~Celestron CGEM~~
 - Player One Uranus-C
 - Sharpstar 0.95x CC
 - SVBONY SV106 Guide Scope
