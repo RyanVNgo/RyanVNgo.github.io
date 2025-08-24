@@ -11,8 +11,8 @@ A recent Comp-Sci graduate from San Diego State University that likes
 writing software, especially for projects or systems that aim to benefit 
 people, our world, or our understanding of everything around us.
 
-Currently improving my knowledge and skills in C++ —  I like the language,
-encourages me to write cleanly (cause it can get messy), and is pretty fast.
+Currently improving my knowledge and skills in C++ alongside general software
+architecture and design.
 
 Beyond that, I've done some ML/AI development in Python + PyTorch/NumPy, and 
 more general stuff in Golang and Java. I guess I also know HTML and CSS given 
