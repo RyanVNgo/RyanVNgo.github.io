@@ -9,11 +9,19 @@
       {% for item in site.docs %}
         {% if page.section == item.title or layout.section == item.title %}
           <a href="{{ item.url }}" class="tab tab-highlight">
-            {{ item.title }}
+            <div class="tab-border">
+              <div class="tab-content">
+                <div>{{ item.title }}</div>
+              </div>
+            </div>
           </a>
         {% else %}
           <a href="{{ item.url }}" class="tab">
-            {{ item.title }}
+            <div class="tab-border">
+              <div class="tab-content">
+                <div>{{ item.title }}</div>
+              </div>
+            </div>
           </a>
         {% endif %}
       {% endfor %}

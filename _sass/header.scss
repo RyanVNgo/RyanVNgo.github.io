@@ -39,40 +39,84 @@ header {
 }
 
 .tab {
-  border-radius: 0.75rem;
-  min-width: 5.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0.1rem 0;
-  padding: 0.5rem 0;
+  min-width: 6rem;
   text-decoration: none;
-  color: var(--text-800);
+  color: var(--text-700);
   font-size: 0.9rem;
   font-weight: 500;
-  letter-spacing: -0.0312rem;
   text-transform: capitalize;
-  transition: all 0.15s;
+  transition: all 0.2s;
+  margin: 0.25rem;
 
   &:not(.tab-highlight):hover {
-    background-color: var(--base-200);
-    box-shadow: var(--shadow) var(--base-500), 
+    .tab-border {
+      transform: translate(0, 0.125rem);
+      background-image: linear-gradient(var(--base-100), var(--base-400));
+      box-shadow: var(--shadow) var(--base-800),
+                  var(--edge-shadow) var(--base-700);
+      .tab-content {
+        background-image: linear-gradient(var(--base-400), var(--base-100));
+      }
+    }
+  }
+
+  .tab-border {
+    border-radius: 0.5rem;
+    background-image: linear-gradient(var(--base-100), var(--base-300)); 
+    box-shadow: var(--shadow) var(--base-700),
                 var(--edge-shadow) var(--base-600);
-    transform: scale(1.05);
+    padding: 0.25rem;
+    transition: inherit;
+
+    .tab-content {
+      border-radius: 0.25rem;
+      background-image: linear-gradient(var(--base-300), var(--base-100));
+      padding: 0.25rem 0;
+      align-items: center;
+      display: flex;
+
+      > div {
+        margin: auto;
+      }
+    }
   }
 }
 
 .tab-highlight {
-  background-color: var(--accent-500);
-  box-shadow: var(--shadow) var(--accent-500),
-              var(--edge-shadow) var(--accent-700);
   color: var(--base-100);
-  
+
   &:hover {
-    background-color: var(--accent-400);
-    box-shadow: var(--shadow) var(--accent-400),
+    .tab-border {
+      transform: translate(0, 0.125rem);
+      background-image: linear-gradient(var(--accent-400) 40%, var(--accent-500));
+      box-shadow: var(--shadow) var(--accent-800),
+                  var(--edge-shadow) var(--accent-700);
+      .tab-content {
+        background-image: linear-gradient(var(--accent-500) 40%, var(--accent-400));
+      }
+    }
+  }
+
+  .tab-border {
+    border-radius: 0.5rem;
+    background-image: linear-gradient(var(--accent-400), var(--accent-500));
+    box-shadow: var(--shadow) var(--accent-700),
                 var(--edge-shadow) var(--accent-600);
-    transform: scale(1.05);
+    padding: 0.25rem;
+    transition: inherit; 
+
+    .tab-content {
+      border-radius: 0.25rem;
+      background-image: linear-gradient(var(--accent-500), var(--accent-400));
+      padding: 0.25rem 0;
+      align-items: center;
+      display: flex;
+
+      > div {
+        padding: 0;
+        margin: auto;
+      }
+    }
   }
 }
 
