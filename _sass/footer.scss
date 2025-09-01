@@ -1,8 +1,5 @@
 
 footer {
-  background-color: var(--base-100);
-  border-top: 1px solid var(--base-300);
-  box-shadow: var(--shadow) var(--base-500);
   width: auto;
   display: flex;
   justify-content: center;
@@ -34,48 +31,42 @@ footer {
   align-items: center;
   gap: 1em;
 
-  .icon-wrapper {
-    transition: all 0.2s;
+  .social-button {
+    min-width: 2rem; 
+    height: 2rem; 
+    marigin: 0.25rem;
+    padding: 0.25rem;
+
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow) var(--base-700),
+                var(--edge-shadow) var(--base-700);
+    background-image: linear-gradient(var(--base-100), var(--base-300)); 
+
+    transition: all 0.1s;
 
     &:hover {
       transform: translate(0, 0.125rem);
-      .icon-border {
-        background-image: linear-gradient(var(--base-100), var(--base-400));
-        box-shadow: var(--shadow) var(--base-800),
-                    var(--edge-shadow) var(--base-700);
-        a {
-          background-image: linear-gradient(var(--base-400), var(--base-100));
-        }
+      box-shadow: var(--shadow) var(--base-700);
+      background-image: linear-gradient(var(--base-100), var(--base-400)); 
+      > img {
+        background-image: linear-gradient(var(--base-400), var(--base-100));
       }
     }
 
-
-    .icon-border {
-      border-radius: 0.5rem;
-      background-image: linear-gradient(var(--base-100), var(--base-300)); 
-      box-shadow: var(--shadow) var(--base-700),
-                  var(--edge-shadow) var(--base-600);
+    > * {
+      box-sizing: border-box;
+      display: flex;
       padding: 0.25rem;
-      transition: inherit;
+      height: 100%;
 
-      a {
-        border-radius: 0.25rem;
-        background-image: linear-gradient(var(--base-300), var(--base-100));
-        padding: 0.5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 1.8rem;
-        min-width: 1.8rem;
+      align-items: center;
 
-        img {
-          filter: #{"invert(var(--img-invert))"};
-          // max-width: 1.7rem;
-          // max-height: 1.7rem;
-          max-width: 1.5rem;
-          max-height: 1.5rem;
-          transition: all 0.2s ease;
-        }
+      border-radius: 0.25rem;
+      background-image: linear-gradient(var(--base-300), var(--base-100));
+
+      img {
+        width: 1.5rem;
+        height: auto;
       }
     }
   }

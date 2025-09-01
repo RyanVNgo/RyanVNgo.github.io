@@ -12,12 +12,10 @@
                 var(--edge-shadow) var(--base-600);
     border-radius: 1.0rem;
     margin: 1.0rem 0.5rem;
-    padding: 0rem;
     color: var(--text-800);
     list-style-type: none;
-    text-decoration: none;
-    filter: none;
     transition: all 0.2s;
+
     &:hover {
       background-color: var(--accent-500);
       box-shadow: var(--shadow) var(--accent-500),

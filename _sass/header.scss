@@ -1,13 +1,10 @@
 
 header {
-  background-color: var(--base-100);
-  border-bottom: 1px solid var(--base-400);
-  box-shadow: var(--shadow) var(--base-500);
   width: auto;
   display: flex;
   justify-content: center;
   margin-bottom: 4rem;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   font-size: 1rem;
 }
 
@@ -15,18 +12,41 @@ header {
   width: var(--content-width);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
-  h1 {
-    font-size: 1rem;
-    white-space: nowrap;
-    text-decoration: var(--accent-500) underline;
+  #home-button {
+    width: 2rem; 
+    height: 2rem; 
+    marigin: 0.25rem;
+    padding: 0.25rem;
 
-    a {
-      text-decoration: none;
-      font-weight: 500;
-      color: var(--text-800);
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow) var(--base-700),
+                var(--edge-shadow) var(--base-700);
+    background-image: linear-gradient(var(--base-100), var(--base-300)); 
+
+    transition: all 0.1s;
+
+    &:hover {
+      transform: translate(0, 0.125rem);
+      box-shadow: var(--shadow) var(--base-700);
+      background-image: linear-gradient(var(--base-100), var(--base-400)); 
+      > img {
+        background-image: linear-gradient(var(--base-400), var(--base-100));
+      }
+    }
+    
+    > img {
+      box-sizing: border-box;
+      padding: 0.25rem;
+      width: 100%;
+      height: 100%;
+
+      border-radius: 0.25rem;
+      background-image: linear-gradient(var(--base-300), var(--base-100));
     }
   }
+
 }
 
 #site-nav {
@@ -39,84 +59,77 @@ header {
 }
 
 .tab {
-  min-width: 6rem;
+  width: 5.5rem;
+  height: 2rem;
+  margin: 0.25rem;
+  padding: 0.25rem;
+
   text-decoration: none;
   color: var(--text-700);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   text-transform: capitalize;
-  transition: all 0.2s;
-  margin: 0.25rem;
+
+  border-radius: 0.5rem;
+  background-image: linear-gradient(var(--base-100), var(--base-300)); 
+  box-shadow: var(--shadow) var(--base-700),
+              var(--edge-shadow) var(--base-700);
+
+  transition: all 0.1s;
 
   &:not(.tab-highlight):hover {
-    .tab-border {
-      transform: translate(0, 0.125rem);
-      background-image: linear-gradient(var(--base-100), var(--base-400));
-      box-shadow: var(--shadow) var(--base-800),
-                  var(--edge-shadow) var(--base-700);
-      .tab-content {
-        background-image: linear-gradient(var(--base-400), var(--base-100));
-      }
+    color: var(--text-800);
+    transform: translate(0, 0.125rem);
+    background-image: linear-gradient(var(--base-100), var(--base-400));
+    box-shadow: var(--shadow) var(--base-700);
+    .tab-content {
+      background-image: linear-gradient(var(--base-400), var(--base-100));
     }
   }
 
-  .tab-border {
-    border-radius: 0.5rem;
-    background-image: linear-gradient(var(--base-100), var(--base-300)); 
-    box-shadow: var(--shadow) var(--base-700),
-                var(--edge-shadow) var(--base-600);
-    padding: 0.25rem;
+  .tab-content {
+    display: block flex;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 0.25rem;
+    background-image: linear-gradient(var(--base-300), var(--base-100));
+
     transition: inherit;
-
-    .tab-content {
-      border-radius: 0.25rem;
-      background-image: linear-gradient(var(--base-300), var(--base-100));
-      padding: 0.25rem 0;
-      align-items: center;
-      display: flex;
-
-      > div {
-        margin: auto;
-      }
-    }
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .tab-highlight {
   color: var(--base-100);
+  border-radius: 0.5rem;
+  background-image: linear-gradient(var(--accent-400), var(--accent-500));
+  box-shadow: var(--shadow) var(--accent-700),
+              var(--edge-shadow) var(--accent-600);
+
+  transition: all 0.1s;
 
   &:hover {
-    .tab-border {
-      transform: translate(0, 0.125rem);
-      background-image: linear-gradient(var(--accent-400) 40%, var(--accent-500));
-      box-shadow: var(--shadow) var(--accent-800),
-                  var(--edge-shadow) var(--accent-700);
-      .tab-content {
-        background-image: linear-gradient(var(--accent-500) 40%, var(--accent-400));
-      }
+    transform: translate(0, 0.125rem);
+    background-image: linear-gradient(var(--accent-400) 30%, var(--accent-500));
+    box-shadow: var(--shadow) var(--accent-700);
+    .tab-content {
+      background-image: linear-gradient(var(--accent-500) 30%, var(--accent-400));
     }
   }
 
-  .tab-border {
-    border-radius: 0.5rem;
-    background-image: linear-gradient(var(--accent-400), var(--accent-500));
-    box-shadow: var(--shadow) var(--accent-700),
-                var(--edge-shadow) var(--accent-600);
-    padding: 0.25rem;
-    transition: inherit; 
+  .tab-content {
+    display: block flex;
+    width: 100%;
+    height: 100%;
 
-    .tab-content {
-      border-radius: 0.25rem;
-      background-image: linear-gradient(var(--accent-500), var(--accent-400));
-      padding: 0.25rem 0;
-      align-items: center;
-      display: flex;
+    border-radius: 0.25rem;
+    background-image: linear-gradient(var(--accent-500), var(--accent-400));
 
-      > div {
-        padding: 0;
-        margin: auto;
-      }
-    }
+    transition: inherit;
+    justify-content: center;
+    align-items: center;
   }
 }
 

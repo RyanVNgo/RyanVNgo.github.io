@@ -1,26 +1,29 @@
 <header>
   <div id="header-content">
+    <!--
     <h1>
       <a href="/">
         {{ site.author }}
       </a>
     </h1>
+    -->
+
+    <a id="home-button" href="/">
+      <img src="/assets/images/ryanvngo-icon-compact.png" alt="Home">
+    </a>
+
     <nav id="site-nav">
       {% for item in site.docs %}
         {% if page.section == item.title or layout.section == item.title %}
           <a href="{{ item.url }}" class="tab tab-highlight">
-            <div class="tab-border">
-              <div class="tab-content">
-                <div>{{ item.title }}</div>
-              </div>
+            <div class="tab-content">
+              <div>{{ item.title }}</div>
             </div>
           </a>
         {% else %}
           <a href="{{ item.url }}" class="tab">
-            <div class="tab-border">
-              <div class="tab-content">
-                <div>{{ item.title }}</div>
-              </div>
+            <div class="tab-content">
+              {{ item.title }}
             </div>
           </a>
         {% endif %}

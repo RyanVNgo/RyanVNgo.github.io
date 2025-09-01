@@ -14,8 +14,8 @@ projects-imgs-dir: /assets/images/projects/
 posts-imgs-dir: /assets/images/posts/
 
 docs:
-  - title: home
-    url: /
+  #  - title: home
+  #    url: /
 
   - title: projects
     url: /pages/projects.html
