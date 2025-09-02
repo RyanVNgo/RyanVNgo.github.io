@@ -5,10 +5,7 @@ style-sheets: [default, project-page]
 title: SRNAFNet
 priority: 2
 github: https://github.com/RyanVNgo/NAFNet-SISR
-tags:
-    - Python
-    - PyTorch
-    - Computer Vision
+cover-photo: "/assets/images/projects/SRNAFNet/image_1.webp"
 blip: >
     SRNAFNet is a Single-Image Super-Resolution CNN Based on the 
     NAFNet intra-block architecture.

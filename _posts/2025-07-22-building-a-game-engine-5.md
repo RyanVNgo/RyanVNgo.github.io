@@ -3,6 +3,7 @@ section: posts
 layout: post
 style-sheets: [default, post-page, syntaxHL]
 title: Game Engine - 5 | Terrain Generation and Rendering
+cover-photo: "/assets/images/posts/game-engine/post-5/image_2.png"
 blip: >
     Implementing a basic terrain generation system and rendering enhancements.
 ---

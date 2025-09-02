@@ -5,12 +5,9 @@ style-sheets: [default, project-page]
 title: rem8C++
 priority: 1
 github: https://github.com/RyanVNgo/rem8Cpp
-tags:
-    - C++
-    - Dear ImGui
-    - Emulator
 images:
     - https://raw.githubusercontent.com/RyanVNgo/rem8Cpp/refs/heads/main/images/IBM_test.png
+cover-photo: "https://raw.githubusercontent.com/RyanVNgo/rem8Cpp/refs/heads/main/images/IBM_test.png"
 blip: >
     A CHIP-8 emulator made in C++.
 ---

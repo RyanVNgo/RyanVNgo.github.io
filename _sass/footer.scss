@@ -47,9 +47,9 @@ footer {
     &:hover {
       transform: translate(0, 0.125rem);
       box-shadow: var(--shadow) var(--base-700);
-      background-image: linear-gradient(var(--base-100), var(--base-400)); 
-      > img {
-        background-image: linear-gradient(var(--base-400), var(--base-100));
+      background-image: linear-gradient(var(--base-100), var(--base-300)); 
+      > * {
+        background-image: linear-gradient(var(--base-200), var(--base-100));
       }
     }
 

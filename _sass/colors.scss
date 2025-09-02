@@ -15,7 +15,7 @@
   --base-200: hsl(
                 var(--base-h) 
                 calc(var(--base-s)) 
-                calc(var(--base-l) + calc(100% - var(--base-l)) * 0.95)
+                calc(var(--base-l) + calc(100% - var(--base-l)) * 0.93)
               );
   --base-300: hsl(
                 var(--base-h) 

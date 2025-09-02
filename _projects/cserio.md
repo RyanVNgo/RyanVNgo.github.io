@@ -5,8 +5,6 @@ style-sheets: [default, project-page, syntaxHL]
 title: CSERIO 
 priority: 4
 github: https://github.com/RyanVNgo/CSERIO
-tags:
-    - C
 blip: >
     An interface to SER format image captures for C programmers.
 ---

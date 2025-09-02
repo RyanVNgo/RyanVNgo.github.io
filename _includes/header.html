@@ -17,7 +17,7 @@
         {% if page.section == item.title or layout.section == item.title %}
           <a href="{{ item.url }}" class="tab tab-highlight">
             <div class="tab-content">
-              <div>{{ item.title }}</div>
+              {{ item.title }}
             </div>
           </a>
         {% else %}

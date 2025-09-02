@@ -4,21 +4,31 @@
 {% endunless %}
 <ul id="post-list">
   {% for post in site.posts limit: post-list-length %}
-    <li class="list-item">
-      <a class="link-wrapper" href="{{ post.url }}">
-        <div class="list-content">
+    <li class="post-list-item">
+
+      {% if post.cover-photo %}
+        <div class="post-list-item-cover-photo-wrapper">
+          <img src="{{ post.cover-photo }}">
+        </div>
+        <div class="post-list-item-content">
           <div class="post-date"> {{ post.date | date: "%Y-%m-%d" }}&emsp; </div>
           <h3 class="post-title"> {{ post.title }} </h3>
           <p class="post-excerpt"> {{ post.blip }} </p>
-          <ul class="tag-list">
-            {% for tag in post.tags %}
-              <li class="tag">
-                {{ tag }}
-              </li>
-            {% endfor %}
-          </ul>
+        </div>
+      {% else %}
+        <div class="post-list-item-content" style="grid-column: 1 / span 2;">
+          <div class="post-date"> {{ post.date | date: "%Y-%m-%d" }}&emsp; </div>
+          <h3 class="post-title"> {{ post.title }} </h3>
+          <p class="post-excerpt"> {{ post.blip }} </p>
+        </div>
+      {% endif %}
+
+      <a class="post-list-item-button" href="{{ post.url }}">
+        <div class="post-list-item-button-inner">
+          <div> &#8599; </div>
         </div>
       </a>
+
     </li>
   {% endfor %}
 </ul>

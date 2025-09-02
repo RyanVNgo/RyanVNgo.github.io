@@ -5,13 +5,11 @@ style-sheets: [default, project-page]
 title: rem8C
 priority: 3
 github: https://github.com/RyanVNgo/rem8C
-tags:
-    - C
-    - Emulator
 images:
     - https://raw.githubusercontent.com/RyanVNgo/rem8C/refs/heads/main/images/IBM_test.png
     - https://raw.githubusercontent.com/RyanVNgo/rem8C/refs/heads/main/images/Flags_test.png
     - https://raw.githubusercontent.com/RyanVNgo/rem8C/refs/heads/main/images/Corax_test.png
+cover-photo: "https://raw.githubusercontent.com/RyanVNgo/rem8C/refs/heads/main/images/IBM_test.png"
 blip: >
     A CHIP-8 emulator made in C.
 ---
