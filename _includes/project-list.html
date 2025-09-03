@@ -7,6 +7,7 @@
   {% for project in sorted_projects limit: project-list-length %}
     <li class="project-list-item">
 
+      <!--
       {% if project.cover-photo %}
         <div class="project-list-item-cover-photo-wrapper">
           <img src="{{ project.cover-photo }}">
@@ -21,12 +22,18 @@
           <p class="project-excerpt"> {{ project.blip }} </p>
         </div>
       {% endif %}
+      -->
 
       <a class="project-list-item-button" href="{{ project.url }}">
         <div class="project-list-item-button-inner">
           <div> &#8599; </div>
         </div>
       </a>
+
+      <div class="project-list-item-content">
+        <h3 class="project-title"> {{ project.title }} </h3>
+        <p class="project-excerpt"> {{ project.blip }} </p>
+      </div>
 
     </li>
   {% endfor %}

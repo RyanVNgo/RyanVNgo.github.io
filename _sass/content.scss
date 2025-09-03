@@ -26,16 +26,18 @@ body {
 }
 
 main {
-  max-width: var(--content-width);
+  box-sizing: border-box;
   width: 100%;
-  margin: 0 auto auto;
-  padding: 1.5rem 3rem 3rem;
-  height: auto;
+  margin-bottom: auto;
+  padding: 1.5rem 2rem 3rem;
 }
 
 article {
+  max-width: var(--content-width);
+
+  margin: 0 auto auto;
   padding: 0 0rem;
-  margin: 0;
+
   font-weight: 400;
 
   > p {
@@ -72,7 +74,7 @@ article {
     letter-spacing: -0.005rem;
     &::before {
       margin-right: 0.5rem;
-      color: var(--accent-500)
+      color: var(--accent-500);
     }
   }
 

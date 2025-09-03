@@ -7,7 +7,6 @@ priority: 1
 github: https://github.com/RyanVNgo/rem8Cpp
 images:
     - https://raw.githubusercontent.com/RyanVNgo/rem8Cpp/refs/heads/main/images/IBM_test.png
-cover-photo: "https://raw.githubusercontent.com/RyanVNgo/rem8Cpp/refs/heads/main/images/IBM_test.png"
 blip: >
     A CHIP-8 emulator made in C++.
 ---
