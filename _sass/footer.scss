@@ -31,13 +31,11 @@ footer {
 #social-links {
   margin: 1rem 0;
   display: flex;
-  align-items: center;
   gap: 1em;
 
   .social-button {
     min-width: 2rem; 
     height: 2rem; 
-    marigin: 0.25rem;
     padding: 0.25rem;
 
     color: var(--text-800);

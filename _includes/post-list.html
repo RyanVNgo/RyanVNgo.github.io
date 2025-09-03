@@ -6,17 +6,18 @@
   {% for post in site.posts limit: post-list-length %}
     <li class="post-list-item">
 
+      <div class="post-list-item-content">
+        <h3 class="post-title"> {{ post.title }} </h3>
+        <div class="post-date"> 
+          {{ post.date | date: "%Y-%m-%d" }}
+        </div>
+      </div>
+
       <a class="post-list-item-button" href="{{ post.url }}">
         <div class="post-list-item-button-inner">
           <div> &#8599; </div>
         </div>
       </a>
-
-      <h3 class="post-title"> {{ post.title }} </h3>
-
-      <div class="post-date"> 
-        {{ post.date | date: "%Y-%m-%d" }}
-      </div>
 
     </li>
   {% endfor %}

@@ -3,29 +3,21 @@
 
 #project-list {
   margin: 0;
-  padding: 0; 
+  padding: 0 0.75rem; 
 
   .project-list-item {
-    box-sizing: border-box;
     display: flex;
     margin-bottom: 1.0rem;
 
-    list-style-type: none;
-
     .project-list-item-button {
       box-sizing: border-box;
-      display: flex;
-      width: 2.5rem;
       height: 2.5rem;
-      margin-right: 0.75rem;
+      aspect-ratio: 1;
       padding: 0.25rem;
 
-      color: inherit;
       text-decoration: none;
-      font-size: 2rem;
 
       border-radius: 0.75rem;
-      background-color: var(--base-300);
       background-image: linear-gradient(var(--base-100), var(--base-300)); 
       box-shadow: var(--shadow) var(--base-700),
                   var(--edge-shadow) var(--base-700);
@@ -41,6 +33,7 @@
 
         border-radius: 0.5rem;
         background-image: linear-gradient(var(--base-300), var(--base-100));
+
         div {
           box-sizing: border-box;
           margin: 0;
@@ -63,21 +56,18 @@
 
     .project-list-item-content {
       flex: 1;
-      margin: 0;
-      padding: 0.5rem 0;
+      padding: 0.25rem 0 0.5rem;
 
       .project-title { 
         margin: 0;
-        padding: 0;
         color: var(--text-800);
         font-weight: 500;
         line-height: 1.2;
       }
 
       .project-excerpt {
-        font-size: 0.75rem;
-        line-height: 1rem;
-        margin: 0.25rem 0 0 1rem;
+        margin-left: 1.0rem;
+        font-size: 0.8rem;
       }
     }
 

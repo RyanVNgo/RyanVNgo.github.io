@@ -20,7 +20,6 @@ header {
   #home-button {
     width: 2rem; 
     height: 2rem; 
-    marigin: 0.25rem;
     padding: 0.25rem;
 
     border-radius: 0.5rem;
@@ -95,7 +94,7 @@ header {
     border-radius: 0.25rem;
     background-image: linear-gradient(var(--base-300), var(--base-100));
 
-    transition: inherit;
+    // transition: inherit;
     justify-content: center;
     align-items: center;
   }
