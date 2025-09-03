@@ -60,7 +60,7 @@ header {
 }
 
 .tab {
-  width: 4.0rem;
+  width: 5.0rem;
   height: 2rem;
   margin: 0.25rem;
   padding: 0.25rem;
@@ -94,7 +94,6 @@ header {
     border-radius: 0.25rem;
     background-image: linear-gradient(var(--base-300), var(--base-100));
 
-    // transition: inherit;
     justify-content: center;
     align-items: center;
   }
