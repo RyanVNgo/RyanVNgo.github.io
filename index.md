@@ -23,6 +23,8 @@ and write-up regarding how it went shortly after.
 Below, you can check out some of the more recent projects I've built and 
 write-ups I've made.
 
+<br>
+
 <div class="list-heading">
     <h2>Recent Projects</h2>
     <a href="{{ site.docs[1].url }}"> more -></a>
