@@ -13,7 +13,7 @@ like putting out there.
 
 I recently graduated with a B.S. in Computer Science from San Diego State University
 and I'm interested in building software that intends to benefit people, our world, 
-or our understanding of everything around us.
+and our understanding of everything around us.
 
 Right now, I'm learning raylib and trying my hand at devloping games from 
 scratch. I've also entered myself into a game jam, specifically [GBJAM 13](https://itch.io/jam/gbjam-13). 
@@ -27,7 +27,7 @@ write-ups I've made.
     <h2>Recent Projects</h2>
     <a href="{{ site.docs[1].url }}"> more -></a>
 </div>
-{% assign project-list-length = 3 %}
+{% assign project-list-length = 2 %}
 {% include project-list.html %}
 
 <div class="list-heading">

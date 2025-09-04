@@ -13,9 +13,6 @@ projects-imgs-dir: /assets/images/projects/
 posts-imgs-dir: /assets/images/posts/
 
 docs:
-  - title: resume
-    url: /pages/resume.html
-
   - title: projects
     url: /pages/projects.html
 

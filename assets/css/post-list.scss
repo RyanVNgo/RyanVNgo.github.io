@@ -2,14 +2,28 @@
 ---
 
 #post-list {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 1rem;
+
   margin: 0;
   padding: 0 0.75rem; 
 
-  .post-list-item {
-    display: flex;
-    margin-bottom: 1.0rem;
+  // @media (max-width: 480px) {
+  //   grid-template-columns: 1fr;
+  // }
 
-    .post-list-item-button {
+  .post-card {
+    display: flex;
+    padding: 0.75rem;
+    min-height: 3.5rem;
+
+    border-radius: 1.5rem;
+    background-image: linear-gradient(var(--base-100), var(--base-200)); 
+    box-shadow: var(--shadow) var(--base-500),
+                var(--edge-shadow) var(--base-500);
+
+    .post-card-button {
       box-sizing: border-box;
       height: 2.5rem;
       aspect-ratio: 1;
@@ -22,7 +36,9 @@
       box-shadow: var(--shadow) var(--base-700),
                   var(--edge-shadow) var(--base-700);
 
-      .post-list-item-button-inner {
+      align-self: flex-end;
+
+      .post-card-button-inner {
         display: flex;
         box-sizing: border-box;
         width: 100%;
@@ -54,21 +70,20 @@
       }
     }
 
-    .post-list-item-content { 
+    .post-card-content { 
       flex: 1;
-      padding: 0.25rem 0 0.5rem;
+      padding: 0.25rem 0.5rem 0.5rem;
 
       .post-title {
         margin: 0;
-        padding: 0;
         color: var(--text-800);
+        font-size: 1.1rem;
         font-weight: 500;
         line-height: 1.2;
       }
 
       .post-date {
-        margin-left: 1.0rem;
-        font-size: 0.8rem;
+        font-size: 0.76rem;
       }
     }
   }

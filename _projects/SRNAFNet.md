@@ -6,7 +6,7 @@ title: SRNAFNet
 priority: 2
 github: https://github.com/RyanVNgo/NAFNet-SISR
 blip: >
-    SRNAFNet is a Single-Image Super-Resolution CNN Based on the 
+    SRNAFNet is a Single-Image Super-Resolution CNN based on the 
     NAFNet intra-block architecture.
 ---
 

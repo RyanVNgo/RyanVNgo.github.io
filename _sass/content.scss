@@ -7,10 +7,13 @@
   --font-size: 16px;
   --content-width: 44rem;
   --img-invert: 0;
+
+  --mobile-width: 768px;
 }
 
 html {
   font-size: var(--font-size);
+  letter-spacing: -4%;
 }
 
 body {
@@ -30,14 +33,13 @@ main {
   box-sizing: border-box;
   width: 100%;
   margin-bottom: auto;
-  padding: 1.5rem 2rem 3rem;
 }
 
 article {
   max-width: var(--content-width);
 
-  margin: 0 auto auto;
-  padding: 0 0rem;
+  margin: 6vh auto auto;
+  padding: 1rem;
 
   font-weight: 350;
 

@@ -4,17 +4,17 @@
 {% endunless %}
 <ul id="post-list">
   {% for post in site.posts limit: post-list-length %}
-    <li class="post-list-item">
+    <li class="post-card">
 
-      <div class="post-list-item-content">
-        <h3 class="post-title"> {{ post.title }} </h3>
+      <div class="post-card-content">
         <div class="post-date"> 
           {{ post.date | date: "%Y-%m-%d" }}
         </div>
+        <h3 class="post-title"> {{ post.title }} </h3>
       </div>
 
-      <a class="post-list-item-button" href="{{ post.url }}">
-        <div class="post-list-item-button-inner">
+      <a class="post-card-button" href="{{ post.url }}">
+        <div class="post-card-button-inner">
           <div> &#8599; </div>
         </div>
       </a>
