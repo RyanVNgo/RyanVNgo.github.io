@@ -2,14 +2,28 @@
 ---
 
 #project-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
   margin: 0;
   padding: 0 0.75rem; 
 
-  .project-list-item {
-    display: flex;
-    margin-bottom: 1.0rem;
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
 
-    .project-list-item-button {
+  .project-card {
+    display: flex;
+    padding: 0.75rem;
+    min-height: 6rem;
+
+    border-radius: 1.5rem;
+    background-image: linear-gradient(var(--base-100), var(--base-200)); 
+    box-shadow: var(--shadow) var(--base-500),
+                var(--edge-shadow) var(--base-500);
+
+    .project-card-button {
       box-sizing: border-box;
       height: 2.5rem;
       aspect-ratio: 1;
@@ -22,7 +36,9 @@
       box-shadow: var(--shadow) var(--base-700),
                   var(--edge-shadow) var(--base-700);
 
-      .project-list-item-button-inner {
+      align-self: flex-end;
+
+      .project-card-button-inner {
         display: flex;
         box-sizing: border-box;
         width: 100%;
@@ -54,20 +70,22 @@
       }
     }
 
-    .project-list-item-content {
+    .project-card-content {
       flex: 1;
-      padding: 0.25rem 0 0.5rem;
+      padding: 0.25rem 0.5rem 0.5rem;
 
       .project-title { 
         margin: 0;
         color: var(--text-800);
+        font-size: 1.1rem;
         font-weight: 500;
         line-height: 1.2;
       }
 
       .project-excerpt {
-        margin-left: 1.0rem;
-        font-size: 0.8rem;
+        margin: 0.25rem 0 0 0.5rem;
+        font-size: 0.76rem;
+        line-height: 1.2;
       }
     }
 

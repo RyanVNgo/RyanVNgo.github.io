@@ -5,15 +5,15 @@
 <ul id="project-list">
   {% assign sorted_projects = site.projects | sort: 'priority' %}
   {% for project in sorted_projects limit: project-list-length %}
-    <li class="project-list-item">
+    <li class="project-card">
 
-      <div class="project-list-item-content">
+      <div class="project-card-content">
         <h3 class="project-title"> {{ project.title }} </h3>
         <div class="project-excerpt"> {{ project.blip }} </div>
       </div>
 
-      <a class="project-list-item-button" href="{{ project.url }}">
-        <div class="project-list-item-button-inner">
+      <a class="project-card-button" href="{{ project.url }}">
+        <div class="project-card-button-inner">
           <div> &#8599; </div>
         </div>
       </a>
