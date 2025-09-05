@@ -2,8 +2,8 @@
 
 source "https://rubygems.org"
 
-gem "jekyll"
+gem "jekyll", "~> 4.4"
 
-gem "rouge"
-
-gem "github-pages", "~> 232", group: :jekyll_plugins
+group :development do
+  gem "rouge"
+end
