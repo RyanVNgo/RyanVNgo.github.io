@@ -7,7 +7,7 @@
 @use "footer";
 
 :root {
-  --sans-font: "Inter", "Arial", system-ui, Ubuntu, -apple-system, sans-serif;
+  --sans-font: "IBM Plex Sans", "Arial", system-ui, Ubuntu, -apple-system, sans-serif;
   --serif-font: "serif";
   --mono-font: Courier New, monospace;
 
@@ -23,10 +23,10 @@ body {
   min-height: 100vh;
   margin: 0;
 
-  background-color: var(--base-100);
+  background-color: var(--base);
 
   font-family: var(--sans-font);
-  color: var(--text-700);
+  color: var(--text);
 }
 
 main {
@@ -46,10 +46,10 @@ p {
   margin: 0 0 1rem;
 
   > a {
-    color: inherit;
-    transition: all 0.1s;
+    color: var(--text-light);
+    transition: all 0.25s;
     &:hover {
-      color: var(--accent-500);
+      color: var(--primary);
     }
   }
 
@@ -58,8 +58,6 @@ p {
     margin: 1.5rem auto; 
     max-width: 95%;
     border-radius: 0.5rem;
-    box-shadow: var(--shadow) var(--base-600),
-                var(--edge-shadow) var(--base-700);
     + sub {
       display: inline-block;
       text-align: center;
@@ -69,7 +67,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--text-900);
+  color: var(--text);
   margin: 0 0 0.5em;
 }
 
@@ -80,7 +78,7 @@ ul {
 
 hr {
   border-style: none;
-  border-top: 0.0625rem solid var(--base-700);
+  border-top: 0.0625rem solid var(--text-light);
   height: 0px;
   margin-bottom: 1rem;
   padding: 0;

@@ -25,10 +25,10 @@ footer {
   > p {
     margin: 0;
     > a {
-      color: var(--text-600);
+      color: var(--text-light);
       text-decoration: underline;
       &:hover {
-        opacity: 0.65;
+        color: var(--primary);
       }
     }
   }
@@ -36,44 +36,24 @@ footer {
 
 #social-links {
   display: flex;
-  gap: 1em;
+  gap: 1.5em;
 
   .social-button {
-    width: 2rem; 
-    height: 2rem; 
-    padding: 0.25rem;
-
-    color: var(--text-800);
-
-    border-radius: 0.5rem;
-    box-shadow: var(--shadow) var(--base-700),
-                var(--edge-shadow) var(--base-700);
-    background-image: linear-gradient(var(--base-100), var(--base-300)); 
+    width: 1.5rem; 
 
     transition: all 0.1s;
 
     &:hover {
-      transform: translate(0, 0.125rem);
-      box-shadow: var(--shadow) var(--base-700);
-      > * {
-        opacity: 0.8;
+      > img {
+        opacity: 0.65;
       }
     }
 
     > img {
-      box-sizing: border-box;
-      display: flex;
-      padding: 0.25rem;
       height: 100%;
       width: 100%;
 
-      align-items: center;
-
-      border-radius: 0.25rem;
-      background-image: linear-gradient(var(--base-300), var(--base-100));
-
       object-fit: contain;
-
     }
   }
 

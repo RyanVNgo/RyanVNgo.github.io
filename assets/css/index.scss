@@ -5,7 +5,7 @@
   margin-bottom: 1.0em;
 
   > span {
-    text-decoration: var(--accent-500) wavy underline;
+    text-decoration: var(--primary) wavy underline;
     text-decoration-thickness: 0.0625em;
     text-decoration-skip-ink: none;
     text-underline-offset: 0.125em;
@@ -15,7 +15,7 @@
 .list-heading {
   display: flex;
 
-  margin: 0 0 1.0em;
+  margin: 0;
   
   justify-content: space-between;
   align-items: center;
@@ -25,12 +25,20 @@
   }
 
   a {
-    color: inherit;
+    box-sizing: border-box;
+    padding: 0.25em 0.75em;
+
+    border-radius: 0.5rem;
+
+    color: var(--text);
     font-size: 0.9rem;
-    text-decoration-color: var(--accent-500);
-    transition: all 0.1s;
+    text-decoration: none;
+
+    transition: all 0.2s;
+
     &:hover {
-      color: var(--accent-500);
+      color: var(--text-light);
+      text-decoration: underline;
     }
   }
 }

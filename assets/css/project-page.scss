@@ -11,34 +11,17 @@
   }
 
   > a {
-    width: 2rem; 
-    height: 2rem; 
-    marigin: 0.25rem;
-    padding: 0.25rem;
-
-    border-radius: 0.5rem;
-    box-shadow: var(--shadow) var(--base-700),
-                var(--edge-shadow) var(--base-700);
-    background-image: linear-gradient(var(--base-100), var(--base-300)); 
-
-    transition: all 0.1s;
-
-    &:hover {
-      transform: translate(0, 0.125rem);
-      box-shadow: var(--shadow) var(--base-700);
-      > * {
-        opacity: 0.8;
-      }
-    }
+    height: 1.75rem; 
 
     > img {
-      box-sizing: border-box;
-      padding: 0.25rem;
-      width: 100%;
+      transition: all 0.2s;
       height: 100%;
+    }
 
-      border-radius: 0.25rem;
-      background-image: linear-gradient(var(--base-300), var(--base-100));
+    &:hover {
+      img {
+        opacity: 0.65;
+      }
     }
   }
 }

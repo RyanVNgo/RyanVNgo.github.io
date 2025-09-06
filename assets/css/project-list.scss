@@ -1,87 +1,63 @@
 ---
 ---
 
-#project-list {
+.project-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 
   margin: 0 0 2.0rem;
   padding: 0 0.75rem; 
-
-  @media (max-width: 480px) {
-    grid-template-columns: 1fr;
-  }
-
-  .project-card {
-    box-sizing: border-box;
-    display: flex;
-    padding: 0.75rem;
-    width: 100%;
-    min-height: 8rem;
-
-    border-radius: 1.5rem;
-    background-image: linear-gradient(var(--base-100), var(--base-200)); 
-    box-shadow: var(--shadow) var(--base-500),
-                var(--edge-shadow) var(--base-500);
-
-    .project-card-button {
-      box-sizing: border-box;
-      height: 2.5rem;
-      aspect-ratio: 1;
-      padding: 0.25rem;
-
-      text-decoration: none;
-
-      border-radius: 0.75rem;
-      background-image: linear-gradient(var(--base-100), var(--base-300)); 
-      box-shadow: var(--shadow) var(--base-700),
-                  var(--edge-shadow) var(--base-700);
-
-      align-self: flex-end;
-
-      .project-card-button-inner {
-        display: flex;
-        box-sizing: border-box;
-        width: 100%;
-        height: 100%;
-
-        justify-content: center;
-        align-content: center;
-
-        border-radius: 0.5rem;
-        background-image: linear-gradient(var(--base-300), var(--base-100));
-
-        div {
-          box-sizing: border-box;
-          margin: 0;
-
-          line-height: 1.75rem;
-          font-size: 1.5rem;
-          color: var(--text-800);
-        }
-      }
-
-      transition: all 0.1s;
-      &:hover {
-        transform: translate(0, 0.125rem);
-        box-shadow: var(--shadow) var(--base-700);
-        > * {
-          opacity: 0.8;
-        }
-      }
-    }
-
-    .project-card-content {
-      flex: 1;
-      padding: 0.25rem 0.5rem 0.5rem;
-
-      > p {
-        font-size: 0.76rem;
-        line-height: 1.2;
-      }
-    }
-
-  }
 }
+
+.project-card {
+  box-sizing: border-box;
+  display: flex;
+
+  width: 100%;
+  min-height: 8rem;
+  padding: 0.75rem;
+
+  border-radius: 1.0rem;
+  outline: 0.0625rem solid var(--text-light);
+
+  text-decoration: none;
+  color: var(--text);
+
+  transition: all 0.2s;
+
+  .project-card-content {
+    flex: 1;
+    padding: 0.25rem 0.5rem 0.5rem;
+
+    .project-card-title {
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    > p {
+      font-size: 0.76rem;
+      line-height: 1.2;
+    }
+  }
+
+  .project-card-arrow {
+    box-sizing: border-box;
+
+    width: 1.5rem;
+
+    text-align: center;
+  }
+
+  &:hover {
+    background-color: var(--text-light);
+    color: var(--base);
+
+    .project-card-title {
+      color: var(--base);
+    }
+  }
+
+}
+
 

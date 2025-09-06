@@ -2,23 +2,19 @@
 {% unless project-list-length %}
   {% assign project-list-length = site.projects | size %}
 {% endunless %}
-<ul id="project-list">
+<div class="project-list">
   {% assign sorted_projects = site.projects | sort: 'priority' %}
   {% for project in sorted_projects limit: project-list-length %}
-    <li class="project-card">
+    <a class="project-card" href="{{ project.url }}">
 
       <div class="project-card-content">
-        <h6 class="project-title"> {{ project.title }} </h6>
+        <h6 class="project-card-title"> {{ project.title }} </h6>
         <p> {{ project.blip }} </p>
       </div>
 
-      <a class="project-card-button" href="{{ project.url }}">
-        <div class="project-card-button-inner">
-          <div> &#8599; </div>
-        </div>
-      </a>
+      <div class="project-card-arrow"> &#8599; </div>
 
-    </li>
+    </a>
   {% endfor %}
-</ul>
+</div>
 

@@ -1,5 +1,6 @@
 <header>
   <div id="header-content">
+
     <a id="home-button" href="/">
       <img src="/assets/images/ryanvngo-icon-compact.png" alt="Home">
     </a>
@@ -8,18 +9,15 @@
       {% for item in site.docs %}
         {% if page.section == item.title or layout.section == item.title %}
           <a href="{{ item.url }}" class="tab tab-highlight">
-            <div class="tab-content">
-              {{ item.title }}
-            </div>
+            {{ item.title }}
           </a>
         {% else %}
           <a href="{{ item.url }}" class="tab">
-            <div class="tab-content">
-              {{ item.title }}
-            </div>
+            {{ item.title }}
           </a>
         {% endif %}
       {% endfor %}
     </nav>
+
   </div>
 </header>

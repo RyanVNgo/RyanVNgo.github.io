@@ -24,17 +24,19 @@ Below, you can check out some of the more recent projects I've built and
 write-ups I've made.
 
 <br>
-
 <div class="list-heading">
     <h3>Recent Projects</h3>
-    <a href="{{ site.docs[1].url }}"> more -></a>
+    <a href="{{ site.docs[1].url }}">more</a>
 </div>
+<hr>
 {% assign project-list-length = 2 %}
 {% include project-list.html %}
 
+<br>
 <div class="list-heading">
     <h3>Recent Posts</h3>
-    <a href="{{ site.docs[2].url }}"> more -></a>
+    <a href="{{ site.docs[2].url }}">more</a>
 </div>
+<hr>
 {% assign post-list-length = 3 %}
 {% include post-list.html %}
