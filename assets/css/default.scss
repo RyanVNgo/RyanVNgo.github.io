@@ -2,8 +2,137 @@
 ---
 
 @use "colors";
-@use "mobile";
-@use "content";
+@use "type_setting";
 @use "header";
 @use "footer";
+
+:root {
+  --sans-font: "Inter", "Arial", system-ui, Ubuntu, -apple-system, sans-serif;
+  --serif-font: "serif";
+  --mono-font: Courier New, monospace;
+
+  --content-width: 44rem;
+  --img-invert: 0;
+
+  --mobile-width: 768px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+
+  background-color: var(--base-100);
+
+  font-family: var(--sans-font);
+  color: var(--text-700);
+}
+
+main {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: auto;
+}
+
+article {
+  max-width: var(--content-width);
+  
+  margin: 6vh auto auto;
+  padding: 1rem;
+}
+
+p {
+  margin: 0 0 1rem;
+
+  > a {
+    color: inherit;
+    transition: all 0.1s;
+    &:hover {
+      color: var(--accent-500);
+    }
+  }
+
+  > img {
+    display: block;
+    margin: 1.5rem auto; 
+    max-width: 95%;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow) var(--base-600),
+                var(--edge-shadow) var(--base-700);
+    + sub {
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-900);
+  margin: 0 0 0.5em;
+}
+
+ul {
+  margin: 0 0 1rem 0.5rem;
+  padding-left: 1rem;
+}
+
+hr {
+  border-style: none;
+  border-top: 0.0625rem solid var(--base-700);
+  height: 0px;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+blockquote {
+  background-color: hsl(var(--block-hsl) / 0.1);
+  margin: 0 0.5rem 1.0rem;
+  padding: 0.5rem 0.75rem 0.75rem;
+  border-radius: 0.5rem 0.75rem 0.75rem 0.5rem;
+  border-left: 0.5rem solid hsl(var(--block-hsl));
+  box-shadow: var(--shadow) hsl(var(--block-hsl) / 0.4),
+              var(--edge-shadow) hsl(var(--block-hsl) / 0.4);
+  font-family: var(--sans-font);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: hsl(var(--block-color));
+
+  &::before {
+    display: block;
+    content: var(--bq-text);
+    font-weight: 800; 
+    font-style: normal;
+    margin: 0;
+  }
+
+  &.blockquote-note {
+    --bq-text: "Note";
+    --block-hsl: 220 100% 75%;
+    --block-color: 220 25% 50%;
+  }
+  &.blockquote-tip {
+    --bq-text: "Tip";
+    --block-hsl: 120 70% 75%;
+    --block-color: 120 25% 50%;
+  }
+  &.blockquote-important {
+    --bq-text: "Important";
+    --block-hsl: 270 70% 75%;
+    --block-color: 270 25% 50%;
+  }
+  &.blockquote-warning {
+    --bq-text: "Warning";
+    --block-hsl: 30 100% 75%;
+    --block-color: 30 25% 50%;
+  }
+  &.blockquote-caution {
+    --bq-text: "Caution";
+    --block-hsl: 0 100% 75%;
+    --block-color: 0 25% 50%;
+  }
+
+}
 

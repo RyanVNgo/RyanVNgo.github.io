@@ -1,44 +1,34 @@
 ---
 ---
 
-article {
-  h1 {
-    margin-bottom: 1.5rem;
-  }
-}
+#home-title {
+  margin-bottom: 1.0em;
 
-.title-highlight {
-  text-decoration: var(--accent-500) wavy underline;
-  text-decoration-thickness: 0.125rem;
-  text-decoration-skip-ink: none;
-  text-underline-offset: 0.25rem;
+  > span {
+    text-decoration: var(--accent-500) wavy underline;
+    text-decoration-thickness: 0.0625em;
+    text-decoration-skip-ink: none;
+    text-underline-offset: 0.125em;
+  }
 }
 
 .list-heading {
   display: flex;
-  padding-bottom: 0.25rem;
-  margin: 2rem 0 0.75rem;
 
-  border-bottom: 0.0625rem solid var(--base-500);
+  margin: 0 0 1.0em;
   
   justify-content: space-between;
   align-items: center;
 
-  >h2 {
+  > h3 {
     margin: 0;
-
-    color: var(--text-900);
-    font-weight: 500;
-    font-size: 1.4rem;
   }
 
   a {
     color: inherit;
     font-size: 0.9rem;
-    text-decoration: var(--accent-500) solid underline;
-    margin-right: 0;
-    transition: all 0.2s;
-    width: 4em;
+    text-decoration-color: var(--accent-500);
+    transition: all 0.1s;
     &:hover {
       color: var(--accent-500);
     }

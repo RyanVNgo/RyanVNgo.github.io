@@ -1,63 +1,45 @@
 ---
 ---
 
-article {
-  #title-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    > h1 {
-      margin-bottom: 0.25rem;
-
-      color: var(--text-900);
-      line-height: 1.8rem;
-      text-indent: 1.5rem hanging;
-      font-weight: 600;
-      font-size: 1.6rem;
-
-      &::before {
-        margin-right: 0.5rem;
-        color: var(--accent-500);
-        content: ">";
-      }
-    }
-
-    > a {
-      width: 2rem; 
-      height: 2rem; 
-      marigin: 0.25rem;
-      padding: 0.25rem;
-
-      border-radius: 0.5rem;
-      box-shadow: var(--shadow) var(--base-700),
-                  var(--edge-shadow) var(--base-700);
-      background-image: linear-gradient(var(--base-100), var(--base-300)); 
-
-      transition: all 0.1s;
-
-      &:hover {
-        transform: translate(0, 0.125rem);
-        box-shadow: var(--shadow) var(--base-700);
-        > * {
-          opacity: 0.8;
-        }
-      }
-
-      > img {
-        box-sizing: border-box;
-        padding: 0.25rem;
-        width: 100%;
-        height: 100%;
-
-        border-radius: 0.25rem;
-        background-image: linear-gradient(var(--base-300), var(--base-100));
-      }
-    }
+  > h1 {
+    margin: 0;
   }
 
-  >h2 {
-    border-bottom: 0.0625rem solid var(--base-500);
+  > a {
+    width: 2rem; 
+    height: 2rem; 
+    marigin: 0.25rem;
+    padding: 0.25rem;
+
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow) var(--base-700),
+                var(--edge-shadow) var(--base-700);
+    background-image: linear-gradient(var(--base-100), var(--base-300)); 
+
+    transition: all 0.1s;
+
+    &:hover {
+      transform: translate(0, 0.125rem);
+      box-shadow: var(--shadow) var(--base-700);
+      > * {
+        opacity: 0.8;
+      }
+    }
+
+    > img {
+      box-sizing: border-box;
+      padding: 0.25rem;
+      width: 100%;
+      height: 100%;
+
+      border-radius: 0.25rem;
+      background-image: linear-gradient(var(--base-300), var(--base-100));
+    }
   }
 }
 

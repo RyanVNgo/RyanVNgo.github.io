@@ -5,7 +5,7 @@ style-sheets: [default, index, post-list, project-list]
 author: Ryan Ngo
 ---
 
-<h1>Hi, I'm <span class="title-highlight">{{ page.author }}</span></h1>
+<h1 id="home-title">Hi, I'm <span>{{ page.author }}</span></h1>
 
 And welcome to my personal website. A place where I provide info about my
 projects, publish write-ups, post notes, and share whatever else I feel
@@ -26,14 +26,14 @@ write-ups I've made.
 <br>
 
 <div class="list-heading">
-    <h2>Recent Projects</h2>
+    <h3>Recent Projects</h3>
     <a href="{{ site.docs[1].url }}"> more -></a>
 </div>
 {% assign project-list-length = 2 %}
 {% include project-list.html %}
 
 <div class="list-heading">
-    <h2>Recent Posts</h2>
+    <h3>Recent Posts</h3>
     <a href="{{ site.docs[2].url }}"> more -></a>
 </div>
 {% assign post-list-length = 3 %}

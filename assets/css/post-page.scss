@@ -1,21 +1,11 @@
 ---
 ---
 
-article {
-  > h1 {
-    text-indent: 1.5rem hanging;
-    margin-bottom: 0.25rem;
-    &::before {
-      content: ">";
-    }
-  }
+#post-title {
+  margin-bottom: 0.25em;
+}
 
-  > h2 {
-    border-bottom: 0.0625rem solid var(--base-500);
-  }
-
-  .post-date {
-    margin-left: 1.5rem;
-  }
+#post-date {
+  margin-left: 1.0em;
 }
 

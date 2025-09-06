@@ -1,0 +1,57 @@
+
+@use "sass:math";
+
+
+$scale-ratio: 1.2;
+$font-size: 16px;
+$line-height: 1.42;
+
+html {
+  font-size: var(--font-size);
+}
+
+h1 {
+  font-size: 1rem * math.pow($scale-ratio, 3);
+  font-weight: 600;
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 1rem * math.pow($scale-ratio, 2);
+  font-weight: 600;
+  line-height: 1em;
+}
+
+h3 {
+  font-size: 1rem * math.pow($scale-ratio, 1.5);
+  font-weight: 500;
+  line-height: 1em;
+}
+
+h4 {
+  font-size: 1rem * math.pow($scale-ratio, 1);
+  font-weight: 500;
+  line-height: 1em;
+}
+
+h5 {
+  font-size: 1rem * math.pow($scale-ratio, 0.75);
+  font-weight: 400;
+  line-height: 1em;
+}
+
+h6 {
+  font-size: 1rem * math.pow($scale-ratio, 0.5);
+  font-weight: 400;
+  line-height: 1em;
+}
+
+body {
+  font-size: 1rem;
+  line-height: $line-height;
+}
+
+small {
+  font-size: calc(1rem / $scale-ratio);
+}
+

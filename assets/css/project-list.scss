@@ -6,7 +6,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 
-  margin: 0;
+  margin: 0 0 2.0rem;
   padding: 0 0.75rem; 
 
   @media (max-width: 480px) {
@@ -14,9 +14,11 @@
   }
 
   .project-card {
+    box-sizing: border-box;
     display: flex;
     padding: 0.75rem;
-    min-height: 6rem;
+    width: 100%;
+    min-height: 8rem;
 
     border-radius: 1.5rem;
     background-image: linear-gradient(var(--base-100), var(--base-200)); 
@@ -74,16 +76,7 @@
       flex: 1;
       padding: 0.25rem 0.5rem 0.5rem;
 
-      .project-title { 
-        margin: 0;
-        color: var(--text-800);
-        font-size: 1.1rem;
-        font-weight: 500;
-        line-height: 1.2;
-      }
-
-      .project-excerpt {
-        margin: 0.25rem 0 0 0.5rem;
+      > p {
         font-size: 0.76rem;
         line-height: 1.2;
       }
