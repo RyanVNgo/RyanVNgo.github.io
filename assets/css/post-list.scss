@@ -19,14 +19,14 @@
 
   border-radius: 1rem;
 
-  text-decoration: none;
+  text-decoration: underline solid transparent;
   color: var(--text);
 
   transition: all 0.2s;
 
   &:hover {
-    text-decoration: underline;
     color: var(--text-light);
+    text-decoration: underline solid var(--text-light);
   }
 }
 

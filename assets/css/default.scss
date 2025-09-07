@@ -13,8 +13,6 @@
 
   --content-width: 44rem;
   --img-invert: 0;
-
-  --mobile-width: 768px;
 }
 
 body {
@@ -38,7 +36,7 @@ main {
 article {
   max-width: var(--content-width);
   
-  margin: 6vh auto auto;
+  margin: 8vh auto auto;
   padding: 1rem;
 }
 
@@ -77,11 +75,13 @@ ul {
 }
 
 hr {
+  height: 0px;
+
+  margin: 0 0 1rem;
+  padding: 0;
+
   border-style: none;
   border-top: 0.0625rem solid var(--text-light);
-  height: 0px;
-  margin-bottom: 1rem;
-  padding: 0;
 }
 
 blockquote {

@@ -11,32 +11,51 @@ And welcome to my personal website. A place where I provide info about my
 projects, publish write-ups, post notes, and share whatever else I feel
 like putting out there.
 
-I recently graduated with a B.S. in Computer Science from San Diego State University
-and I'm interested in building software that intends to benefit people, our world, 
-and our understanding of everything around us.
 
-Right now, I'm learning raylib and trying my hand at devloping games from 
-scratch. I've also entered myself into a game jam, specifically [GBJAM 13](https://itch.io/jam/gbjam-13). 
-It ends on September 22nd, 2025 so I should (hopefully) have a project page 
-and write-up regarding how it went shortly after.
+I recently graduated with a B.S. in Computer Science from San Diego State 
+University and I'm interested in building software to support research 
+and discovery, with the intention of advancing knowledge and improving
+human livelihood.
 
-Below, you can check out some of the more recent projects I've built and 
-write-ups I've made.
+Outside of programming, I like tech, Formula 1, gaming, astrophotography,
+and K-pop. <sub><i>(stan Aespa)</i></sub>
 
-<br>
+Currently learning 
+<a href="https://www.raylib.com/" target="_blank">raylib</a>
+and plan on participating in
+<a href="https://itch.io/jam/gbjam-13" target="_blank">GMJAM 13</a>.
+
+
+<div id="home-social-links">
+    <a class="social-button" href="{{ site.github }}" target="_blank">
+        <img src="/assets/images/Github_Logo.png" alt="Github">
+        <div>Github</div>
+    </a>
+    <a class="social-button" href="{{ site.linkedin }}" target="_blank">
+        <img src="/assets/images/LinkedIn_Logo.png" alt="Github">
+        <div>Linkedin</div>
+    </a>
+    <a class="social-button" href="mailto:{{ site.email}}" target="_blank">
+        <img src="/assets/images/Mail_Logo.png" alt="Github">
+        <div>vanryan711@gmail.com</div>
+    </a>
+</div>
+
+
 <div class="list-heading">
-    <h3>Recent Projects</h3>
+    <h3>Projects</h3>
     <a href="{{ site.docs[1].url }}">more</a>
 </div>
 <hr>
 {% assign project-list-length = 2 %}
 {% include project-list.html %}
 
-<br>
+
 <div class="list-heading">
-    <h3>Recent Posts</h3>
+    <h3>Posts</h3>
     <a href="{{ site.docs[2].url }}">more</a>
 </div>
 <hr>
 {% assign post-list-length = 3 %}
 {% include post-list.html %}
+

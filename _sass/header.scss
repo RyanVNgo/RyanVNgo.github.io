@@ -7,7 +7,8 @@ header {
   display: flex;
   justify-content: center;
 
-  font-size: 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
 }
 
 #header-content {
@@ -21,19 +22,38 @@ header {
 }
 
 #home-button {
-  height: 2.0rem;
+  display: flex;
+  align-items: center;
+
+  height: 1.75rem;
+
+  text-decoration: none;
+  color: var(--text);
 
   > img {
     height: 100%;
     transition: all 0.2s;
   }
 
-  &:not(.tab-highlight):hover {
-    > img {
-      opacity: 0.65;
-    }
+  #home-button-text {
+    margin-left: 0.25em;
+
+    text-decoration: underline solid transparent;
+
+    transition: all 0.2s;
   }
 
+  &:not(.tab-highlight):hover {
+    color: var(--text-light);
+
+    #home-button-text {
+      text-decoration: underline solid var(--text-light);
+    }
+
+    > img {
+      opacity: 0.7;
+    }
+  }
 }
 
 #site-nav {
@@ -43,31 +63,31 @@ header {
   margin: 0;
   padding: 0;
   gap: 0.5rem;
-}
 
-.tab {
-  display: flex;
-  justify-content: center;
+  .tab {
+    display: flex;
+    justify-content: center;
 
-  box-sizing: border-box;
-  min-width: 5em;
-  padding: 0.5em;
+    box-sizing: border-box;
+    min-width: 5em;
+    padding: 0.5em;
 
-  text-decoration: none;
-  color: var(--text);
-  font-size: 0.85rem;
-  font-weight: 500;
-  text-transform: capitalize;
+    text-decoration: underline solid transparent;
+    color: var(--text);
+    text-transform: capitalize;
 
-  transition: all 0.2s;
+    transition: all 0.2s;
 
-  &:not(.tab-highlight):hover {
-    color: var(--text-light);
-    text-decoration: underline solid var(--text-light);
+    &:not(.tab-highlight):hover {
+      color: var(--text-light);
+      text-decoration: underline solid var(--text-light);
+    }
   }
+
+  .tab-highlight {
+    text-decoration: underline solid var(--text);
+  }
+
 }
 
-.tab-highlight {
-  text-decoration: underline;
-}
 
