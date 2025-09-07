@@ -1,7 +1,7 @@
 
-title: Ryan V. Ngo Portfolio Site
+title: Ryan Ngo
 author: Ryan Ngo
-description: Online portfolio
+description: Personal Website
 baseurl: ""
 url: https://RyanVNgo.github.io
 
@@ -25,14 +25,17 @@ docs:
   # - title: notes
   #   url: /pages/notes.html
 
-  # - title: reading 
-  #   url: /pages/reading.html
+  - title: reading 
+    url: /pages/reading.html
 
-  - title: about
-    url: /pages/about.html
+  # - title: about
+  #   url: /pages/about.html
 
 collections:
   projects:
+    output: true
+
+  readings:
     output: true
 
 sass:

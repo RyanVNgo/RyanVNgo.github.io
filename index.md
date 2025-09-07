@@ -12,9 +12,9 @@ projects, publish write-ups, post notes, and share whatever else I feel
 like putting out there.
 
 I recently graduated with a B.S. in Computer Science from San Diego State 
-University and I'm interested in building software to support research 
-and discovery, with the intention of advancing knowledge and improving
-human livelihood.
+University and I'm interested in building software that advances scientific 
+research and discovery, with the goal of expanding human knowledge and
+enhancing quality of life.
 
 Outside of programming, I like tech, Formula 1, gaming, astrophotography,
 and K-pop. <sub><i>(stan Aespa)</i></sub>
