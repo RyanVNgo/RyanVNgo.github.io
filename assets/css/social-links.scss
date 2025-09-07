@@ -1,0 +1,27 @@
+
+.social-links {
+  display: flex;
+  gap: 1.5em;
+
+  .social-button {
+    width: 1.25rem; 
+
+    > img {
+      height: 100%;
+      width: 100%;
+
+      transition: all 0.2s;
+
+      object-fit: contain;
+    }
+
+    &:hover {
+      > img {
+        opacity: 0.7;
+      }
+    }
+
+  }
+
+}
+
