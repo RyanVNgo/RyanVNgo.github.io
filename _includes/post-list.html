@@ -6,7 +6,7 @@
   {% for post in site.posts limit: post-list-length %}
     <a class="post-card" href="{{ post.url }}">
 
-      <div class="post-title"> {{ post.title }} </div>
+      <h3 class="post-title"> {{ post.title }} </h3>
 
       <small class="post-date"> 
         {{ post.date | date: "%Y-%m-%d" }}

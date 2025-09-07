@@ -20,11 +20,11 @@
   justify-content: space-between;
   align-items: center;
 
-  > h3 {
+  .list-heading-title{
     margin: 0;
   }
 
-  a {
+  .list-heading-link {
     box-sizing: border-box;
     padding: 0.25em 0.75em;
 
@@ -39,50 +39,6 @@
     &:hover {
       color: var(--text-light);
       text-decoration: underline solid var(--text-light);
-    }
-  }
-}
-
-#home-social-links {
-  display: flex;
-  gap: 1em;
-
-  margin-bottom: 2.0rem;
-  padding: 0.5rem;
-
-  .social-button {
-    display: flex;
-    text-decoration: none;
-    align-items: center;
-
-    > img {
-      width: 1.25rem;
-      height: 100%;
-
-      transition: all 0.2s;
-
-      object-fit: contain;
-    }
-
-    > div {
-      margin-left: 0.5em;
-
-      color: var(--text);
-      text-decoration: underline solid transparent;
-      font-size: 0.85rem;
-
-      transition: all 0.2s;
-    }
-
-    &:hover {
-      > div {
-        color: var(--text-light);
-        text-decoration: underline solid var(--text-light);
-      }
-
-      > img {
-        opacity: 0.7;
-      }
     }
   }
 }

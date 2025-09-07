@@ -8,19 +8,38 @@
       </div>
     </a>
 
-    <nav id="site-nav">
-      {% for item in site.docs %}
-        {% if page.section == item.title or layout.section == item.title %}
-          <a href="{{ item.url }}" class="tab tab-highlight">
-            {{ item.title }}
-          </a>
-        {% else %}
-          <a href="{{ item.url }}" class="tab">
-            {{ item.title }}
-          </a>
-        {% endif %}
-      {% endfor %}
-    </nav>
+    <div id="header-links">
+      <nav id="site-nav">
+        {% for item in site.docs %}
+          {% if page.section == item.title or layout.section == item.title %}
+            <a href="{{ item.url }}" class="tab tab-highlight">
+              {{ item.title }}
+            </a>
+          {% else %}
+            <a href="{{ item.url }}" class="tab">
+              {{ item.title }}
+            </a>
+          {% endif %}
+        {% endfor %}
+
+      </nav>
+
+      <div id="header-social-links">
+
+        <a class="social-button" href="{{ site.github }}" target="_blank">
+          <img src="/assets/images/Github_Logo.png" alt="Github">
+        </a>
+
+        <a class="social-button" href="{{ site.linkedin }}" target="_blank">
+          <img src="/assets/images/LinkedIn_Logo.png" alt="Github">
+        </a>
+
+        <a class="social-button" href="mailto:{{ site.email}}" target="_blank">
+          <img src="/assets/images/Mail_Logo.png" alt="Github">
+        </a>
+
+      </div>
+    </div>
 
   </div>
 </header>

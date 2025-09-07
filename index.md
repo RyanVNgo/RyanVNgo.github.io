@@ -25,26 +25,11 @@ Currently learning
 and plan on participating in
 <a href="https://itch.io/jam/gbjam-13" target="_blank">GMJAM 13</a>.
 
-
-<div id="home-social-links">
-    <a class="social-button" href="{{ site.github }}" target="_blank">
-        <img src="/assets/images/Github_Logo.png" alt="Github">
-        <div>Github</div>
-    </a>
-    <a class="social-button" href="{{ site.linkedin }}" target="_blank">
-        <img src="/assets/images/LinkedIn_Logo.png" alt="Github">
-        <div>Linkedin</div>
-    </a>
-    <a class="social-button" href="mailto:{{ site.email}}" target="_blank">
-        <img src="/assets/images/Mail_Logo.png" alt="Github">
-        <div>vanryan711@gmail.com</div>
-    </a>
-</div>
-
+<br>
 
 <div class="list-heading">
-    <h3>Projects</h3>
-    <a href="{{ site.docs[1].url }}">more</a>
+    <h2 class="list-heading-title">Projects</h2>
+    <a class="list-heading-link" href="{{ site.docs[1].url }}">more</a>
 </div>
 <hr>
 {% assign project-list-length = 2 %}
@@ -52,8 +37,8 @@ and plan on participating in
 
 
 <div class="list-heading">
-    <h3>Posts</h3>
-    <a href="{{ site.docs[2].url }}">more</a>
+    <h2 class="list-heading-title">Posts</h2>
+    <a class="list-heading-link" href="{{ site.docs[2].url }}">more</a>
 </div>
 <hr>
 {% assign post-list-length = 3 %}

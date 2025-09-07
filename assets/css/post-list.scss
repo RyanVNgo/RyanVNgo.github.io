@@ -24,9 +24,19 @@
 
   transition: all 0.2s;
 
+  .post-title {
+    margin: 0;
+
+    font-size: 1.0rem;
+    font-weight: 400;
+
+    color: inherit;
+  }
+
   &:hover {
     color: var(--text-light);
     text-decoration: underline solid var(--text-light);
+
   }
 }
 
