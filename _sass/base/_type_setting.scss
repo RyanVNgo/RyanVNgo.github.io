@@ -1,10 +1,15 @@
 
 @use "sass:math";
 
-
 $scale-ratio: 1.2;
 $font-size: 16px;
 $line-height: 1.42;
+
+:root {
+  --sans-font: "Geist", "Arial", system-ui, Ubuntu, -apple-system, sans-serif;
+  --serif-font: "serif";
+  --mono-font: Courier New, monospace;
+}
 
 html {
   font-size: var(--font-size);

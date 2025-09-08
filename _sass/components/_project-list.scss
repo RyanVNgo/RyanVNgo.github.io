@@ -29,38 +29,34 @@
 
   transition: all 0.2s;
 
-  .project-card-content {
-    flex: 1;
-    padding: 0.25rem 0.5rem 0.5rem;
-
-    .project-card-title {
-      font-weight: 500;
-      transition: all 0.2s;
-    }
-
-    > p {
-      font-size: 0.76rem;
-      line-height: 1.2;
-    }
-  }
-
-  .project-card-arrow {
-    box-sizing: border-box;
-
-    width: 1.5rem;
-
-    text-align: center;
-  }
-
   &:hover {
     background-color: var(--text-light);
     color: var(--base);
-
-    .project-card-title {
-      color: var(--base);
-    }
   }
 
 }
 
+.project-card__content {
+  flex: 1;
+  padding: 0.25rem 0.5rem 0.5rem;
+
+  > p {
+    font-size: 0.76rem;
+    line-height: 1.2;
+  }
+}
+
+.project-card__title {
+  color: inherit;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.project-card__arrow {
+  box-sizing: border-box;
+
+  width: 1.5rem;
+
+  text-align: center;
+}
 

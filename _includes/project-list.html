@@ -7,12 +7,12 @@
   {% for project in sorted_projects limit: project-list-length %}
     <a class="project-card" href="{{ project.url }}">
 
-      <div class="project-card-content">
-        <h6 class="project-card-title"> {{ project.title }} </h6>
+      <div class="project-card__content">
+        <h6 class="project-card__title"> {{ project.title }} </h6>
         <p> {{ project.blip }} </p>
       </div>
 
-      <div class="project-card-arrow"> &#8599; </div>
+      <div class="project-card__arrow"> &#8599; </div>
 
     </a>
   {% endfor %}

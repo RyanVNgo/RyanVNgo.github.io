@@ -22,19 +22,16 @@
 
   transition: all 0.2s;
 
-  .post-title {
-    margin: 0;
-
-    font-size: 1.0rem;
-    font-weight: 400;
-
-    color: inherit;
-  }
-
   &:hover {
     color: var(--text-light);
     text-decoration: underline solid var(--text-light);
-
   }
 }
 
+.post-card__title {
+  margin: 0;
+
+  color: inherit;
+  font-size: 1.0rem;
+  font-weight: 400;
+}

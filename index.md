@@ -5,7 +5,7 @@ style-sheets: [default, index]
 author: Ryan Ngo
 ---
 
-<h1 id="home-title">Hi, I'm <span>{{ page.author }}</span></h1>
+<h1 class="home-title">Hi, I'm <span>{{ page.author }}</span></h1>
 
 And welcome to my personal website. A place where I provide info about my
 projects, publish write-ups, post notes, and share whatever else I feel
@@ -27,8 +27,8 @@ and plan on participating in
 <br>
 
 <div class="list-heading">
-    <h2 class="list-heading-title">Projects</h2>
-    <a class="list-heading-link" href="{{ site.docs[1].url }}">more</a>
+    <h2 class="list-heading__title">Projects</h2>
+    <a class="list-heading__link" href="{{ site.docs[1].url }}">more</a>
 </div>
 <hr>
 {% assign project-list-length = 2 %}
@@ -36,8 +36,8 @@ and plan on participating in
 
 
 <div class="list-heading">
-    <h2 class="list-heading-title">Posts</h2>
-    <a class="list-heading-link" href="{{ site.docs[2].url }}">more</a>
+    <h2 class="list-heading__title">Posts</h2>
+    <a class="list-heading__link" href="{{ site.docs[2].url }}">more</a>
 </div>
 <hr>
 {% assign post-list-length = 3 %}

@@ -1,7 +1,7 @@
 ---
 ---
 
-#home-title {
+.home-title {
   margin-bottom: 1.0em;
 
   > span {
@@ -19,27 +19,26 @@
   
   justify-content: space-between;
   align-items: center;
-
-  .list-heading-title{
-    margin: 0;
-  }
-
-  .list-heading-link {
-    box-sizing: border-box;
-    padding: 0.25em 0.75em;
-
-    border-radius: 0.5rem;
-
-    color: var(--text);
-    font-size: 0.9rem;
-    text-decoration: underline solid transparent;
-
-    transition: all 0.2s;
-
-    &:hover {
-      color: var(--text-light);
-      text-decoration: underline solid var(--text-light);
-    }
-  }
 }
 
+.list-heading__title{
+  margin: 0;
+}
+
+.list-heading__link {
+  box-sizing: border-box;
+  padding: 0.25em 0.75em;
+
+  border-radius: 0.5rem;
+
+  color: var(--text);
+  font-size: 0.9rem;
+  text-decoration: underline solid transparent;
+
+  transition: all 0.2s;
+
+  &:hover {
+    color: var(--text-light);
+    text-decoration: underline solid var(--text-light);
+  }
+}

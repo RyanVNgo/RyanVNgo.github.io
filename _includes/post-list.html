@@ -5,13 +5,10 @@
 <div class="post-list">
   {% for post in site.posts limit: post-list-length %}
     <a class="post-card" href="{{ post.url }}">
-
-      <h3 class="post-title"> {{ post.title }} </h3>
-
-      <small class="post-date"> 
+      <h3 class="post-card__title"> {{ post.title }} </h3>
+      <small class="post-card__date"> 
         {{ post.date | date: "%Y-%m-%d" }}
       </small>
-
     </a>
   {% endfor %}
 </div>
