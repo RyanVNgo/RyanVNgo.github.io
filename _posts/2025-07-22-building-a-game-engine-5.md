@@ -180,7 +180,7 @@ to implement the greedy meshing so it'll all work out*.
 </blockquote>
 
 
-### Muli Draw Indirect
+### Multi Draw Indirect
 
 While not a direct optimization, the new implementation of our instance data
 makes multi draw indirect calls more useful to us. In our current 
