@@ -1,6 +1,6 @@
 
 :root {
-  --content-width: 44rem;
+  --content-width: 48rem;
   --img-invert: 0;
 }
 
@@ -23,10 +23,15 @@ main {
 }
 
 article {
+  box-sizing: border-box;
   max-width: var(--content-width);
   
   margin: 8vh auto auto;
-  padding: 1rem;
+  padding: 1rem 2rem;
+
+  > h2, > h3, > h4, > h5, > h6 {
+    margin: 1.25em 0 0.25em;
+  }
 }
 
 p {
@@ -42,7 +47,7 @@ p {
 
   > img {
     display: block;
-    margin: 1.5rem auto; 
+    margin: 0 auto; 
     max-width: 95%;
     border-radius: 0.5rem;
     + sub {
@@ -55,7 +60,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--text);
-  margin: 0 0 0.5em;
+  margin: 0 0 0.25em;
 }
 
 ul {

@@ -47,9 +47,14 @@
 }
 
 .project-card__title {
+  margin-bottom: 0.25em;
+
   color: inherit;
-  font-weight: 500;
   transition: all 0.2s;
+
+  font-size: 1.09rem;
+  font-weight: 500;
+  line-height: 1;
 }
 
 .project-card__arrow {
