@@ -1,7 +1,7 @@
 ---
 section: home
 layout: default 
-style-sheets: [default, index, post-list, project-list]
+style-sheets: [default, index]
 author: Ryan Ngo
 ---
 

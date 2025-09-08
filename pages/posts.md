@@ -1,7 +1,7 @@
 ---
 section: posts
 layout: default 
-style-sheets: [default, post-list]
+style-sheets: [default]
 author: Ryan Ngo
 ---
 

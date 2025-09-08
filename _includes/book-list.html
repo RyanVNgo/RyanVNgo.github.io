@@ -1,0 +1,23 @@
+
+<div class="book-list">
+    {% assign sorted_books = site.readings | sort: "date-finished" | reverse %}
+    {% for book in sorted_books %} 
+    <div class="book-card">
+        <img class="book-card__cover-image" src="{{ book.cover-image }}">
+        <div class="book-card__content">
+            <hgroup class="book-card__title-group">
+                <h2>{{ book.title }}</h2>
+                <h3>{{ book.author }}</h3>
+                <p>Date Finished: {{ book.date-finished }}</p>
+            </hgroup>
+            <!--
+            <div class="book-card__writing">
+            {{ book.content }}
+            </div>
+            -->
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+

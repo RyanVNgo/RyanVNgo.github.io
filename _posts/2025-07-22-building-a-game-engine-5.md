@@ -1,7 +1,7 @@
 ---
 section: posts
 layout: post
-style-sheets: [default, post-page, syntaxHL]
+style-sheets: [default, post-page]
 title: Game Engine - 5 | Terrain Generation and Rendering
 cover-photo: "/assets/images/posts/game-engine/post-5/image_2.png"
 blip: >

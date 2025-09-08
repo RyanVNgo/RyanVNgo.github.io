@@ -1,7 +1,7 @@
 ---
 section: projects
 layout: project 
-style-sheets: [default, project-page, syntaxHL]
+style-sheets: [default, project-page]
 title: CSERIO 
 priority: 4
 github: https://github.com/RyanVNgo/CSERIO
