@@ -1,0 +1,28 @@
+
+{% unless notes-list-length %}
+  {% assign notes-list-length = site.notes | size %}
+{% endunless %}
+<ul class="note-list">
+  {% for note in site.notes reversed limit: notes-list-length %}
+    <li class="note-card">
+
+      <div class="note-card__header">
+        <div class="note-card__date"> 
+          {{ note.date | date: "%Y-%m-%d %H:%M" }}
+        </div>
+
+        <span>— </span>
+
+        <div class="note-card__title"> 
+          {{ note.title }} 
+        </div>
+      </div>
+
+      <div class="note-card__content">
+        {{ note.content }}
+      </div>
+
+    </li>
+  {% endfor %}
+</ul>
+

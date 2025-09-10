@@ -22,8 +22,8 @@ docs:
   - title: posts 
     url: /pages/posts.html
 
-  # - title: notes
-  #   url: /pages/notes.html
+  - title: notes
+    url: /pages/notes.html
 
   - title: reading 
     url: /pages/reading.html
@@ -31,11 +31,15 @@ docs:
   # - title: about
   #   url: /pages/about.html
 
+collections_dir: collections
 collections:
   projects:
     output: true
 
   readings:
+    output: true
+
+  notes:
     output: true
 
 sass:
