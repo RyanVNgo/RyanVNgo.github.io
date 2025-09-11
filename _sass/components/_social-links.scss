@@ -7,7 +7,7 @@
 .social-button {
   width: 1.25rem; 
 
-  > img {
+  > img, > svg {
     height: 100%;
     width: 100%;
 
@@ -17,6 +17,9 @@
   }
 
   &:hover {
+    > svg {
+      opacity: 0.7;
+    }
     > img {
       opacity: 0.7;
     }
