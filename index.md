@@ -19,10 +19,10 @@ enhancing quality of life.
 Outside of programming, I like tech, Formula 1, gaming, astrophotography,
 and K-pop. <sub><i>(stan Aespa)</i></sub>
 
-Currently learning 
-<a href="https://www.raylib.com/" target="_blank">raylib</a>
-and plan on participating in
-<a href="https://itch.io/jam/gbjam-13" target="_blank">GBJAM 13</a>.
+### Now
+
+Getting better at building software in C++ with a focus on desktop
+applications. I've been using ImGui so far but I plan on pivoting to Qt.
 
 <br>
 
