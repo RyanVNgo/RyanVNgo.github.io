@@ -89,7 +89,7 @@ blockquote {
   font-family: var(--sans-font);
   font-weight: 400;
   font-style: italic;
-  font-size: 0.9rem;
+  font-size: var(--h5-size);
   color: hsl(var(--block-color));
 
   &::before {

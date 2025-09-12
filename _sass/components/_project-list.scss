@@ -26,6 +26,7 @@
 
   text-decoration: none;
   color: var(--text);
+  fill: var(--text);
 
   transition: all 0.2s;
 
@@ -42,7 +43,7 @@
   padding: 0.25rem 0.5rem 0.5rem;
 
   > p {
-    font-size: 0.76rem;
+    font-size: var(--small-size);
     line-height: 1.2;
   }
 }
@@ -53,7 +54,7 @@
   color: inherit;
   transition: all 0.2s;
 
-  font-size: 1.09rem;
+  font-size: var(--h3-size);
   font-weight: 500;
   line-height: 1;
 }
@@ -62,6 +63,8 @@
   box-sizing: border-box;
 
   width: 1.5rem;
+
+  fill: inherit;
 
   text-align: center;
 }

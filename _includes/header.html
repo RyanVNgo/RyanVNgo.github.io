@@ -2,7 +2,7 @@
   <div id="header-content">
 
     <a id="home-button" href="/">
-      <img src="/assets/images/ryanvngo-icon-compact.png" alt="Home">
+      <img class="invert-on-scheme" src="/assets/images/ryanvngo-icon-compact.png" alt="Home">
       <div id="home-button-text">
         {{ site.author }}
       </div>
@@ -25,6 +25,11 @@
       </nav>
 
       {% include social-links.html %}
+
+      <button id="theme-toggle">
+        {% octicon sun height:24 class:"invert-on-scheme" %}
+        {% octicon moon height:24 class:"invert-on-scheme" %}
+      </button>
 
     </div>
 

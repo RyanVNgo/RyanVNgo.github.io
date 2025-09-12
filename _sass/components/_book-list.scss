@@ -25,14 +25,18 @@
 .book-card__content {
   padding: 0 0.5rem;
 
-  font-size: 0.85rem;
+  font-size: var(--small-size);
 }
 
 .book-card__title-group{ 
   margin-bottom: 0.5rem;
   > * { margin: 0; }
-  h2 { font-size: 1.3rem; }
-  h3 { font-size: 1.0rem; }
+  h2 { 
+    font-size: var(--h3-size);
+  }
+  h3 { 
+    font-size: var(--h4-size);
+  }
 }
 
 .book-card__writing {

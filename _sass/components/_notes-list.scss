@@ -49,7 +49,12 @@
   border: 0.0625rem solid var(--base-darker);
 
   > p {
-    margin: 0;
+    margin-bottom: 1em;
+
+    &:last-child {
+      margin: 0;
+    }
+
   }
 }
 
