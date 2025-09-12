@@ -12,7 +12,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
 
-  <script src="/assets/js/color-scheme.js" defer></script>
+  <script src="/assets/js/color-scheme.js"></script>
+  <script src="/assets/js/buttons.js" defer></script>
 
   {% for style-sheet in page.style-sheets %}
     <link rel="stylesheet" href="{{ '/assets/css/' | append: style-sheet | append: '.css' | relative_url }}">

@@ -1,5 +1,4 @@
 
-const toggleBtn = document.getElementById('theme-toggle');
 const storedTheme = localStorage.getItem('theme');
 
 if (storedTheme) {
@@ -13,12 +12,4 @@ if (storedTheme) {
     localStorage.setItem('theme', 'light');
   }
 }
-
-toggleBtn.addEventListener('click', () => {
-  const currentTheme = document.documentElement.getAttribute('data-theme');
-  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-  document.documentElement.setAttribute('data-theme', newTheme);
-  localStorage.setItem('theme', newTheme);
-});
 
