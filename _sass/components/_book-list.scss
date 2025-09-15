@@ -2,7 +2,7 @@
 .book-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.0rem;
+  gap: 2.0rem 1.0rem;
 
   margin: 0 0 2.0rem;
   padding: 0.5rem;
@@ -18,7 +18,9 @@
 
 .book-card__cover-image {
   width: 5rem;
+  height: 8rem;
   object-fit: contain;
+  object-position: center top;
   align-self: flex-start;
 }
 
