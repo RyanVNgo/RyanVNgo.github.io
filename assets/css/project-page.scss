@@ -5,20 +5,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
 
-  > a {
-    height: 1.75rem; 
-    align-self: flex-start;
+.title-section__github-link {
+  height: 1.5rem; 
+  align-self: flex-start;
 
-    > img {
-      transition: all 0.2s;
-      height: 100%;
-    }
+  > svg {
+    transition: all 0.2s;
+    height: 100%;
+  }
 
-    &:hover {
-      img {
-        opacity: 0.65;
-      }
+  &:hover {
+    svg {
+      opacity: 0.65;
     }
   }
 }
