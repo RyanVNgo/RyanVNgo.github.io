@@ -61,38 +61,6 @@ header {
   gap: 1rem;
 }
 
-#site-nav {
-  display: flex;
-  align-items: center;
-
-  margin: 0;
-  padding: 0 0.5rem;
-  gap: 1.0rem;
-
-  .tab {
-    display: flex;
-    justify-content: center;
-
-    box-sizing: border-box;
-    padding: 0.5em;
-
-    text-decoration: underline solid transparent;
-    color: var(--text);
-    text-transform: capitalize;
-
-    transition: all 0.2s;
-
-    &:not(.tab-highlight):hover {
-      color: var(--text-light);
-      text-decoration: underline solid var(--text-light);
-    }
-  }
-
-  .tab-highlight {
-    text-decoration: underline solid var(--text);
-  }
-}
-
 #theme-toggle {
   all: unset;
   display: flex;

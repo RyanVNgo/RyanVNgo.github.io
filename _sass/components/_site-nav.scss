@@ -1,0 +1,34 @@
+
+.site-nav {
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+  padding: 0 0.5rem;
+  gap: 1.0rem;
+
+}
+
+.site-nav__tab {
+  display: flex;
+  justify-content: center;
+
+  box-sizing: border-box;
+  padding: 0.5em;
+
+  text-decoration: underline solid transparent;
+  color: var(--text);
+  text-transform: capitalize;
+
+  transition: all 0.2s;
+
+  &:not(.site-nav__tab--highlight):hover {
+    color: var(--text-light);
+    text-decoration: underline solid var(--text-light);
+  }
+}
+
+.site-nav__tab--highlight {
+  text-decoration: underline solid var(--text);
+}
+

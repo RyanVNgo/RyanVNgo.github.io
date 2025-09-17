@@ -1,0 +1,13 @@
+<nav class="site-nav">
+  {% for item in site.docs %}
+    {% if page.section == item.title or layout.section == item.title %}
+      <a href="{{ item.url }}" class="site-nav__tab site-nav__tab--highlight">
+        {{ item.title }}
+      </a>
+    {% else %}
+      <a href="{{ item.url }}" class="site-nav__tab">
+        {{ item.title }}
+      </a>
+    {% endif %}
+  {% endfor %}
+</nav>
