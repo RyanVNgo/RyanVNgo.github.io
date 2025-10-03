@@ -2,7 +2,7 @@
 section: posts
 layout: post
 style-sheets: [default, post-page]
-title: Building a Game Engine - 2 | Organization
+title: Game Engine - 2 | Organization
 ---
 
 ## Structure

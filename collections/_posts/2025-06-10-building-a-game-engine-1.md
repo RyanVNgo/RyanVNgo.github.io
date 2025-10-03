@@ -2,7 +2,7 @@
 section: posts
 layout: post
 style-sheets: [default, post-page]
-title: Building a Game Engine - 1 | Start
+title: Game Engine - 1 | Start
 ---
 
 With how abysmal recent games have been in terms of performance to visual quality, I've been wanting

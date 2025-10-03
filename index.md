@@ -21,8 +21,8 @@ and K-pop. <sub><i>(stan Aespa)</i></sub>
 
 ### Now
 
-Getting better at building software in C++ with a focus on desktop
-applications. I've been using ImGui so far but I plan on pivoting to Qt.
+Getting better at building high-performance C++ applications for
+data-intensive and compute-intensive domains.
 
 <br>
 

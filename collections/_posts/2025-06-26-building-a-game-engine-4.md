@@ -2,7 +2,7 @@
 section: posts
 layout: post
 style-sheets: [default, post-page]
-title: Building a Game Engine - 4 | Performance Monitoring
+title: Game Engine - 4 | Performance Monitoring
 cover-photo: "/assets/images/posts/game-engine/image_3.webp"
 ---
 

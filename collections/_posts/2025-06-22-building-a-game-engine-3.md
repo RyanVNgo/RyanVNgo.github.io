@@ -2,7 +2,7 @@
 section: posts
 layout: post
 style-sheets: [default, post-page]
-title: Building a Game Engine - 3 | Rendering with Instancing
+title: Game Engine - 3 | Rendering with Instancing
 cover-photo: "/assets/images/posts/game-engine/image_2.webp"
 ---
 
