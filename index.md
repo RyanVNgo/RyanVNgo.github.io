@@ -8,21 +8,20 @@ author: Ryan Ngo
 <h1 class="home-title">Hi, I'm <span>{{ page.author }}</span></h1>
 
 And welcome to my personal website. A place where I provide info about my
-projects, publish write-ups, post notes, and share whatever else I feel
-like putting out there.
+projects, post write-ups, and share whatever else I feel like putting out 
+there.
 
 I recently graduated with a B.S. in Computer Science from San Diego State 
 University and I'm interested in building software that advances scientific 
-research and discovery, with the goal of expanding human knowledge and
-enhancing quality of life.
+research and discovery.
 
-Outside of programming, I like tech, Formula 1, gaming, astrophotography,
+Outside of programming I like tech, Formula 1, gaming, astrophotography,
 and K-pop. <sub><i>(stan Aespa)</i></sub>
 
 ### Now
 
-Getting better at building high-performance C++ applications for
-data-intensive and compute-intensive domains.
+Improving my skills in developing C++ applications, mostly focused on 
+astronomy and astrophotography.
 
 <br>
 

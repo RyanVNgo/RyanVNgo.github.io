@@ -22,9 +22,6 @@ docs:
   - title: posts 
     url: /pages/posts.html
 
-  - title: notes
-    url: /pages/notes.html
-
   - title: reading 
     url: /pages/reading.html
 
@@ -37,9 +34,6 @@ collections:
     output: true
 
   readings:
-    output: true
-
-  notes:
     output: true
 
 sass:
