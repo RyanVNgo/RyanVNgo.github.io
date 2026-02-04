@@ -12,7 +12,8 @@
                 <h1>{{ page.target }}</h1>
                 <hr>
                 <a id="astrophoto-image-link" href="{{ page.full-image-url }}" target="_blank">
-                    <img id="astrophoto-image" src="{{ page.full-image-url }}">
+                    <img class="astrophoto-image__low" src="{{ page.sub-image-url }}">
+                    <img class="astrophoto-image__high" src="{{ page.full-image-url }}" loading="lazy">
                 </a>
 
                 <div id="properties-section">
