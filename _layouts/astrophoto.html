@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    {% include head.html %}
+
+    <body>
+
+        {% include header.html %}
+
+        <main>
+            <article>
+                <h1>{{ page.target }}</h1>
+                <hr>
+                <a id="astrophoto-image-link" href="{{ page.full-image-url }}" target="_blank">
+                    <img id="astrophoto-image" src="{{ page.full-image-url }}">
+                </a>
+
+                <div id="properties-section">
+                    {% if page.properties %}
+                    {% for prop-section in page.properties %}
+                        <div class="prop-list">
+                            <div class="prop-list__title">
+                                {{ prop-section[0] }}
+                            </div>
+
+                            {% for item in prop-section[1] %}
+                            <div class=prop-list__equiptype>{{ item[0] }}</div>
+                            <div class=prop-list__equipname>{{ item[1] }}</div>
+                            {% endfor %}
+                        </div>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+
+                <!--
+                <hr>
+                {{ content }}
+                -->
+
+            </article>
+        </main>
+
+        {% include footer.html %}
+
+    </body>
+
+</html>
+

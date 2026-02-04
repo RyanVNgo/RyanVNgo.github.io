@@ -1,0 +1,18 @@
+
+<div class="astrophoto-list">
+    {% assign sorted_astrophotos = site.astrophotos | sort: "date-finish" | reverse %}
+    {% for astrophoto in sorted_astrophotos %}
+    <a class="astrophoto-card" href="{{ astrophoto.url }}">
+        <img
+                class="astrophoto-card__image"
+                src="{{ astrophoto.sub-image-url }}"
+                alt="{{ astrophoto.target }}"
+                loading="lazy"
+        >
+        <figcaption class="astrophoto-card__title">
+            {{ astrophoto.target }}
+        </figcaption>
+    </a>
+    {% endfor %}
+</div>
+
