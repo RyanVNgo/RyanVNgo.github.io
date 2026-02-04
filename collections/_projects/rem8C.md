@@ -3,7 +3,8 @@ section: projects
 layout: project
 style-sheets: [default, project-page]
 title: rem8C
-priority: 3
+year: 2025
+priority: 2
 github: https://github.com/RyanVNgo/rem8C
 images:
     - https://raw.githubusercontent.com/RyanVNgo/rem8C/refs/heads/main/images/IBM_test.png

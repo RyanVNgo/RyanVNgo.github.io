@@ -3,7 +3,8 @@ section: projects
 layout: project
 style-sheets: [default, project-page]
 title: SRNAFNet
-priority: 2
+year: 2025
+priority: 3
 github: https://github.com/RyanVNgo/NAFNet-SISR
 blip: >
     SRNAFNet is a Single-Image Super-Resolution CNN based on the 

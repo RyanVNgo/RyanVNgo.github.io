@@ -3,7 +3,8 @@ section: projects
 layout: project 
 style-sheets: [default, project-page]
 title: CSERIO 
-priority: 4
+year: 2024
+priority: 1
 github: https://github.com/RyanVNgo/CSERIO
 blip: >
     An interface to SER format image captures for C programmers.

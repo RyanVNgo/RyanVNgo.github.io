@@ -8,7 +8,7 @@ author: Ryan Ngo
 # Readings
 ---
 
-The collection of books I've read so far since July 2025.
+The collection of books I've read since July 2025.
 
 {% include book-list.html %}
 

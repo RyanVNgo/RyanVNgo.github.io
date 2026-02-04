@@ -1,23 +1,15 @@
 
 {% unless project-list-length %}
-  {% assign project-list-length = site.projects | size %}
+{% assign project-list-length = site.projects | size %}
 {% endunless %}
 <div class="project-list">
-  {% assign sorted_projects = site.projects | sort: 'priority' %}
-  {% for project in sorted_projects limit: project-list-length %}
+    {% assign sorted_projects = site.projects | sort: 'priority' | reverse %}
+    {% for project in sorted_projects limit: project-list-length %}
     <a class="project-card" href="{{ project.url }}">
-
-      <div class="project-card__content">
-        <div class="project-card__title"> {{ project.title }} </div>
-        <p> {{ project.blip }} </p>
-      </div>
-
-      <!--
-      <div class="project-card__arrow"> &#8599; </div>
-      -->
-      {% octicon arrow-up-right height:24 %}
-
+        <div class="project-card__title">{{ project.title }}</div>
+        <div class="project-card__leader"></div>
+        <small class="project-card__year">{{ project.year }}</small>
     </a>
-  {% endfor %}
+    {% endfor %}
 </div>
 

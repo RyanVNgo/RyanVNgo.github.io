@@ -1,15 +1,16 @@
 
 {% unless post-list-length %}
-  {% assign post-list-length = site.posts | size %}
+{% assign post-list-length = site.posts | size %}
 {% endunless %}
 <div class="post-list">
-  {% for post in site.posts limit: post-list-length %}
+    {% for post in site.posts limit: post-list-length %}
     <a class="post-card" href="{{ post.url }}">
-      <div class="post-card__title"> {{ post.title }} </div>
-      <small class="post-card__date"> 
-        {{ post.date | date: "%Y-%m-%d" }}
-      </small>
+        <div class="post-card__title"> {{ post.title }} </div>
+        <div class="post-card__leader"></div>
+        <small class="post-card__date"> 
+            {{ post.date | date: "%Y-%m-%d" }}
+        </small>
     </a>
-  {% endfor %}
+    {% endfor %}
 </div>
 

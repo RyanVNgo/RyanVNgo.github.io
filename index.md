@@ -30,7 +30,6 @@ astronomy and astrophotography.
     <a class="list-heading__link" href="{{ site.docs[1].url }}">more</a>
 </div>
 <hr>
-{% assign project-list-length = 2 %}
 {% include project-list.html %}
 
 

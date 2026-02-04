@@ -3,7 +3,8 @@ section: projects
 layout: project
 style-sheets: [default, project-page]
 title: rem8C++
-priority: 1
+year: 2025
+priority: 4
 github: https://github.com/RyanVNgo/rem8Cpp
 images:
     - https://raw.githubusercontent.com/RyanVNgo/rem8Cpp/refs/heads/main/images/IBM_test.png
