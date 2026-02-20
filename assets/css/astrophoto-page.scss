@@ -2,13 +2,15 @@
 ---
 
 article {
-  max-width: calc(var(--content-width) * 1.5);
+  max-width: calc(var(--content-width) * 1.4);
 }
 
 #astrophoto-image-link {
   display: block;
   position: relative;
   overflow: hidden;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .astrophoto-image__low {

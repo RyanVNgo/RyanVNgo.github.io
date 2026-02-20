@@ -18,12 +18,8 @@ hold interest in the hobby and hope to return to it soon (I really
 just need a new mount).
 
 Unfortunately, a good amount of information regarding the capturing 
-equipment and parameters for these photos have been lost. I didn't 
-bother to write them down anywhere and although I shared these images
-with that information in posts made in an astrophotography Discord
-community, the channel containing these posts has since been deleted
-following restructuring. So if some images contain little to no 
-information, that is the reason why.
+equipment and parameters for these photos have been lost so if some 
+images contain little to no information, that is the reason why.
 
 <sub>
     (page is a WIP as I upload more images and find more information)
