@@ -3,54 +3,62 @@ section: projects
 layout: project 
 style-sheets: [default, project-page]
 title: CSERIO 
-year: 2024
-priority: 1
+year: 2026
+priority: 5
 github: https://github.com/RyanVNgo/CSERIO
 blip: >
     An interface to SER format image captures for C programmers.
 ---
 
-{% highlight c %}
-#include <stdio.h>
+{% highlight C %}
+#define CSERIO_IMPLEMENTATION
 #include "cserio.h"
 
-/* this example omits error checking */
-int main(int argc, char* argv[]) {
+int main(void) {
     int status = 0;
-    serfile* ser_capture;
+    serfile* my_ser = NULL;
 
     ser_open_file(
-        &ser_capture,
-        "/path/mars_capture.ser",
-        READONLY, 
-        &status
+            &my_ser,
+            "/home/ryanvngo/Downloads/mars_capture.ser",
+            READONLY,
+            &status
     );
+    if (status) {
+        fprintf(stderr, "Error opening ser: %d\n", status);
+        exit(EXIT_FAILURE);
+    }
 
-    unsigned long frame_size = 0;
-    ser_get_frame_byte_size(ser_capture, &frame_size, &status);
+    int32_t frame_count = 0;
+    ser_get_frame_count(my_ser, &frame_count, &status);
+    if (status) {
+        fprintf(stderr, "Error getting frame count: %d\n", status);
+        exit(EXIT_FAILURE);
+    }
+    printf("Frame count: %d\n", frame_count);
 
-    char* frame_buff = malloc(frame_size);
-    ser_read_frame(ser_capture, frame_buff, 0, &status);
+    ser_close_file(my_ser, &status);
+    if (status) {
+        fprintf(stderr, "Error closing ser: %d\n", status);
+        exit(EXIT_FAILURE);
+    }
 
-    /* do stuff with frame data */
-
-    ser_close_file(ser_capture, &status);
-    free(frame_buff);
-
-    return 0;
+    return EXIT_SUCCESS;
 }
 {% endhighlight %}
 
-I built CSERIO because I noticed a lack of any real library that
+<sub>*Updated to Version 2 in 2026*</sub>
+
+I built CSERIO because I noticed a lack of a C/C++ library that
 provided an interface to interact with SER format image captures.
 
 SER files are essentially like raw video captures but were designed 
 primarily for use in astrophotography in capturing videos of things
 like planets and sometimes deep sky objects.
 
-It's a fairly well supported image format within the space and uses
-a fairly simple architecture. It has a fixed width heading followed
-by image data and ending with an optional footer.
+It's a fairly well supported image format within the space and has 
+a simple internal structure. It has a fixed width header followed
+by image data and ending with an optional trailer.
 
 If you're unfamiliar, standard image captures in both astrophotography
 and oftentimes the professional astronomy space utilize fit/fits format
@@ -62,9 +70,8 @@ construction, supporting variable width headers and multidimensional
 layering, the need for an interface to the relatively simplistic
 SER format image capture is understandably less.
 
-Still, I've built the library and it's still undergoing development.
-While it may only see use in personal projects since I'd like to develop
-some software for the astrophtography space, it's still a nice
-endeavor in developing and documenting my own libraries.
-
+The project started development in 2024 but I had stopped a few months 
+later after losing interest. In early 2026, I revived development and 
+changed a significant amount the implementation resulting in a major
+version change to 2.0.
 
