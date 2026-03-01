@@ -47,31 +47,21 @@ int main(void) {
 }
 {% endhighlight %}
 
-<sub>*Updated to Version 2 in 2026*</sub>
+In 2024, I was experimenting with developing software that could display
+`.fits` format images. This format is used extensively in the astronomy space
+for storing a wide range of astronomical data. CFITSIO is a predominant library
+for providing IO operations for the format and is what I used in my software.
 
-I built CSERIO because I noticed a lack of a C/C++ library that
-provided an interface to interact with SER format image captures.
+However, another format, used mostly by amateur astrophotographers, is the `.ser`
+file format. The format is also intended to store astronomical data but serves 
+a different purpose and is much simpler in construction. Naturally, I went looking
+for a library that provided IO operations for this format but couldn't find
+anything. That's when I decided to try building a library similar to CFITSIO for
+SER files.
 
-SER files are essentially like raw video captures but were designed 
-primarily for use in astrophotography in capturing videos of things
-like planets and sometimes deep sky objects.
+The project started development in 2024 but I had stopped a few months later after 
+losing interest. In early 2026 I revived development with interface adjustments and
+completion of necessary IO routines. The library now provides adequate routines 
+to create, read, write, and modify `.ser` format files.
 
-It's a fairly well supported image format within the space and has 
-a simple internal structure. It has a fixed width header followed
-by image data and ending with an optional trailer.
-
-If you're unfamiliar, standard image captures in both astrophotography
-and oftentimes the professional astronomy space utilize fit/fits format
-image captures. This format already has a well built and documented
-library interface called CFITSIO, hence the name for this project.
-
-Provided that fit/fits format images are fairly complicated in
-construction, supporting variable width headers and multidimensional
-layering, the need for an interface to the relatively simplistic
-SER format image capture is understandably less.
-
-The project started development in 2024 but I had stopped a few months 
-later after losing interest. In early 2026, I revived development and 
-changed a significant amount the implementation resulting in a major
-version change to 2.0.
 
