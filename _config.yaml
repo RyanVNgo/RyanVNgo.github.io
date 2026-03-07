@@ -13,8 +13,8 @@ projects-imgs-dir: /assets/images/projects/
 posts-imgs-dir: /assets/images/posts/
 
 docs:
-  - title: home
-    url: /index.html
+  # - title: home
+  #   url: /index.html
 
   - title: projects
     url: /pages/projects.html
@@ -22,8 +22,8 @@ docs:
   - title: posts 
     url: /pages/posts.html
 
-  - title: astro
-    url: /pages/astro.html
+  # - title: astro
+  #   url: /pages/astro.html
 
   - title: reading 
     url: /pages/reading.html

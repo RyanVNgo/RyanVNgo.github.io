@@ -18,18 +18,15 @@ research and discovery.
 Outside of programming I like tech, Formula 1, gaming, astrophotography,
 and K-pop. <sub><i>(stan Aespa)</i></sub>
 
-### Now
+## Now
 
 Improving my skills in developing C++ applications, mostly focused on 
 astronomy and astrophotography.
-
-<br>
 
 <div class="list-heading">
     <h2 class="list-heading__title">Projects</h2>
     <a class="list-heading__link" href="{{ site.docs[1].url }}">more</a>
 </div>
-<hr>
 {% include project-list.html %}
 
 
@@ -37,7 +34,6 @@ astronomy and astrophotography.
     <h2 class="list-heading__title">Posts</h2>
     <a class="list-heading__link" href="{{ site.docs[2].url }}">more</a>
 </div>
-<hr>
 {% assign post-list-length = 3 %}
 {% include post-list.html %}
 

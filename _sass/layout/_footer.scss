@@ -4,7 +4,8 @@ footer {
   justify-content: center;
   width: 100%;
 
-  font-size: var(--small-size);
+  font-size:    var(--mini-size);
+  font-weight:  var(--body-weight);
 
   a {
     color: inherit;
@@ -14,11 +15,11 @@ footer {
 }
 
 #footer-content {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 6vh;
-  padding: 1rem;
+  padding: var(--spacing-100) var(--spacing-150);
 
   width: var(--content-width);
 

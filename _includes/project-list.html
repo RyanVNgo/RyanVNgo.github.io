@@ -6,7 +6,7 @@
     {% assign sorted_projects = site.projects | sort: 'priority' | reverse %}
     {% for project in sorted_projects limit: project-list-length %}
     <a class="project-card" href="{{ project.url }}">
-        <div class="project-card__title">{{ project.title }}</div>
+        <h3 class="project-card__title">{{ project.title }}</h3>
         <div class="project-card__leader"></div>
         <small class="project-card__year">{{ project.year }}</small>
     </a>

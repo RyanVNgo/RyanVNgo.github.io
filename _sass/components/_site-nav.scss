@@ -4,9 +4,11 @@
   align-items: center;
 
   margin: 0;
-  padding: 0 0.5rem;
-  gap: 1.0rem;
+  padding-inline: var(--spacing-50);
+  gap: var(--spacing-100);
 
+  font-size:    var(--mini-size);
+  font-weight:  var(--h6-weight);
 }
 
 .site-nav__tab {
@@ -14,7 +16,7 @@
   justify-content: center;
 
   box-sizing: border-box;
-  padding: 0.5em;
+  padding: var(--spacing-50);
 
   text-decoration: underline solid transparent;
   color: var(--text);

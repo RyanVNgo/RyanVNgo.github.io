@@ -15,10 +15,14 @@
 .list-heading {
   display: flex;
 
-  margin-bottom: 0.5rem;
+  margin-block: var(--spacing-200) var(--spacing-50);
   
   justify-content: space-between;
   align-items: center;
+
+  padding-block-end: var(--spacing-50);
+  margin-block-end: var(--spacing-100);
+  border-block-end: var(--border-size) solid var(--text);
 }
 
 .list-heading__title{
@@ -27,12 +31,13 @@
 
 .list-heading__link {
   box-sizing: border-box;
-  padding: 0.25em 0.75em;
+  padding-inline: 0.75em;
 
   border-radius: 0.5rem;
 
   color: var(--text);
-  font-size: var(--h5-size);
+  font-size:    var(--small-size);
+  font-weight:  var(--small-weight);
   text-decoration: underline solid transparent;
 
   transition: all 0.2s;

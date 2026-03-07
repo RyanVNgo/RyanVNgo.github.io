@@ -2,11 +2,10 @@
 .book-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2.0rem 1.0rem;
+  gap: var(--spacing-200) var(--spacing-100);
 
-  margin: 0 0 2.0rem;
-  padding: 0.5rem;
-
+  margin-block-end: var(--spacing-200);
+  padding: var(--spacing-50);
 }
 
 .book-card {
@@ -25,19 +24,24 @@
 }
 
 .book-card__content {
-  padding: 0 0.5rem;
+  padding-inline: var(--spacing-50);
 
-  font-size: var(--small-size);
+  font-size: var(--mini-size);
 }
 
 .book-card__title-group{ 
-  margin-bottom: 0.5rem;
-  > * { margin: 0; }
-  h2 { 
-    font-size: var(--h3-size);
+  margin-block-end: var(--spacing-50);
+
+  > * {
+    margin: 0; 
   }
-  h3 { 
+
+  h2 { 
     font-size: var(--h4-size);
+  }
+
+  h3 { 
+    font-size: var(--body-size);
   }
 }
 

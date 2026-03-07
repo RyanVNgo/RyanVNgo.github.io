@@ -1,7 +1,15 @@
 
 :root {
-  --content-width: 48rem;
+  --content-width: 40rem;
   --img-invert: 0;
+
+  --spacing-50:         0.50rem;
+  --spacing-75:         0.75rem;
+  --spacing-100:        1.00rem;
+  --spacing-150:        1.50rem;
+  --spacing-200:        2.00rem;
+
+  --border-size:    0.0625rem;
 }
 
 body {
@@ -17,25 +25,28 @@ body {
 }
 
 main {
+  flex: 1;
+  display: flex;
   box-sizing: border-box;
   width: 100%;
-  margin-bottom: auto;
 }
 
 article {
+  flex: 1;
   box-sizing: border-box;
   max-width: var(--content-width);
   
-  margin: 8vh auto auto;
-  padding: 1rem 2rem;
+  margin-inline: auto;
+  padding-inline: var(--spacing-200);
+  padding-block: 12vh;
 
   > h2, > h3, > h4, > h5, > h6 {
-    margin: 1.25em 0 0.25em;
+    margin-block: var(--spacing-200) var(--spacing-50);
   }
 }
 
 p {
-  margin: 0 0 1rem;
+  margin-block: 0 var(--spacing-100);
 
   > a {
     color: var(--text-light);
@@ -49,7 +60,6 @@ p {
     display: block;
     margin: 0 auto; 
     max-width: 95%;
-    border-radius: 0.5rem;
     + sub {
       display: inline-block;
       text-align: center;
@@ -59,37 +69,29 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--text);
-  margin: 0 0 0.25em;
+  margin-block: 0 var(--spacing-50);
 }
 
 ul {
-  margin: 0 0 1rem 0.5rem;
-  padding-left: 1rem;
+  margin: 0 0 var(--spacing-100) var(--spacing-50);
+  padding-inline-start: var(--spacing-100);
 }
 
 hr {
   height: 0px;
-
-  margin: 0 0 1rem;
-  padding: 0;
-
+  margin-block-end: var(--spacing-100);
   border-style: none;
-  border-top: 0.0625rem solid var(--text-light);
+  border-top: var(--border-size) solid var(--text);
 }
 
 blockquote {
   background-color: hsl(var(--block-hsl) / 0.1);
-  margin: 0 0.5rem 1.0rem;
-  padding: 0.5rem 0.75rem 0.75rem;
-  border-radius: 0.5rem 0.75rem 0.75rem 0.5rem;
+  margin: var(--spacing-100);
+  padding: var(--spacing-75) var(--spacing-100);
   border-left: 0.5rem solid hsl(var(--block-hsl));
-  // box-shadow: 0 0        0.125rem hsl(var(--block-hsl) / 0.4),
-  //             0 0.125rem 0.125rem hsl(var(--block-hsl) / 0.4);
-  font-family: var(--sans-font);
-  font-weight: 400;
+
   font-style: italic;
-  font-size: var(--h5-size);
+  font-size: var(--mini-size);
   color: hsl(var(--block-color));
 
   &::before {

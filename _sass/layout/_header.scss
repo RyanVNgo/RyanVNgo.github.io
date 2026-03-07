@@ -1,24 +1,22 @@
 
 header {
-  box-sizing: border-box;
-
-  width: 100%;
-
   display: flex;
   justify-content: center;
 
-  font-size: var(--small-size);
-  font-weight: 500;
+  width: 100%;
+
+  font-size:    var(--mini-size);
+  font-weight:  var(--h6-weight);
 }
 
 #header-content {
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   width: var(--content-width);
-  padding: 1.0rem 0.5rem 0.75rem;
-  margin: 0 1rem;
+  padding: var(--spacing-100) var(--spacing-150);
 }
 
 #home-button {
@@ -58,7 +56,7 @@ header {
 
 #header-links {
   display: flex;
-  gap: 1rem;
+  gap: var(--spacing-100);
 }
 
 #theme-toggle {

@@ -7,9 +7,15 @@
   align-items: center;
 }
 
+#title-section__title {
+  margin: 0;
+}
+
 .title-section__github-link {
   height: 1.5rem; 
   align-self: flex-start;
+
+  margin-block: auto;
 
   > svg {
     transition: all 0.2s;
