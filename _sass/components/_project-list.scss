@@ -1,7 +1,7 @@
 
 .project-list {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing-100);
 
   padding-inline: var(--spacing-50);
@@ -9,20 +9,27 @@
 
 .project-card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 
-  gap: var(--spacing-100);
+  gap: var(--spacing-50);
+  padding: var(--spacing-100);
 
   text-decoration: underline solid transparent;
   color: var(--text);
 
+  outline: var(--border-size) dashed var(--base-dark);
+
   transition: all 0.2s;
 
   &:hover {
-    color: var(--text-light);
-    text-decoration: underline solid var(--text-light);
+    color: var(--primary);
+    background-color: var(--primary-faded);
+    outline: var(--border-size) solid var(--primary);
+
+    .project-card__title {
+      text-decoration: underline solid var(--primary);
+    }
   }
 }
 
@@ -34,8 +41,17 @@
   font-weight:  var(--h6-weight);
 }
 
-.project-card__leader {
-  flex-grow: 1;
-  border-bottom: solid 1px var(--base-darker);
+.project-card__blip {
+  flex: 1;
+  font-size: var(--mini-size);
+  font-weight: var(--mini-weight);
+  padding-inline-start: var(--spacing-50);
+}
+
+.project-card__year {
+  margin: 0;
+  align-self: end;
+  font-size: var(--mini-size);
+  font-weight: var(--body-weight);
 }
 

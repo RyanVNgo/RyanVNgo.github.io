@@ -7,7 +7,9 @@
     {% for project in sorted_projects limit: project-list-length %}
     <a class="project-card" href="{{ project.url }}">
         <h3 class="project-card__title">{{ project.title }}</h3>
-        <div class="project-card__leader"></div>
+        {% if project.blip %}
+        <p class="project-card__blip">{{ project.blip }}</p>
+        {% endif %}
         <small class="project-card__year">{{ project.year }}</small>
     </a>
     {% endfor %}

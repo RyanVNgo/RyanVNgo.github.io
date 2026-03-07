@@ -13,16 +13,24 @@
   justify-content: space-between;
   align-items: center;
 
-  gap: var(--spacing-100);
+  gap: var(--spacing-50);
+  padding: var(--spacing-100);
 
   text-decoration: underline solid transparent;
   color: var(--text);
 
+  outline: var(--border-size) dashed var(--base-dark);
+
   transition: all 0.2s;
 
   &:hover {
-    color: var(--text-light);
-    text-decoration: underline solid var(--text-light);
+    color: var(--primary);
+    background-color: var(--primary-faded);
+    outline: var(--border-size) solid var(--primary);
+
+    .post-card__title {
+      text-decoration: underline solid var(--primary);
+    }
   }
 }
 
@@ -34,8 +42,7 @@
   font-weight:  var(--h6-weight);
 }
 
-.post-card__leader {
-  flex-grow: 1;
-  border-bottom: solid 1px var(--base-darker);
+.post-card__date {
+  font-size: var(--mini-size);
 }
 
