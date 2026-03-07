@@ -18,7 +18,7 @@
   box-sizing: border-box;
   padding: var(--spacing-50);
 
-  text-decoration: underline solid transparent;
+  text-decoration: none;
   color: var(--text);
   text-transform: capitalize;
 
@@ -26,11 +26,10 @@
 
   &:not(.site-nav__tab--highlight):hover {
     color: var(--text-light);
-    text-decoration: underline solid var(--text-light);
   }
 }
 
 .site-nav__tab--highlight {
-  text-decoration: underline solid var(--text);
+  color: var(--primary);
 }
 

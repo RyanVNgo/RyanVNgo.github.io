@@ -17,6 +17,8 @@ header {
 
   width: var(--content-width);
   padding: var(--spacing-100) var(--spacing-150);
+
+  text-shadow: var(--text-shadow);
 }
 
 #home-button {
@@ -35,18 +37,11 @@ header {
 
   #home-button-text {
     margin-left: 0.25em;
-
-    text-decoration: underline solid transparent;
-
     transition: all 0.2s;
   }
 
   &:not(.tab-highlight):hover {
     color: var(--text-light);
-
-    #home-button-text {
-      text-decoration: underline solid var(--text-light);
-    }
 
     > img {
       opacity: 0.7;

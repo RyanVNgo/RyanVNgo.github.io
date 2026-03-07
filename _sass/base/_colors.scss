@@ -11,6 +11,10 @@
   --primary-faded:  oklch(0.60 0.15 290 / 0.1);
 
   --filter-scheme-invert:     invert(0);
+
+  --text-shadow:  0     0     0px   rgba(50, 50, 50, 0.1),
+                  1px   1px   3px   rgba(50, 50, 50, 0.3),
+                  -1px  -1px  2px   rgba(50, 50, 50, 0.1);
 }
 
 [data-theme="light"] {
@@ -29,6 +33,10 @@
   --primary-faded:  oklch(0.70 0.10 290 / 0.1);
 
   --filter-scheme-invert:     invert(1);
+
+  --text-shadow:  0     0     1px   rgba(220, 220, 220, 0.1),
+                  1px   1px   3px   rgba(220, 220, 220, 0.3),
+                  -1px  -1px  2px   rgba(220, 220, 220, 0.1);
 }
 
 .invert-on-scheme {

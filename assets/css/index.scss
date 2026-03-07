@@ -38,12 +38,11 @@
   color: var(--text);
   font-size:    var(--small-size);
   font-weight:  var(--small-weight);
-  text-decoration: underline solid transparent;
+  text-decoration: none;
 
   transition: all 0.2s;
 
   &:hover {
     color: var(--text-light);
-    text-decoration: underline solid var(--text-light);
   }
 }
