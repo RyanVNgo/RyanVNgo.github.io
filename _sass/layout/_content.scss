@@ -13,8 +13,10 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  > * { min-width: 0; }
+
   min-height: 100vh;
   margin: 0;
 
@@ -24,15 +26,7 @@ body {
   color: var(--text);
 }
 
-main {
-  flex: 1;
-  display: flex;
-  box-sizing: border-box;
-  width: 100%;
-}
-
 article {
-  flex: 1;
   box-sizing: border-box;
   max-width: var(--content-width);
   

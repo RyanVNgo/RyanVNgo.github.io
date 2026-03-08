@@ -2,7 +2,6 @@
 footer {
   display: flex;
   justify-content: center;
-  width: 100%;
 
   font-size:    var(--mini-size);
   font-weight:  var(--body-weight);
@@ -19,9 +18,9 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-100) var(--spacing-150);
 
   width: var(--content-width);
+  padding: var(--spacing-100) var(--spacing-150);
 
   text-shadow: var(--text-shadow);
 

@@ -1,7 +1,7 @@
 
 .book-list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(14rem,1fr));
   gap: var(--spacing-200) var(--spacing-100);
 
   margin-block-end: var(--spacing-200);
