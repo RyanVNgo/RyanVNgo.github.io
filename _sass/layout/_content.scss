@@ -24,6 +24,7 @@ body {
 
   font-family: var(--sans-font);
   color: var(--text);
+  text-shadow: var(--text-shadow);
 }
 
 article {
@@ -33,10 +34,6 @@ article {
   margin-inline: auto;
   padding-inline: var(--spacing-200);
   padding-block: 12vh;
-
-  > * {
-    text-shadow: var(--text-shadow);
-  }
 
   > h2, > h3, > h4, > h5, > h6 {
     margin-block: var(--spacing-200) var(--spacing-50);
@@ -83,19 +80,20 @@ hr {
 }
 
 blockquote {
-  background-color: hsl(var(--block-hsl) / 0.1);
   margin: var(--spacing-100);
   padding: var(--spacing-75) var(--spacing-100);
-  border-left: 0.5rem solid hsl(var(--block-hsl));
 
   font-style: italic;
   font-size: var(--mini-size);
   color: hsl(var(--block-color));
 
+  background-color: hsl(var(--block-hsl) / 0.1);
+  border-left: 0.5rem solid hsl(var(--block-hsl));
+
   &::before {
     display: block;
     content: var(--bq-text);
-    font-weight: 800; 
+    font-weight: var(--h1-weight);
     font-style: normal;
     margin: 0;
   }
@@ -125,6 +123,5 @@ blockquote {
     --block-hsl: 0 100% 75%;
     --block-color: 0 25% 50%;
   }
-
 }
 

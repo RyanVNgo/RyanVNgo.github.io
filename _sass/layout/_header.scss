@@ -21,8 +21,6 @@ header {
   width: var(--content-width);
   padding: var(--spacing-100) var(--spacing-150);
 
-  text-shadow: var(--text-shadow);
-
   .social-links, #home-button-text {
     @media screen and (max-width: 600px) {
       display: none;
