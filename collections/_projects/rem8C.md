@@ -11,7 +11,7 @@ images:
     - https://raw.githubusercontent.com/RyanVNgo/rem8C/refs/heads/main/images/Flags_test.png
     - https://raw.githubusercontent.com/RyanVNgo/rem8C/refs/heads/main/images/Corax_test.png
 blip: >
-    A CHIP-8 emulator made in C.
+    A CHIP-8 emulator made in C with an SDL2 renderer.
 ---
 
 ![IBM logo test ROM running]({{ page.images[0] }})

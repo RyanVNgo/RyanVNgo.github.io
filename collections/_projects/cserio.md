@@ -7,7 +7,8 @@ year: 2026
 priority: 5
 github: https://github.com/RyanVNgo/CSERIO
 blip: >
-    An interface to SER format image captures for C programmers.
+    A single header C library that provides IO operations for .ser
+    format image sequence files.
 ---
 
 {% highlight C %}
