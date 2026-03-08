@@ -2,7 +2,8 @@
 @use "sass:math";
 
 $scale-ratio: 1.125;
-$font-size: 16px;
+$font-size:         16px;
+$font-size-mobile:  14px;
 $line-height: 1.42;
 
 $h1-size:       1rem * math.pow($scale-ratio,  3.00);
@@ -20,6 +21,10 @@ $mini-size:     1rem * math.pow($scale-ratio, -1.00);
   --serif-font: "serif";
   --mono-font: Courier New, monospace;
   --font-size: #{$font-size};
+
+  @media screen and (max-width: 600px) {
+    --font-size: #{$font-size-mobile};
+  }
 
   --h1-size:      #{$h1-size};
   --h2-size:      #{$h2-size};
