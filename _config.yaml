@@ -22,21 +22,12 @@ docs:
   - title: posts 
     url: /pages/posts.html
 
-  # - title: astro
-  #   url: /pages/astro.html
-
   - title: reading 
     url: /pages/reading.html
-
-  # - title: about
-  #   url: /pages/about.html
 
 collections_dir: collections
 collections:
   projects:
-    output: true
-
-  astrophotos:
     output: true
 
   readings:
