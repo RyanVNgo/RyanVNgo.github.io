@@ -3,7 +3,6 @@ section: posts
 layout: post
 style-sheets: [default, post-page]
 title: Rewriting CSERIO
-published: false
 ---
 
 I started developing CSERIO in 2024 after wanting a C library that could
@@ -49,7 +48,7 @@ on my end to validate library functionality.
 ### Consolidation to a Single Header
 
 In the previous implementation, I placed all the defines, structs, and 
-function prototypes into a single header file and placed all funciton
+function prototypes into a single header file and placed all function
 definitions in a series of source files. Then, I provided a `Makefile`
 which would build the files into a static library file `libcserio.a`.
 
@@ -80,20 +79,115 @@ with the project.
 ### Complete Suite of Routines
 
 The new suite of routines now provides enough functionality needed to create,
-read, and write SER files. This includes more granular read/write
-routines for the header, an append routine for writing a new image, and a 
-read routine for the trailer.
+read, and write SER files. 
+
+They can be separated into four general groups: access, header, image, and
+trailer.
+
+{% highlight C %}
+/*-------------------- SER Access Routines --------------------*/
+
+int ser_create_file(serfile** sptr, const char* path, int* status);
+int ser_open_file(serfile** sptr, const char* path, int mode, int* status);
+int ser_close_file(serfile* sptr, int* status);
+
+{% endhighlight %}
+
+The access routines haven't change much functionally speaking with the only
+new routine here being the `ser_create_file` routine.
+
+{% highlight C %}
+/*-------------------- Header Routines --------------------*/
+
+int ser_read_rec_count(serfile* sptr, int* rec_count, int* status);
+int ser_read_file_id(serfile* sptr, char* file_id, int* status);
+int ser_read_lu_id(serfile* sptr, int32_t* lu_id, int* status);
+int ser_read_color_id(serfile* sptr, int32_t* color_id, int* status);
+int ser_read_little_endian(serfile* sptr, int32_t* little_endian, int* status);
+int ser_read_image_width(serfile* sptr, int32_t* image_width, int* status);
+int ser_read_image_height(serfile* sptr, int32_t* image_height, int* status);
+int ser_read_pixel_depth_per_plane(serfile* sptr, int32_t* pixel_depth_per_plane, int* status);
+int ser_read_frame_count(serfile* sptr, int32_t* frame_count, int* status);
+int ser_read_observer(serfile* sptr, char* observer, int* status);
+int ser_read_instrument(serfile* sptr, char* instrument, int* status);
+int ser_read_telescope(serfile* sptr, char* telescope, int* status);
+int ser_read_date_time(serfile* sptr, int64_t* date_time, int* status);
+int ser_read_date_time_utc(serfile* sptr, int64_t* date_time_utc, int* status);
+
+int ser_write_file_id(serfile* sptr, const char* file_id, int* status);
+int ser_write_lu_id(serfile* sptr, const int32_t lu_id, int* status);
+int ser_write_color_id(serfile* sptr, const int32_t color_id, int* status);
+int ser_write_little_endian(serfile* sptr, const int32_t little_endian, int* status);
+int ser_write_image_width(serfile* sptr, const uint32_t image_width, int* status);
+int ser_write_image_height(serfile* sptr, const uint32_t image_height, int* status);
+int ser_write_pixel_depth_per_plane(serfile* sptr, const int32_t pixel_depth_per_plane, int* status);
+int ser_write_observer(serfile* sptr, const char* observer, int* status);
+int ser_write_instrument(serfile* sptr, const char* instrument, int* status);
+int ser_write_telescope(serfile* sptr, const char* telescope, int* status);
+int ser_write_date_time(serfile* sptr, const int64_t date_time, int* status);
+int ser_write_date_time_utc(serfile* sptr, const int64_t date_time_utc, int* status);
+
+{% endhighlight %}
+
+The set of header routines was the biggest change.
+
+In the previous implementation, there were only two routines that provided 
+read and write capabilities for the header. They required a `KEY` to select 
+the header field and a `LEN` to know how many bytes to read from or write 
+to. This was easy to mess up and offered little in the way of safety.
+
+The new routines are now explicit on which header field they operate on and
+are what data they require. Only the `char*` parameters need to be carefully
+accounted for since the functions assume a specific length for these buffers.
+These are still provided by the `LEN` constants and is explained in the
+documentation.
+
+{% highlight C %}
+/*-------------------- Image Routines --------------------*/
+
+int ser_get_number_of_planes(serfile* sptr, int* nop, int* status);
+int ser_get_bytes_per_pixel(serfile* sptr, unsigned long* bytes_per_pixel, int* status); 
+int ser_get_frame_byte_size(serfile* sptr, unsigned long* byte_size, int* status);
+int ser_read_frame(serfile* sptr, void* dest, size_t idx, int* status);
+int ser_append_frame(serfile* sptr, const void* data, uint64_t timestamp, int* status);
+
+{% endhighlight %}
+
+With the image routines, the addition of `ser_append_frame` to allow users 
+to write new images to the SER file was the most important change. It
+also functions as the write routine for the trailer since there needs
+to a be a timestamp for every frame provided the trailer is active.
+
+
+{% highlight C %}
+/*-------------------- Trailer Routines --------------------*/
+
+int ser_read_timestamp(serfile* sptr, int64_t* dest, size_t idx, int* status);
+{% endhighlight %}
+
+There's just one trailer routine which reads a timestamp.
+
 
 ### Validation
 
 All routines now interact with SER files in a way that ensures validity
-through a series of internal checks. Now, malformed SER files can't be opened and 
-valid ones can't be malformed.
+through a series of internal checks. This presents itself in many ways 
+throughout the routines.
+
+For example, you cannot change the width or height fields in the header
+if image data is present as is may create an invalid correlation between
+the two. 
+
+While it's a bit restrictive in this manner, it helps to ensure malformed 
+SER files can't be opened/created and valid ones can't be malformed.
+
 
 ### Using Check for Unit Tests
 
-I replaced the entire testing implementation with Check and have near complete 
-code coverage.
+I replaced the entire testing framework with 
+[Check](https://libcheck.github.io/check/). 
+It's far better than what I produced and made developing the unit tests
+much easier.
 
 
 ## For the Future
