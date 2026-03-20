@@ -3,6 +3,7 @@ section: posts
 layout: post
 style-sheets: [default, post-page]
 title: Rewriting CSERIO
+published: false
 ---
 
 I started developing CSERIO in 2024 after wanting a C library that could
