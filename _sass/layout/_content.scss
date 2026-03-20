@@ -37,6 +37,11 @@ article {
 
   > h2, > h3, > h4, > h5, > h6 {
     margin-block: var(--spacing-200) var(--spacing-50);
+
+    & + :is(h1, h2, h3, h4, h5, h6) {
+      margin-block-start: var(--spacing-100);;
+    }
+
   }
 }
 

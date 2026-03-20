@@ -19,7 +19,8 @@
   text-decoration: none;
   color: var(--text);
 
-  outline: var(--border-size) dashed var(--base-dark);
+  outline: var(--border-size) solid var(--base-dark);
+  border-radius: var(--spacing-50);
 
   transition: all 0.2s;
 
