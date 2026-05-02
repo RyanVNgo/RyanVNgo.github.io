@@ -3,6 +3,7 @@ section: posts
 layout: post
 style-sheets: [default, post-page]
 title: Game Engine - 2 | Organization
+published: false
 ---
 
 ## Structure

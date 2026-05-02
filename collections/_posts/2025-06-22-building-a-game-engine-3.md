@@ -4,6 +4,7 @@ layout: post
 style-sheets: [default, post-page]
 title: Game Engine - 3 | Rendering with Instancing
 cover-photo: "/assets/images/posts/game-engine/image_2.webp"
+published: false
 ---
 
 ## Representing Voxel Objects

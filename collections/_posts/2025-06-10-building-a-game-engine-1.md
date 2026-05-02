@@ -3,6 +3,7 @@ section: posts
 layout: post
 style-sheets: [default, post-page]
 title: Game Engine - 1 | Start
+published: false
 ---
 
 With how abysmal recent games have been in terms of performance to visual quality, I've been wanting
