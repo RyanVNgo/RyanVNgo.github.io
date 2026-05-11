@@ -1,4 +1,6 @@
 
+@use "base/sizing.scss";
+
 header {
   display: flex;
   justify-content: center;
@@ -8,7 +10,7 @@ header {
 }
 
 #header-content {
-  box-sizing: border-box;
+  box-sizing: content-box;
 
   display: flex;
   align-items: center;
@@ -22,7 +24,7 @@ header {
   padding: var(--spacing-100) var(--spacing-150);
 
   .social-links, #home-button-text {
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: #{sizing.$content-width}) {
       display: none;
     }
   }

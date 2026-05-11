@@ -1,6 +1,8 @@
 
+@use "base/sizing.scss";
+
 :root {
-  --content-width: 40rem;
+  --content-width: #{sizing.$content-width};
   --img-invert: 0;
 
   --spacing-50:         0.50rem;
@@ -24,11 +26,10 @@ body {
 
   font-family: var(--sans-font);
   color: var(--text);
-  text-shadow: var(--text-shadow);
 }
 
 article {
-  box-sizing: border-box;
+  box-sizing: content-box;
   max-width: var(--content-width);
   
   margin-inline: auto;

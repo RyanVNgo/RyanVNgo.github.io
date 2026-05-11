@@ -1,4 +1,6 @@
 
+@use "base/sizing.scss";
+
 footer {
   display: flex;
   justify-content: center;
@@ -14,7 +16,7 @@ footer {
 }
 
 #footer-content {
-  box-sizing: border-box;
+  box-sizing: content-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,7 +37,7 @@ footer {
   }
 
   .site-nav, p {
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: #{sizing.$content-width}) {
       display: none;
     }
   }
