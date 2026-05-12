@@ -8,8 +8,9 @@ priority: 4
 github: https://github.com/RyanVNgo/rem8Cpp
 images:
     - https://raw.githubusercontent.com/RyanVNgo/rem8Cpp/refs/heads/main/images/IBM_test.png
+overview: Emulator
 blip: >
-    A CHIP-8 emulator made in C++ with an ImGui backend of GLFW and OpenGL 3.
+    A CHIP-8 emulator in C++ with ImGui
 ---
 
 ![IBM logo test ROM running]({{ page.images[0] }})

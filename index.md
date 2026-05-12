@@ -5,34 +5,36 @@ style-sheets: [default, index]
 author: Ryan Ngo
 ---
 
-<h1 class="home-title">Hi, I'm <span>{{ page.author }}</span></h1>
+<span class="eyebrow">Software Developer & CS Grad</span>
+<h1 class="home-title">
+    Hi, I'm {{ site.author }} and I'm<br>
+    <span>Building Software for... <i>something</i>...</span>
+</h1>
 
-And welcome to my personal website. A place where I provide info about my
-projects, post write-ups, and share whatever else I feel like putting out 
-there.
+I recently graduated from San Diego State University with a B.S. in
+Computer Science and I'm interested in building clean, performant,
+robust software that advances our science, research, and exploration
+of space.
 
-I recently graduated with a B.S. in Computer Science from San Diego State 
-University and I'm interested in building software that advances scientific 
-research and discovery.
+Outside of software: Formula 1, tech, astronomy, and K-pop. <sub><i>(stan NMIXX)</i></sub>
 
-Outside of programming I like tech, Formula 1, gaming, astrophotography,
-and K-pop. <sub><i>(stan Aespa)</i></sub>
-
-## Now
-
-Improving my skills in developing C++ applications, mostly focused on 
-astronomy and astrophotography.
+<div class="info-block">
+    <div class="info-block__text">
+    <span>Now</span> - improving C++ skills, mostly in developing robust
+    applications.
+    </div>
+</div>
 
 <div class="list-heading">
-    <h2 class="list-heading__title">Projects</h2>
-    <a class="list-heading__link" href="{{ site.docs[1].url }}">more</a>
+    <span class="eyebrow">Projects</span>
+    <a class="list-heading__link" href="{{ site.docs[1].url }}">all projects -></a>
 </div>
 {% include project-list.html %}
 
 
 <div class="list-heading">
-    <h2 class="list-heading__title">Posts</h2>
-    <a class="list-heading__link" href="{{ site.docs[2].url }}">more</a>
+    <span class="eyebrow">Posts</span>
+    <a class="list-heading__link" href="{{ site.docs[2].url }}">all posts -></a>
 </div>
 {% assign post-list-length = 3 %}
 {% include post-list.html %}

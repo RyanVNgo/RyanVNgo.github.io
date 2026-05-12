@@ -6,9 +6,9 @@ title: CSERIO
 year: 2026
 priority: 5
 github: https://github.com/RyanVNgo/CSERIO
+overview: Library
 blip: >
-    A single header C library that provides IO operations for .ser
-    format image sequence files.
+    Single header C library for IO operations on .ser files
 ---
 
 {% highlight C %}

@@ -8,7 +8,6 @@
   gap: var(--spacing-100);
 
   font-size:    var(--mini-size);
-  font-weight:  var(--h6-weight);
 }
 
 .site-nav__tab {
@@ -19,17 +18,17 @@
   padding: var(--spacing-50);
 
   text-decoration: none;
-  color: var(--text);
+  color: var(--text-tertiary);
   text-transform: capitalize;
 
   transition: all 0.2s;
 
   &:not(.site-nav__tab--highlight):hover {
-    color: var(--text-light);
+    color: var(--text-primary);
   }
 }
 
 .site-nav__tab--highlight {
-  color: var(--primary);
+  color: var(--accent);
 }
 

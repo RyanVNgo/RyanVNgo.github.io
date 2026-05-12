@@ -6,7 +6,6 @@ footer {
   justify-content: center;
 
   font-size:    var(--mini-size);
-  font-weight:  var(--body-weight);
 
   a {
     color: inherit;
@@ -27,11 +26,11 @@ footer {
   > p {
     margin: 0;
     > a {
-      color: var(--text-light);
+      color: var(--text-tertiary);
       text-decoration: underline;
 
       &:hover {
-        color: var(--primary);
+        color: var(--accent);
       }
     }
   }

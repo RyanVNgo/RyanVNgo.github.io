@@ -3,8 +3,17 @@
 
 #title-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  margin-block-end: var(--spacing-200);
+}
+
+#title-section__overview {
+  flex: 100%;
+  display: inline-block;
+  margin-block-end: var(--spacing-100);
 }
 
 #title-section__title {

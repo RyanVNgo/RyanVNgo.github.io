@@ -9,6 +9,9 @@
 
     <main>
       <article>
+        <span id="title-section__overview" class="eyebrow">
+            {{ page.overview }}
+        </span>
 
         <div id="title-section">
           <h1 id="title-section__title">{{ page.title }}</h1>
@@ -18,10 +21,7 @@
               {% octicon mark-github height:24 class:"invert-on-scheme" %}
             </a>
           {% endif %}
-
         </div>
-
-        <hr>
 
         {{ content }}
 

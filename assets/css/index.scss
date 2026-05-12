@@ -2,13 +2,10 @@
 ---
 
 .home-title {
-  margin-bottom: 1.0em;
+  margin-bottom: var(--spacing-200);
 
   > span {
-    text-decoration: var(--primary) wavy underline;
-    text-decoration-thickness: 0.125rem;
-    text-decoration-skip-ink: none;
-    text-underline-offset: 0.125em;
+    color: var(--accent);
   }
 }
 
@@ -20,12 +17,15 @@
   justify-content: space-between;
   align-items: center;
 
-  padding-block-end: var(--spacing-50);
   margin-block-end: var(--spacing-100);
-  border-block-end: var(--border-size) solid var(--text);
+
+  font-size: var(--mini-size);
+  color: var(--text-tertiary);
 }
 
 .list-heading__title{
+  font-family: var(--mono-font);
+  text-transform: uppercase;
   margin: 0;
 }
 
@@ -35,14 +35,12 @@
 
   border-radius: 0.5rem;
 
-  color: var(--text);
-  font-size:    var(--small-size);
-  font-weight:  var(--small-weight);
+  color: inherit;
   text-decoration: none;
 
   transition: all 0.2s;
 
   &:hover {
-    color: var(--text-light);
+    color: var(--accent);
   }
 }

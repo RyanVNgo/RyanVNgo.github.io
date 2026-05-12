@@ -6,11 +6,11 @@
     {% assign sorted_projects = site.projects | sort: 'priority' | reverse %}
     {% for project in sorted_projects limit: project-list-length %}
     <a class="project-card" href="{{ project.url }}">
-        <h3 class="project-card__title">{{ project.title }}</h3>
+        <span class="project-card__title">{{ project.title }}</span>
         {% if project.blip %}
-        <p class="project-card__blip">{{ project.blip }}</p>
+        <span class="project-card__blip">{{ project.blip }}</span>
         {% endif %}
-        <small class="project-card__year">{{ project.year }}</small>
+        <span class="project-card__year">{{ project.year }}</span>
     </a>
     {% endfor %}
 </div>

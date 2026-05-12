@@ -1,13 +1,25 @@
 ---
 ---
 
-#post-title {
-  margin-block-end: var(--spacing-50);
+.title-section {
+  margin-block-end: var(--spacing-200);
 }
 
-#post-date {
+#title-section__overview {
+  display: inline-block;
+  margin-block-end: var(--spacing-100);
+}
+
+#title-section__title {
+  margin-block-end: var(--spacing-100);
+}
+
+#title-section__post-info{
+  display: flex;
+  gap: var(--spacing-150);
+
+  font-family: var(--mono-font);
   font-size:    var(--mini-size);
-  margin-inline-start:  var(--spacing-100);
-  margin-block-end:     var(--spacing-50);
+  color: var(--text-tertiary);
 }
 

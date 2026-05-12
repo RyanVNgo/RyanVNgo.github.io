@@ -9,9 +9,26 @@
 
     <main>
       <article>
-        <h1 id="post-title">{{ page.title }}</h1>
-        <div id="post-date"> {{ page.date | date: "%Y-%m-%d" }}&emsp; </div>
-        <hr>
+        <div class="title-section">
+            <span id="title-section__overview" class="eyebrow">
+                {{ page.overview }}
+            </span>
+
+            <h1 id="title-section__title">{{ page.title }}</h1>
+
+            <div id="title-section__post-info">
+                <span>{{ page.date | date: "%Y-%m-%d" }}</span>
+                {% assign words = page.content | number_of_words %}
+                {% assign reading_time = words | divided_by: 200 %}
+                <span>/</span>
+                <span>~{{ reading_time }} min read</span>
+                {% unless page.tag.empty? %}
+                    <span>/</span>
+                    <span>{{ page.tags | join: ", " }}</span>
+                {% endunless %}
+            </div>
+
+        </div>
         {{ content }}
       </article>
     </main>

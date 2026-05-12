@@ -6,9 +6,9 @@ title: SRNAFNet
 year: 2025
 priority: 3
 github: https://github.com/RyanVNgo/NAFNet-SISR
+overview: Artificial Intelligence
 blip: >
-    A Single-Image Super-Resolution CNN based on the NAFNet intra-block
-    architecture.
+    Single-Image Super-Resolution CNN based on the NAFNet
 ---
 
 ![Super resolution example]({{ site.projects-imgs-dir | append: page.title }}/image_1.webp)
