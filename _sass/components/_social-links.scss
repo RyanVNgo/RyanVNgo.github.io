@@ -13,12 +13,14 @@
 
     transition: all 0.2s;
 
+    fill: var(--text-tertiary);
+
     object-fit: contain;
   }
 
   &:hover {
     > svg {
-      opacity: 0.7;
+      fill: var(--text-primary);
     }
     > img {
       opacity: 0.7;

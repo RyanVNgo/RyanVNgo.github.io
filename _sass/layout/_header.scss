@@ -68,6 +68,8 @@ header {
 
   cursor: pointer;
   
+  fill: var(--text-tertiary);
+
   transition: all 0.2s;
 
   > .octicon {
@@ -75,7 +77,7 @@ header {
   }
 
   &:hover {
-    opacity: 0.7;
+    fill: var(--text-primary);
   }
 
 }
