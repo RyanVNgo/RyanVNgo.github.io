@@ -27,14 +27,14 @@ Outside of software: Formula 1, tech, astronomy, and K-pop. <sub><i>(stan NMIXX)
 
 <div class="list-heading">
     <span class="eyebrow">Projects</span>
-    <a class="list-heading__link" href="{{ site.docs[1].url }}">all projects -></a>
+    <a class="list-heading__link" href="{{ site.docs[0].url }}">all projects -></a>
 </div>
 {% include project-list.html %}
 
 
 <div class="list-heading">
     <span class="eyebrow">Posts</span>
-    <a class="list-heading__link" href="{{ site.docs[2].url }}">all posts -></a>
+    <a class="list-heading__link" href="{{ site.docs[1].url }}">all posts -></a>
 </div>
 {% assign post-list-length = 3 %}
 {% include post-list.html %}
