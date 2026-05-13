@@ -7,6 +7,11 @@ year: 2025
 priority: 3
 github: https://github.com/RyanVNgo/NAFNet-SISR
 overview: Artificial Intelligence
+tags:
+    - Python
+    - PyTorch
+    - NumPy
+    - AI
 blip: >
     Single-Image Super-Resolution CNN based on the NAFNet
 ---

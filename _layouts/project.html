@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 
 <html>
-  {% include head.html %}
+    {% include head.html %}
 
-  <body>
+    <body>
 
-    {% include header.html %}
+        {% include header.html %}
 
-    <main>
-      <article>
-        <span id="title-section__overview" class="eyebrow">
-            {{ page.overview }}
-        </span>
+        <main>
+            <article>
+                <div id="title-section">
+                    <span id="title-section__overview" class="eyebrow">
+                        {{ page.overview }}
+                    </span>
 
-        <div id="title-section">
-          <h1 id="title-section__title">{{ page.title }}</h1>
+                    <h1 id="title-section__title">{{ page.title }}</h1>
 
-          {% if page.github %}
-            <a class="title-section__github-link" href="{{ page.github }}" target="_blank">
-              {% octicon mark-github height:24 class:"invert-on-scheme" %}
-            </a>
-          {% endif %}
-        </div>
+                    <div id="title-section__post-info">
+                        {% if page.github %}
+                        <a href="{{ page.github }}" target="_blank">
+                            Github
+                        </a>
+                        {% endif %}
 
-        {{ content }}
+                        {% unless page.tags == empty %}
+                        <span>/</span>
+                        <span>{{ page.tags | join: ", " }}</span>
+                        {% endunless %}
+                    </div>
 
-      </article>
-    </main>
+                </div>
 
-    {% include footer.html %}
+                {{ content }}
 
-  </body>
+            </article>
+        </main>
+
+        {% include footer.html %}
+
+    </body>
 
 </html>
 

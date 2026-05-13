@@ -2,38 +2,31 @@
 ---
 
 #title-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-
   margin-block-end: var(--spacing-200);
 }
 
 #title-section__overview {
-  flex: 100%;
   display: inline-block;
   margin-block-end: var(--spacing-100);
 }
 
 #title-section__title {
-  margin: 0;
+  margin-block-end: var(--spacing-100);
 }
 
-.title-section__github-link {
-  height: 1.5rem; 
-  align-self: flex-start;
+#title-section__post-info{
+  display: flex;
+  gap: var(--spacing-150);
 
-  margin-block: auto;
-
-  > svg {
-    transition: all 0.2s;
-    height: 100%;
-  }
-
-  &:hover {
-    svg {
-      opacity: 0.65;
+  font-family: var(--mono-font);
+  font-size:    var(--mini-size);
+  color: var(--text-tertiary);
+  
+  > a {
+    color: var(--text-tertiary);
+    transition: all 0.25s;
+    &:hover {
+      color: var(--text-primary);
     }
   }
 }

@@ -9,6 +9,9 @@ github: https://github.com/RyanVNgo/rem8Cpp
 images:
     - https://raw.githubusercontent.com/RyanVNgo/rem8Cpp/refs/heads/main/images/IBM_test.png
 overview: Emulator
+tags:
+    - C++
+    - Dear ImGui
 blip: >
     A CHIP-8 emulator in C++ with ImGui
 ---

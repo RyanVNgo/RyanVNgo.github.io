@@ -11,6 +11,9 @@ images:
     - https://raw.githubusercontent.com/RyanVNgo/rem8C/refs/heads/main/images/Flags_test.png
     - https://raw.githubusercontent.com/RyanVNgo/rem8C/refs/heads/main/images/Corax_test.png
 overview: Emulator
+tags:
+    - C
+    - SDL2
 blip: >
     A CHIP-8 emulator in C with SDL2 renderer
 ---

@@ -7,6 +7,9 @@ year: 2026
 priority: 5
 github: https://github.com/RyanVNgo/CSERIO
 overview: Library
+tags:
+    - C
+    - Library
 blip: >
     Single header C library for IO operations on .ser files
 ---
