@@ -20,8 +20,7 @@ Outside of software: Formula 1, tech, astronomy, and K-pop. <sub><i>(stan NMIXX)
 
 <div class="info-block">
     <div class="info-block__text">
-    <span>Now</span> - improving C++ skills, mostly in developing robust
-    applications.
+    <span>Now</span> - improving skills in developing C++ software.
     </div>
 </div>
 
