@@ -11,16 +11,15 @@ author: Ryan Ngo
     <span>Building Software for... <i>something</i>...</span>
 </h1>
 
-I recently graduated from San Diego State University with a B.S. in
-Computer Science and I'm interested in building clean, performant,
-robust software that advances our science, research, and exploration
-of space.
+I currently spend my time building personal software projects, some of 
+which are featured below alongside posts about them and other topics I 
+find interesting.
 
 Outside of software: Formula 1, tech, astronomy, and K-pop. <sub><i>(stan NMIXX)</i></sub>
 
 <div class="info-block">
     <div class="info-block__text">
-    <span>Now</span> - improving skills in developing C++ software.
+    <span>Now</span> - improving skills in developing software in C++
     </div>
 </div>
 
