@@ -204,34 +204,17 @@ regards if that's of concern.
 [[nodiscard]] auto get_bool() noexcept -> bool;
 [[nodiscard]] auto get_string() const -> std::string;
 
-/* could align even more */
+/* possible further alignment */
 [[nodiscard]] auto get_vector() const noexcept  -> const std::vector<int>&;
-[[nodiscard]] auto get_bool() noexcept          -> bool;
+[[nodiscard]] auto get_bool()   noexcept        -> bool;
 [[nodiscard]] auto get_string() const           -> std::string;
-
-/* certain situations like this can still be awkward */
-[[nodiscard]] auto get_vector() const noexcept  -> const std::vector<int>&;
-[[nodiscard]] auto get_bool() noexcept          -> bool;
-[[nodiscard]] auto get_string() const           -> std::string;
-auto get_nothing() const noexcept -> void;
-
-/* you could do this I suppose */
-[[nodiscard]] auto get_vector() const noexcept  -> const std::vector<int>&;
-[[nodiscard]] auto get_bool() noexcept          -> bool;
-[[nodiscard]] auto get_string() const           -> std::string;
-              auto get_nothing() const noexcept -> void;
-
-/* even more alignment? IDK */
-[[nodiscard]] auto get_vector()     const noexcept  -> const std::vector<int>&;
-[[nodiscard]] auto get_bool()       noexcept        -> bool;
-[[nodiscard]] auto get_string()     const           -> std::string;
-              auto get_nothing()    const noexcept  -> void;
 
 {% endhighlight %}
 
-It's not perfect but I like the trailing return syntax. It also aligns more 
-with languages like Rust and Go if you work with those (and I might in the
-future).
+It's not perfect though and the benefits are really in the usage, not
+the style, but I like the trailing return syntax any and will continue
+using it for the time being. It also aligns more with languages like 
+Rust or Go if you work with those (and I might in the future).
 
 
 ### Drogon and sqlite3
