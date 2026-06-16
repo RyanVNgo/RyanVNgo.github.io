@@ -27,6 +27,7 @@ Outside of software: Formula 1, tech, astronomy, and K-pop. <sub><i>(stan NMIXX)
     <span class="eyebrow">Projects</span>
     <a class="list-heading__link" href="{{ site.docs[0].url }}">all projects -></a>
 </div>
+{% assign project-list-length = 4 %}
 {% include project-list.html %}
 
 
