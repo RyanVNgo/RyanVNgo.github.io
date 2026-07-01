@@ -5,11 +5,18 @@ style-sheets: [default, index]
 author: Ryan Ngo
 ---
 
-<span class="eyebrow">Software Developer & CS Grad</span>
-<h1 class="home-title">
-    Hi, I'm {{ site.author }} and I'm<br>
-    <span>Building Software for... <i>something</i>...</span>
-</h1>
+<span class="eyebrow">Software Developer & CS Grad<span>
+<div class="home-title">
+  <h1 class="home-title">
+    {{ site.author }}.
+  </h1>
+  <h2>
+    Working to Build Clear, Reliable, Sustainable Software
+  </h2>
+</div>
+
+I enjoy building software through careful implementation and continuous
+refinement. My focus is on systems that are clear, reliable, and performant.
 
 I currently spend my time building personal software projects, some of 
 which are featured below alongside posts about them and other topics I 
