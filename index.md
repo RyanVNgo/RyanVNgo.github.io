@@ -11,7 +11,7 @@ author: Ryan Ngo
     {{ site.author }}.
   </h1>
   <h2>
-    Working to Build Clear, Reliable, Sustainable Software
+    Working to Create Performant, Extensible Software
   </h2>
 </div>
 
