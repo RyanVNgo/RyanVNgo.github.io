@@ -11,12 +11,12 @@ author: Ryan Ngo
     {{ site.author }}.
   </h1>
   <h2>
-    Working to Create Performant, Extensible Software
+    Working to Create Performant, Scalable Software
   </h2>
 </div>
 
 I enjoy building software through careful implementation and continuous
-refinement. My focus is on systems that are clear, reliable, and performant.
+refinement, with a focus on writing clear, extensible, performant code.
 
 I currently spend my time building personal software projects, some of 
 which are featured below alongside posts about them and other topics I 
