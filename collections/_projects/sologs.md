@@ -103,13 +103,7 @@ and write the `README.md`.
 Emphasis on the *some* for those mentioned as it was very little and much 
 of my direction led to the model having next to no liberty on how to 
 write the code. I essentially used it as a faster way of writing what I 
-would've already written. And I'd know since I reviewed everything it wrote
-and would sometimes adjust what it after the fact if it did something
-not to my liking.
-
-I could've spent time extensively setting up an agent to write code to
-my liking but I had no particlar interest in doing so.
-
+would've already written.
 
 ## Future Development
 
