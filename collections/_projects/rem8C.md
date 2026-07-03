@@ -6,10 +6,6 @@ title: rem8C
 year: 2025
 priority: 2
 github: https://github.com/RyanVNgo/rem8C
-images:
-    - https://raw.githubusercontent.com/RyanVNgo/rem8C/refs/heads/main/images/IBM_test.png
-    - https://raw.githubusercontent.com/RyanVNgo/rem8C/refs/heads/main/images/Flags_test.png
-    - https://raw.githubusercontent.com/RyanVNgo/rem8C/refs/heads/main/images/Corax_test.png
 overview: Emulator
 tags:
     - C
@@ -18,7 +14,7 @@ blip: >
     A CHIP-8 emulator in C with SDL2 renderer
 ---
 
-![IBM logo test ROM running]({{ page.images[0] }})
+![IBM logo test ROM running]({{ site.projects-imgs-dir }}/rem8C/IBM_test.png)
 
 This emulator was developed for the sake of learning and understanding the
 core functionality of computer systems at a rudimentary level. I primarily
@@ -75,9 +71,9 @@ this.
 Again, this implementation appears to work as it passes all the tests.
 For now, these changes in implementation will remain.
 
-![Corax test ROM running]({{ page.images[2] }})
+![Corax test ROM running]({{ site.projects-imgs-dir }}/rem8C/Corax_test.png)
 
-![Flags test ROM running]({{ page.images[1] }})
+![Flags test ROM running]({{ site.projects-imgs-dir }}/rem8C/Flags_test.png)
 
 
 ### ROM Compatibility

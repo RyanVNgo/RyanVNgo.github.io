@@ -16,7 +16,7 @@ blip: >
     Single-Image Super-Resolution CNN based on NAFNet
 ---
 
-![Super resolution example]({{ site.projects-imgs-dir | append: page.title }}/image_1.webp)
+![Super resolution example]({{ site.projects-imgs-dir }}/SRNAFNet/image_1.webp)
 <sub>
     Low-Res *(top-left)*, 
     High-Res *(top-right)*,
@@ -42,7 +42,7 @@ computer vision problems specifically and much of the research going on behind i
 
 ## Model
 
-![SRNAFNet Architecture]({{ site.projects-imgs-dir | append: page.title }}/image_2.webp)
+![SRNAFNet Architecture]({{ site.projects-imgs-dir }}/SRNAFNet/image_2.webp)
 <sub>SRNAFNet Architecture</sub>
 
 The model is essentially a combination of two works, a multi-path progressively upscaling
@@ -74,14 +74,14 @@ For evaluation, we measured PSNR and SSIM on four benchmark datasets: Set5, Set1
 and Urban100. For some comparative analysis, we also implemented variations of the network
 which utilized the other intra-block architectures discussed in the NAFNet paper.
 
-![PSNR and SSIM metrics]({{ site.projects-imgs-dir | append: page.title }}/image_3.webp)
+![PSNR and SSIM metrics]({{ site.projects-imgs-dir }}/SRNAFNet/image_3.webp)
 <sub>PSNR and SSIM metrics of each block type</sub>
 
 The NAFNet style block performed the best out of all intra-block architectures in PSNR and SSIM
 metrics. This was also the case in the NAFNet paper but it's nice to see it carry over in a
 similar but different case.
 
-![Inference Times]({{ site.projects-imgs-dir | append: page.title }}/image_4.webp)
+![Inference Times]({{ site.projects-imgs-dir }}/SRNAFNet/image_4.webp)
 <sub>Average per-image inference time for x2 downscaled images from Urban100</sub>
 
 Surprisingly, the NAFNet block also performed the best amongst all variations on inference time.

@@ -6,17 +6,16 @@ title: rem8C++
 year: 2025
 priority: 4
 github: https://github.com/RyanVNgo/rem8Cpp
-images:
-    - https://raw.githubusercontent.com/RyanVNgo/rem8Cpp/refs/heads/main/images/IBM_test.png
 overview: Emulator
 tags:
     - C++
     - Dear ImGui
+    - vcpkg
 blip: >
-    A CHIP-8 emulator in C++ with ImGui
+    A CHIP-8 emulator built in C++ with Dear ImGui
 ---
 
-![IBM logo test ROM running]({{ page.images[0] }})
+![IBM logo test ROM running]({{ site.projects-imgs-dir}}/rem8Cpp/IBM_test.png)
 
 This is just an extension of [rem8C](https://github.com/RyanVNgo/rem8C) but developed in C++
 and given some quality of life improvements like a better loading system, 
