@@ -5,18 +5,18 @@ style-sheets: [default, index]
 author: Ryan Ngo
 ---
 
-<span class="eyebrow">Software Developer & CS Grad<span>
-<div class="home-title">
-  <h1 class="home-title">
-    {{ site.author }}.
-  </h1>
-  <h2>
-    Working to Create Performant, Scalable Software
-  </h2>
+<div class="title-section center-text">
+    <span id="title-section__overview" class="eyebrow">
+      Software Developer & CS Grad
+    </span>
+    <h1 id="title-section__title">
+      Hi, I'm {{ site.author }},<br>
+      Welcome to My Personal Website.
+    </h1>
 </div>
 
-I enjoy building software through careful implementation and continuous
-refinement, with a focus on writing clear, extensible, performant code.
+I'm a software developer based in California who enjoys building software
+with an emphasis on simplicity, performance, and extensibility.
 
 I currently spend my time building personal software projects, some of 
 which are featured below alongside posts about them and other topics I 

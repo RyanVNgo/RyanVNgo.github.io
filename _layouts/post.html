@@ -9,14 +9,14 @@
 
         <main>
             <article>
-                <div class="title-section">
+                <div class="title-section center-text">
                     <span id="title-section__overview" class="eyebrow">
                         {{ page.overview }}
                     </span>
 
                     <h1 id="title-section__title">{{ page.title }}</h1>
 
-                    <div id="title-section__post-info">
+                    <div id="title-section__info">
                         <span>{{ page.date | date: "%Y-%m-%d" }}</span>
                         {% assign words = page.content | number_of_words %}
                         {% assign reading_time = words | divided_by: 200 %}

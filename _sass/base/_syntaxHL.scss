@@ -4,6 +4,7 @@
   margin: 0 0.125em;
 
   color: var(--text-secondary);
+  font-family: var(--mono-font);
   font-size: 0.8rem;
 
   border-radius: 0.375em;
@@ -22,9 +23,13 @@
 
   overflow: scroll;
 
-  pre { 
+  > pre { 
     margin: 0;
     padding: 1.5rem 1.75rem;
+
+    > code > span {
+      font-family: var(--mono-font);
+    }
   }
 
   .hll { background-color: #272822; }

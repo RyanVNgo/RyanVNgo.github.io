@@ -5,6 +5,6 @@ style-sheets: [default]
 author: Ryan Ngo
 ---
 
-<span class="eyebrow">Posts</span>
+<span class="eyebrow center-text">Posts</span>
 
 {% include post-list.html %}

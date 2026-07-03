@@ -1,0 +1,25 @@
+
+.title-section {
+  margin-block-end: var(--spacing-400);
+}
+
+#title-section__overview {
+  display: inline-block;
+  margin-block-end: var(--spacing-100);
+}
+
+#title-section__title {
+  margin-block-end: var(--spacing-100);
+}
+
+#title-section__info {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-150);
+
+  font-family:  var(--sans-font);
+  font-weight:  var(--h1-weight);
+  font-size:    var(--mini-size);
+  color: var(--text-tertiary);
+}
+

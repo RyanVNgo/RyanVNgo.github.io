@@ -5,7 +5,7 @@ style-sheets: [default]
 author: Ryan Ngo
 ---
 
-<span class="eyebrow">Projects</span>
+<span class="eyebrow center-text">Projects</span>
 
 {% include project-list.html %}
 
