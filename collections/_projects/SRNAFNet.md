@@ -13,7 +13,7 @@ tags:
     - NumPy
     - AI
 blip: >
-    Single-Image Super-Resolution CNN based on the NAFNet
+    Single-Image Super-Resolution CNN based on NAFNet
 ---
 
 ![Super resolution example]({{ site.projects-imgs-dir | append: page.title }}/image_1.webp)

@@ -11,7 +11,7 @@ tags:
     - C
     - Library
 blip: >
-    Single header C library for IO operations on .ser files
+    Single header C library for I/O operations on .ser files
 ---
 
 {% highlight C %}

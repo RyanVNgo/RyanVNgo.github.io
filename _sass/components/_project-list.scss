@@ -12,6 +12,7 @@
 .project-card {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   gap: var(--spacing-50);
   padding: var(--spacing-75) var(--spacing-100);
@@ -42,6 +43,7 @@
 }
 
 .project-card__blip {
+  margin-inline-start: var(--spacing-50);
   flex: 1;
 }
 
