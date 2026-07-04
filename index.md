@@ -9,9 +9,9 @@ author: Ryan Ngo
     <span id="title-section__overview" class="eyebrow">
       Software Developer & CS Grad
     </span>
-    <h1 id="title-section__title">
-      Hi, I'm {{ site.author }},<br>
-      Welcome to My Personal Website.
+    <h1 id="title-section__title" class="home-title">
+      Hi, I'm <span>{{ site.author }}</span><br>
+      Welcome to My Personal Website
     </h1>
 </div>
 

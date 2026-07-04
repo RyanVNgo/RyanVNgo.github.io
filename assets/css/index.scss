@@ -1,12 +1,14 @@
 ---
 ---
 
-.home-title {
-  margin-bottom: var(--spacing-400);
-
-  > h1 {
-    margin-bottom: var(--spacing-50);
-  }
+.home-title > span {
+  background: linear-gradient(
+    to top,
+    var(--accent),
+    oklch(from var(--accent-dim) 0.85 c h / 1.0)
+  );
+  background-clip: text;
+  color: transparent;
 }
 
 .list-heading {
