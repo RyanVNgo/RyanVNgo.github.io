@@ -5,30 +5,24 @@ style-sheets: [default, index]
 author: Ryan Ngo
 ---
 
-<div class="title-section center-text">
-    <span id="title-section__overview" class="eyebrow">
-      Software Developer & CS Grad
-    </span>
-    <h1 id="title-section__title" class="home-title">
+<div id="home-header">
+  <div id="home-header__text">
+    <h1 id="home-header__title">
       Hi, I'm <span>{{ site.author }}</span><br>
-      Welcome to My Personal Website
     </h1>
+    <h2>
+      A software developer based in California building tools and
+      applications with a focus on design, performance, and extensibility.
+    </h2>
+  </div>
+  <img class="light-background" id="home-header__pic" src="/assets/images/dot_portrait_2.png">
 </div>
-
-I'm a software developer based in California who enjoys building software
-with an emphasis on simplicity, performance, and extensibility.
 
 I currently spend my time building personal software projects, some of 
 which are featured below alongside posts about them and other topics I 
 find interesting.
 
 Outside of software: Formula 1, tech, astronomy, and K-pop. <sub><i>(stan NMIXX)</i></sub>
-
-<div class="info-block">
-    <div class="info-block__text">
-    <span>Now</span> - improving skills in developing software in C++
-    </div>
-</div>
 
 <div class="list-heading">
     <span class="eyebrow">Projects</span>

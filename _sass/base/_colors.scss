@@ -1,6 +1,8 @@
 
+$light-bg-primary:   oklch(1.00  0.000 0);  
+
 :root {
-  --bg-primary:     oklch(1.00  0.000 0);
+  --bg-primary:     #{$light-bg-primary};
   --bg-secondary:   oklch(0.97  0.000 0);
 
   --text-primary:   oklch(0.20  0.000 0);
@@ -38,4 +40,8 @@
 .invert-on-scheme {
   filter: var(--filter-scheme-invert);
 };
+
+.light-background {
+  background-color: #{$light-bg-primary};
+}
 
