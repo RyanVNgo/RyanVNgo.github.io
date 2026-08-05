@@ -15,7 +15,7 @@ author: Ryan Ngo
       applications with a focus on design, performance, and extensibility.
     </h2>
   </div>
-  <img class="light-background" id="home-header__pic" src="/assets/images/dot_portrait_2.png">
+  <img class="light-background" id="home-header__pic" src="/assets/images/dot_portrait.png">
 </div>
 
 I currently spend my time building personal software projects, some of 
