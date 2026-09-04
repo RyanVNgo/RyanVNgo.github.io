@@ -16,6 +16,13 @@ blip: >
     Single-Image Super-Resolution CNN based on NAFNet
 ---
 
+<blockquote class="blockquote-note" markdown="1">
+  **Archived (Sep 4, 2026) — no longer maintained.**
+
+  For more information, please visit the project's
+  [github repository]({{ page.github }}).
+</blockquote>
+
 ![Super resolution example]({{ site.projects-imgs-dir }}/SRNAFNet/image_1.webp)
 <sub>
     Low-Res *(top-left)*, 
