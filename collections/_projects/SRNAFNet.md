@@ -5,7 +5,7 @@ style-sheets: [default, project-page]
 title: SRNAFNet
 year: 2025
 priority: 3
-github: https://github.com/RyanVNgo/NAFNet-SISR
+github: https://github.com/RyanVNgo/SRNAFNet
 overview: Artificial Intelligence
 tags:
     - Python
