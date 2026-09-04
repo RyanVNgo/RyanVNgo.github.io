@@ -16,6 +16,13 @@ blip: >
     A lightweight HTTP logging server
 ---
 
+<blockquote class="blockquote-note" markdown="1">
+  **Archived (Sep 2, 2026) — no longer maintained.** 
+
+  For more information, please visit the project's
+  [github repository]({{ page.github }}).
+</blockquote>
+
 **sologs** is a logging server build in C++ using Drogon as the HTTP
 framework and SQLite for the database.
 

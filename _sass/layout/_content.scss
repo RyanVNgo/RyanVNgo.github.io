@@ -103,7 +103,8 @@ hr {
 }
 
 blockquote {
-  margin: var(--spacing-50);
+  margin-inline: var(--spacing-50);
+  margin-block: 0 var(--spacing-200);
   padding: var(--spacing-75) var(--spacing-100);
 
   font-style: italic;
@@ -113,7 +114,11 @@ blockquote {
   background-color: hsl(var(--block-hsl) / 0.1);
   border-left: 0.5rem solid hsl(var(--block-hsl));
 
-  > a {
+  > :last-child {
+    margin-bottom: 0;
+  }
+  
+  a {
     color: var(--block-color);
     transition: 0.2s all;
     &:hover {

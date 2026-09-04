@@ -15,6 +15,13 @@ blip: >
     A CHIP-8 emulator built in C++ with Dear ImGui
 ---
 
+<blockquote class="blockquote-note" markdown="1">
+  **Archived (Sep 2, 2026) — no longer maintained.**
+
+  For more information, please visit the project's
+  [github repository]({{ page.github }}).
+</blockquote>
+
 ![IBM logo test ROM running]({{ site.projects-imgs-dir}}/rem8Cpp/IBM_test.png)
 
 This is just an extension of [rem8C](https://github.com/RyanVNgo/rem8C) but developed in C++

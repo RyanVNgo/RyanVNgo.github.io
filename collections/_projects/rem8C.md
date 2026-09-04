@@ -14,6 +14,13 @@ blip: >
     A CHIP-8 emulator in C with SDL2 renderer
 ---
 
+<blockquote class="blockquote-note" markdown="1">
+  **Archived (Sep 3, 2026) — no longer maintained.**
+
+  For more information, please visit the project's
+  [github repository]({{ page.github }}).
+</blockquote>
+
 ![IBM logo test ROM running]({{ site.projects-imgs-dir }}/rem8C/IBM_test.png)
 
 This emulator was developed for the sake of learning and understanding the
