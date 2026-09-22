@@ -7,6 +7,7 @@ year: 2025
 priority: 2
 github: https://github.com/RyanVNgo/rem8C
 overview: Emulator
+status: archived
 tags:
     - C
     - SDL2

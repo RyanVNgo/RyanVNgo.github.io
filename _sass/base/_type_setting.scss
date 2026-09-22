@@ -11,6 +11,7 @@ $h3-size:       1rem * math.pow($scale-ratio,  0.50);
 $body-size:     1rem;
 $small-size:    1rem * math.pow($scale-ratio, -1.00);
 $mini-size:     1rem * math.pow($scale-ratio, -2.00);
+$tiny-size:     1rem * math.pow($scale-ratio, -4.00);
 
 :root {
   --sans-font: "Google Sans Flex", "Arial", system-ui, Ubuntu, -apple-system, sans-serif;
@@ -28,6 +29,7 @@ $mini-size:     1rem * math.pow($scale-ratio, -2.00);
   --body-size:    #{$body-size};
   --small-size:   #{$small-size};
   --mini-size:    #{$mini-size};
+  --tiny-size:    #{$tiny-size};
 
   --h1-weight:      500;
   --h2-weight:      500;

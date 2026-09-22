@@ -11,8 +11,8 @@ author: Ryan Ngo
       Hi, I'm <span>{{ site.author }}</span><br>
     </h1>
     <h2>
-      A software developer focused on designing and building 
-      maintainable, extensible, and adaptable software.
+      A software developer focused on building maintainable,
+      extensible, and flexible tools and applications.
     </h2>
   </div>
   <img class="light-background" id="home-header__pic" src="/assets/images/dot_portrait.png">

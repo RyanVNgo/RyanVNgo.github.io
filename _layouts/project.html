@@ -27,6 +27,14 @@
                         <span>/</span>
                         <span>{{ page.tags | join: ", " }}</span>
                         {% endunless %}
+
+
+                        {% if page.status%}
+                        <span>/</span>
+                        <span class="status-blob status-blob__{{ page.status}}">
+                            {{ page.status }}
+                        </span>
+                        {% endif %}
                     </div>
 
                 </div>

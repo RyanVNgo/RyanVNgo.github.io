@@ -7,13 +7,14 @@ year: 2025
 priority: 3
 github: https://github.com/RyanVNgo/SRNAFNet
 overview: Artificial Intelligence
+status: archived
 tags:
     - Python
     - PyTorch
     - NumPy
     - AI
 blip: >
-    Single-Image Super-Resolution CNN based on NAFNet
+    Single-Image Super-Resolution CNN
 ---
 
 <blockquote class="blockquote-note" markdown="1">

@@ -1,0 +1,25 @@
+
+.status-blob {
+  padding: 0 var(--spacing-50);
+  font-size: var(--tiny-size);
+  border-radius: 999px;
+  border: solid var(--border-size);
+  margin-block: auto;
+  display: none;
+}
+
+.status-blob__active {
+  color: var(--project-active);
+  display: inline;
+}
+
+.status-blob__developing {
+  color: var(--project-developing);
+  display: inline;
+}
+
+.status-blob__archived {
+  color: var(--project-archived);
+  display: inline;
+}
+

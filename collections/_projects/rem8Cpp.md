@@ -7,6 +7,7 @@ year: 2025
 priority: 4
 github: https://github.com/RyanVNgo/rem8Cpp
 overview: Emulator
+status: archived
 tags:
     - C++
     - Dear ImGui

@@ -7,6 +7,7 @@ year: 2026
 priority: 6
 github: https://github.com/RyanVNgo/sologs
 overview: Server Application
+status: archived
 tags:
     - C++
     - CMake

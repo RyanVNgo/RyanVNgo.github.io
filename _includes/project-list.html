@@ -10,6 +10,9 @@
         {% if project.blip %}
         <span class="project-card__blip">{{ project.blip }}</span>
         {% endif %}
+        <span class="status-blob status-blob__{{ project.status }}">
+            {{project.status}}
+        </span>
         <span class="project-card__year">{{ project.year }}</span>
     </a>
     {% endfor %}

@@ -7,6 +7,7 @@ year: 2026
 priority: 5
 github: https://github.com/RyanVNgo/CSERIO
 overview: Library
+status: active
 tags:
     - C
     - Library
