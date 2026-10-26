@@ -27,53 +27,47 @@ blip: >
 **sologs** is a logging server build in C++ using Drogon as the HTTP
 framework and SQLite for the database.
 
-This page will briefly go over what I got out of the project and some
-notes about it's development.
+This page will briefly go over some details about the project and provide
+various notes about it's development.
 
-Exacting details about implementation or usage will not be covered here.
-However, if you're still curious about some of that, then you can take a
-look at it's [github]({{ page.github }}).
+Exact details about implementation or usage will not be covered here.
+If you're curious about that, then you can take a look at it's
+[github]({{ page.github }}).
 
 
 ## Reason
 
-My goal, at the time of developing the project, was to improve my skills
-in developing C++ applications.
+My goal was to improve my skills in developing C++ applications.
 
-I believe one of, if not, the best ways to improve is to simply build,
-no matter complex or simple it is, so long at you learn something new out 
-of it. This project is an example of that.
-
-I went for a back-end like application that exposes a REST-like API and
-interacts with a database. These are two things I've never direclty worked
-with in C++ so I used this project as an environment to learn more about
-it.
+I went for a back-end like application that exposes a RESTful API and
+interacts with a database. These are two things I've never directly worked
+with in C++ so I used this project as an environment to learn more about it.
 
 
 ## Some Details
 
 ### HTTP Framework
 
-sologs, at the time of writing (2026-06-16), uses Drogon as the HTTP
-framework which honestly handles a significant amount of the networking. 
+sologs (2026-06-16) uses Drogon as the HTTP framework which handles a 
+significant amount of the implementation details regarding networking 
+and workload distribution across multiple threads. 
 
-As a result, I may modify the implemention to use a low-level networking
-library like [Asio](https://think-async.com/Asio/) and provide the
-implementation myself. It will very likely be worse than Drogon and other
-HTTP frameworks but it would give me hands-on experience with topics like
-asynchronous TCP communication and HTTP parsing.
+While this simplified this portion of development, I felt dissatisfied
+by how little I understood about the details abstracted away by Drogon.
+I may return to the project to refactor the networking component with
+my own implementation and improved understanding, though I may very well
+apply that work to some future project.
 
 
 ### Database
 
-The database I'm using for the project is SQLite, specifically with the
-sqlite3 library.
+The database is SQLite, specifically with the sqlite3 library.
 
 I already have experience writing SQL and communicating to a database
-with code, I just haven't done it yet in C++.
+through software, I just haven't done it yet in C++.
 
-The implementation was straight forward enough but I think a good amount
-of work is still left to improve the performance of the end-to-end data
+Implementation was straight forward enough but I think significant work 
+can be done to improve the performance of the end-to-end data
 pipeline.
 
 
@@ -89,12 +83,12 @@ but it did make testing much easier.
 By making each major component compile to a static library, linking the
 components to the corresponding tests is fairly trivial.
 
-Additionally, I followed a dependency injection pattern with interfaces
+Additionally, I conformed to dependency injection with interfaces
 to allow components to decouple from each other. In the tests, any
-component with depdencies can just get mocks instead.
+component with depdencies can get mocks instead.
 
 This does add more boilerplate to the code but that was a tradeoff I was
-willing to make in this case.
+willing to make.
 
 
 ## Agentic Coding 
@@ -116,9 +110,5 @@ would've already written.
 ## Future Development
 
 At the time of writing, there are some additional features and performance
-improvements I'd like to implement so those may come in the near future.
-
-Additionally, as mentioned before, I may use this project as the environment 
-to learn more about networking and HTTP handling by replacing Drogon 
-with a custom implementation, supported by [Asio](https://think-async.com/Asio/).
+improvements I'd like to implement so those may come in a future version.
 
