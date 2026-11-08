@@ -46,6 +46,7 @@ $tiny-size:     1rem * math.pow($scale-ratio, -4.00);
   --mini-ls:    0.0125em;
 
   --line-height:  #{$line-height};
+  --header-line-height: 1.1;
 }
 
 html {
@@ -53,7 +54,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.1;
+  line-height: var(--header-line-height);
 }
 
 h1 {

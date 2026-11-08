@@ -18,9 +18,8 @@ author: Ryan Ngo
   <img class="light-background" id="home-header__pic" src="/assets/images/dot_portrait.png">
 </div>
 
-I currently spend my time building personal software projects, some of 
-which are featured below alongside posts about them and other topics I 
-find interesting.
+Currently building personal software projects. Some are featured below 
+alongside posts about them and other topics I want to write about.
 
 Outside of software: Formula 1, tech, astronomy, and K-pop. <sub><i>(stan NMIXX)</i></sub>
 
