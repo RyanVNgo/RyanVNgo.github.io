@@ -19,7 +19,7 @@ author: Ryan Ngo
 </div>
 
 Currently building personal software projects. Some are featured below 
-alongside posts about them and other topics I want to write about.
+alongside posts about them and other topics I find interesting.
 
 Outside of software: Formula 1, tech, astronomy, and K-pop. <sub><i>(stan NMIXX)</i></sub>
 
